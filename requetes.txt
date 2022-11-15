@@ -55,7 +55,7 @@ LIMIT ?
 
 6/ Le commentaire qui laisse le moins indifférent
 
-SELECT id_avis, COUNT(*) as Jugements_obtenus git clone git@github.com:fbour33/sgbd-jeux.git
+SELECT id_avis, COUNT(*) as Jugements_obtenus
 FROM Jugements
 GROUP BY id_avis
 HAVING COUNT(*) = (
