@@ -5,19 +5,19 @@ Stratégie: Avoir listes des jeux du themes => Verifier qu'ils ont été critiqu
 SELECT DISTINCT J.nom_jeu, M.description (à enlever apres test de tri)
 FROM Jeu J NATURAL JOIN Themes T JOIN Mecanique M
     ON M.id_jeu = id_jeu
-WHERE T.Intitule = '?'
+WHERE T.intitule = '?'
     AND id_jeu in (
         SELECT DISTINCT id_jeu
         FROM Avis
     )
-
+ORDER BY M.description
 
 2/  Pour un joueur donné, la liste des commentaires se référant à un jeu dans une de ses
 catégories préférées.
 
 Stratégie: Avoir mécaniques pref => liste des jeux de ces mécaniques => liste des commentaires de ces jeux
 
-SELECT Commentaires
+SELECT commentaire
 FROM Avis
 WHERE id_jeu IN (
     SELECT DISTINCT id_jeu 
@@ -40,11 +40,11 @@ WHERE pertinence = 1
 
 4/ Les joueurs, classés selon le nombre de jeux qu’ils ont notés
 
-SELECT pseudo, id_joueur, COUNT(*) as Avis_donné
+SELECT pseudo, id_joueur, COUNT(*) as Avis_donne
 FROM Joueur J LEFT OUTER JOIN Avis A
     ON J.id_joueur = A.id_joueur
 GROUP BY id_joueur, pseudo
-ORDER BY Avis_donné
+ORDER BY Avis_donne
 
 5/ La liste des n commentaires les plus récents
 
