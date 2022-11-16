@@ -24,7 +24,7 @@ WHERE id_jeu IN (
     FROM Jeu NATURAL JOIN Mecanique
     WHERE description IN (
         SELECT description
-        FROM Meca_pref
+        FROM Mecaniques_pref
         WHERE id_joueur ='?'
     )
 )
@@ -91,12 +91,11 @@ AFTER INSERT OR UPDATE OR DELETE ON Jugement
 FOR EACH ROW
 BEGIN
     UPDATE Avis as A
-    SET indice_confiance = IC.Indice_confiance
-    FROM (
-        SELECT id_avis, (1+COUNT(estPositif))/(1+COUNT(estNegatif)) as Indice_confiance
-        FROM Jugements
-        GROUP BY id_avis
-        ) as IC
+    SET indice_confiance = (
+        SELECT (1+COUNT(estPositif))/(1+COUNT(estNegatif))
+        FROM Jugement
+        WHERE id = ?
+    )
     WHERE A.id_avis = IC.id_avis
 END;
 
