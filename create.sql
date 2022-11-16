@@ -91,9 +91,10 @@ create table AVIS
 
 create table JUGEMENTS
 (
-    PERTINENCE                      NUMBER(3)              not null,
     ID_AVIS                         NUMBER(3)              not null,
     ID_JOUEURS                      NUMBER(3)              not null,
+    EST_POSITIF                     NUMBER(3)                      ,
+    EST_NEGATIF                     NUMBER(3)                      ,
 );
 
 
