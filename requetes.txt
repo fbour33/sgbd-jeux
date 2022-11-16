@@ -70,9 +70,9 @@ par l’indice de confiance du commentaire correspondant.
 
 
 Classement des jeux suivant la moyenne des avis:
-SELECT id_jeu, AVG(*) as Note
+SELECT id_jeu, AVG(note) as Note
 FROM Avis
-GROUP BY id_avis
+GROUP BY id_jeu
 ORDER BY Note
 
 Calcul de l'indice de confiance:
@@ -91,7 +91,7 @@ AFTER INSERT OR UPDATE OR DELETE ON Jugement
 FOR EACH ROW
 BEGIN
     UPDATE Avis as A
-    SET indice_confiance = Indice_confiance
+    SET indice_confiance = IC.Indice_confiance
     FROM (
         SELECT id_avis, (1+COUNT(estPositif))/(1+COUNT(estNegatif)) as Indice_confiance
         FROM Jugements
@@ -99,6 +99,8 @@ BEGIN
         ) as IC
     WHERE A.id_avis = IC.id_avis
 END;
+
+TRIGGER MARCHE PAS !! PAS DE FROM DANS UN UPDATE ! 
 
 Requete Finale (??):
 SELECT id_jeu, AVG(A.note * A.indice_confiance) as Note
