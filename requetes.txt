@@ -3,7 +3,7 @@
 Stratégie: Avoir listes des jeux du themes => Verifier qu'ils ont été critiqués => les trier par mécaniques
 
 SELECT DISTINCT J.nom_jeu, M.description (à enlever apres test de tri)
-FROM Jeu J NATURAL JOIN Themes T JOIN Mecanique M
+FROM Jeu AS J NATURAL JOIN Themes AS T JOIN Mecanique AS M
     ON M.id_jeu = id_jeu
 WHERE T.intitule = '?'
     AND id_jeu in (
@@ -41,7 +41,7 @@ WHERE pertinence = 1
 4/ Les joueurs, classés selon le nombre de jeux qu’ils ont notés
 
 SELECT pseudo, id_joueur, COUNT(*) as Avis_donne
-FROM Joueur J LEFT OUTER JOIN Avis A
+FROM Joueur AS J LEFT OUTER JOIN Avis AS A
     ON J.id_joueur = A.id_joueur
 GROUP BY id_joueur, pseudo
 ORDER BY Avis_donne
@@ -81,7 +81,27 @@ FROM Jugements
 GROUP BY id_avis
 
 Seule solution que je vois pour cette requete:
-Ajouter un attribut Indice_confiance dans la table Avis.
+Ajouter un attribut indice_confiance dans la table Avis.
 Mettre en place un trigger insert sur la table Jugement qui modifie l'attribut Indice_confiance de chaque avis. 
 De cette facon, il est beaucoup plus facile d'avoir acces a l'indice de confiance et donc la ponderation puis moyenne est triviale. 
 
+Le trigger en question:
+CREATE OR REPLACE TRIGGER Ind_conf
+AFTER INSERT OR UPDATE OR DELETE ON Jugement
+FOR EACH ROW
+BEGIN
+    UPDATE Avis as A
+    SET indice_confiance = Indice_confiance
+    FROM (
+        SELECT id_avis, (1+COUNT(estPositif))/(1+COUNT(estNegatif)) as Indice_confiance
+        FROM Jugements
+        GROUP BY id_avis
+        ) as IC
+    WHERE A.id_avis = IC.id_avis
+END;
+
+Requete Finale (??):
+SELECT id_jeu, AVG(A.note * A.indice_confiance) as Note
+FROM Avis AS A
+GROUP BY id_avis
+ORDER BY Note
