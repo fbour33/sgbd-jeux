@@ -81,8 +81,10 @@ create table AVIS
     COMMENTAIRE_AVIS                CHAR(1000)                     ,
     DATE_AVIS                       DATE                           ,
     ID_JEU                          NUMBER(3)              not null,
+    ID_JOUEUR                       NUMBER(3)              not null,
     ID_CONFIG                       NUMBER(3)              not null,
     constraint pk_avis primary key (ID_AVIS)
+    constraint uc_avis UNIQUE (ID_JEU, ID_JOUEUR)
 );
 
 -- ============================================================
@@ -146,9 +148,10 @@ create table MECANIQUES_PREF
 
 create table EXTENSIONS 
 {
+    ID_EXTENSION                NUMBER(3)             not null,
     NOM_EXTENSION               CHAR(20)              not null,
     ID_JEU                      NUMBER(3)             not null, 
-    constraint pk_extensions primary key (NOM_EXTENSION)  
+    constraint pk_extensions primary key (ID_EXTENSION)  
 };
 
 -- ============================================================
@@ -156,13 +159,18 @@ create table EXTENSIONS
 -- ============================================================
 
 create table CONFIGURATIONS 
-{
-    
-    ID_JEU                      NUMBER(3)             not null, 
+{   
+    ID_CONFIG                   NUMBER(3)             not null, 
     NB_JOUEURS                  NUMBER(3)             not null,
-    NOM_EXTENSION               CHAR(20)              not null, 
-    ID_AVIS                     NUMBER(3)             not null, 
+    constraint pk_config primary key (ID_CONFIG)
 };
+
+create table EXTENSIONS_UTILISEE 
+{
+    ID_EXTENSION                NUMBER(3)              not null, 
+    ID_CONFIG                   NUMBER(3)              not null, 
+    constraint pk_extensions_utilisee primary key (ID_EXTENSION, ID_CONFIG)
+}
 
 alter table MECANIQUES
     add constraint fk1_mecaniques foreign key (ID_JEU)
@@ -196,18 +204,6 @@ alter table THEMES_RPEF
     add constraint fk2_themes_pref foreign key (INTITULE_THEME)
         references MECANIQUES (INTITULE_THEME); 
 
-alter table CONFIGURATIONS
-    add constraint fk1_configurations foreign key (ID_JEU)
-        references JEUX (ID_JEU);
-
-alter table CONFIGURATIONS
-    add constraint fk2_configurations foreign key (NOM_EXTENSION)
-        references EXTENSIONS (NOM_EXTENSION);
-
-alter table CONFIGURATIONS
-    add constraint fk3_configurations foreign key (ID_AVIS)
-        references AVIS (ID_AVIS);
-
 alter table AVIS
     add constraint fk1_avis foreign key (ID_JEU)
         references JEUX (ID_JEU);
@@ -223,3 +219,11 @@ alter table JUGEMENTS
 alter table JUGEMENTS
     add constraint fk2_jugements foreign key (ID_JOUEUR)
         references JOUEURS (ID_JOUEUR);
+
+alter table EXTENSIONS_UTILISEE
+    add constraint fk1_extensions_utilisee foreign key (ID_EXTENSION)
+        references EXTENSIONS (ID_EXTENSION);
+
+alter table EXTENSIONS_UTILISEE
+    add constraint fk2_extensions_utilisee foreign key (ID_CONFIG)
+        references CONFIGURATIONS (ID_CONFIG);

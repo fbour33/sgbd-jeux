@@ -2,28 +2,28 @@
 
 Stratégie: Avoir listes des jeux du themes => Verifier qu'ils ont été critiqués => les trier par mécaniques
 
-SELECT DISTINCT J.nom_jeu, M.description (à enlever apres test de tri)
-FROM Jeu AS J NATURAL JOIN Themes AS T JOIN Mecanique AS M
+SELECT DISTINCT J.nom_jeu, M.description_mecanique (à enlever apres test de tri)
+FROM Jeux AS J NATURAL JOIN Themes AS T JOIN Mecaniques AS M
     ON M.id_jeu = id_jeu
-WHERE T.intitule = '?'
+WHERE T.intitule_theme = '?'
     AND id_jeu in (
         SELECT DISTINCT id_jeu
         FROM Avis
     )
-ORDER BY M.description
+ORDER BY M.description ASC
 
 2/  Pour un joueur donné, la liste des commentaires se référant à un jeu dans une de ses
 catégories préférées.
 
 Stratégie: Avoir mécaniques pref => liste des jeux de ces mécaniques => liste des commentaires de ces jeux
 
-SELECT commentaire
+SELECT commentaire_avis
 FROM Avis
 WHERE id_jeu IN (
     SELECT DISTINCT id_jeu 
-    FROM Jeu NATURAL JOIN Mecanique
-    WHERE description IN (
-        SELECT description
+    FROM Jeux NATURAL JOIN Mecaniques
+    WHERE description_mecanique IN (
+        SELECT description_mecanique
         FROM Mecaniques_pref
         WHERE id_joueur ='?'
     )
@@ -35,15 +35,15 @@ Stratégie: Avoir la liste des jugements positifs d'un avis => remonter aux joue
 
 SELECT id_joueur
 FROM Jugements
-WHERE pertinence = 1
+WHERE est_positif = 1
     AND id_avis = ?
 
 4/ Les joueurs, classés selon le nombre de jeux qu’ils ont notés
 
-SELECT pseudo, id_joueur, COUNT(*) as Avis_donne
-FROM Joueur AS J LEFT OUTER JOIN Avis AS A
+SELECT pseudo_joueur, id_joueur, COUNT(*) as Avis_donne
+FROM Joueurs AS J LEFT OUTER JOIN Avis AS A
     ON J.id_joueur = A.id_joueur
-GROUP BY id_joueur, pseudo
+GROUP BY id_joueur, pseudo_joueur
 ORDER BY Avis_donne
 
 5/ La liste des n commentaires les plus récents
@@ -51,9 +51,9 @@ ORDER BY Avis_donne
 SELECT *
 FROM Avis
 ORDER BY date_avis 
-LIMIT ? 
+LIMIT ?  
 
-6/ Le commentaire qui laisse le moins indifférent
+6/ Le commentaires qui laisse le moins indifférent
 
 SELECT id_avis, COUNT(*) as Jugements_obtenus
 FROM Jugements
@@ -70,7 +70,7 @@ par l’indice de confiance du commentaire correspondant.
 
 
 Classement des jeux suivant la moyenne des avis:
-SELECT id_jeu, AVG(note) as Note
+SELECT id_jeu, AVG(note_avis) as Note
 FROM Avis
 GROUP BY id_jeu
 ORDER BY Note
@@ -87,19 +87,17 @@ De cette facon, il est beaucoup plus facile d'avoir acces a l'indice de confianc
 
 Le trigger en question:
 CREATE OR REPLACE TRIGGER Ind_conf
-AFTER INSERT OR UPDATE OR DELETE ON Jugement
+AFTER INSERT OR UPDATE OR DELETE ON Jugements
 FOR EACH ROW
 BEGIN
     UPDATE Avis as A
     SET indice_confiance = (
         SELECT (1+COUNT(estPositif))/(1+COUNT(estNegatif))
-        FROM Jugement
+        FROM Jugements
         WHERE id = ?
     )
-    WHERE A.id_avis = IC.id_avis
+    WHERE A.id_avis = new.id_avis
 END;
-
-TRIGGER MARCHE PAS !! PAS DE FROM DANS UN UPDATE ! 
 
 Requete Finale (??):
 SELECT id_jeu, AVG(A.note * A.indice_confiance) as Note
