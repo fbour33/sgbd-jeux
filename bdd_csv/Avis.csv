@@ -1,251 +1,251 @@
-﻿id_avis;note_avis;commentaire;date;id_config;id_joueur;;
-1;18;"""Incroyable ce jeu ! Probablement le meilleur de l'année ! Je conseille fortement !""";'28-MAY-2020';6;1;Incroyable ce jeu ! Probablement le meilleur de l'année ! Je conseille fortement !;28-May-2020
-2;8;"""Quelle déception ! Je l'attendais tellement mais il manque trop de contenu, en 30min on a vite fait le tour...""";'14-JAN-2019';84;1;Quelle déception ! Je l'attendais tellement mais il manque trop de contenu, en 30min on a vite fait le tour...;14-janv-19
-3;16;"""Très sympa à jouer avec des amis !""";'26-AUG-2021';90;1;Très sympa à jouer avec des amis !;26-Aug-2021
-4;12;"""C'est pas le jeu de l'année, mais il saura vous occuper pendant une soirée ou deux !""";'03-MAR-2022';86;1;C'est pas le jeu de l'année, mais il saura vous occuper pendant une soirée ou deux !;03-mars-22
-5;14;"""Pas mal !""";'14-APR-2018';48;2;Pas mal !;14-Apr-2018
-6;6;"""Pas bien !""";'21-JAN-2019';42;2;Pas bien !;21-janv-19
-7;0;"""G pa kompri lé regle""";'21-JUL-2015';65;4;G pa kompri lé regle;21-juil-15
-8;20;"""Incroyable  ! Mon jeu préféré !""";'03-APR-2022';23;5;Incroyable  ! Mon jeu préféré !;03-Apr-2022
-9;20;"""Exceptionnel ! Mon nouveau jeu préféré !""";'23-DEC-2022';7;5;Exceptionnel ! Mon nouveau jeu préféré !;23-Dec-2022
-10;20;"""Magistral ! Mon nouveau jeu préféré !""";'29-JAN-2020';41;5;Magistral ! Mon nouveau jeu préféré !;29-janv-20
-11;20;"""WOOOOOOOOOOOOOOOOOOOOW ! Mon nouveau jeu préféré !""";'27-FEB-2019';83;5;WOOOOOOOOOOOOOOOOOOOOW ! Mon nouveau jeu préféré !;27-Feb-2019
-12;13;"""Un peu cher pour sa durée de vie mais néanmoins agréable !""";'12-SEP-2020';1;6;Un peu cher pour sa durée de vie mais néanmoins agréable !;12-sept-20
-13;18;"""Parfait pour jouer avec ses enfants !""";'28-JAN-2019';98;7;Parfait pour jouer avec ses enfants !;28-janv-19
-14;0;"""Mon dieu ! Mais quelle horreur ! Ce jeu n'a pour seul objectif de rendre vos enfants violents ! Je suis OUTRÉ !""";'11-JUN-2015';50;7;Mon dieu ! Mais quelle horreur ! Ce jeu n'a pour seul objectif de rendre vos enfants violents ! Je suis OUTRÉ !;11-juin-15
-15;19;"""Excellent jeu avec une durée de vie infinie !""";'09-JUL-2016';100;8;Excellent jeu avec une durée de vie infinie !;09-juil-16
-16;20;"""Oui""";'03-JUL-2022';16;10;Oui;03-juil-22
-17;0;"""Non""";'06-OCT-2020';98;10;Non;06-oct-20
-18;0;"""Non""";'20-SEP-2017';96;10;Non;20-sept-17
-19;20;"""Oui""";'05-JUN-2021';68;10;Oui;05-juin-21
-20;17;"""enorme c incr com jeu""";'18-FEB-2022';30;11;enorme c incr com jeu;18-Feb-2022
-21;16;"""vrmt bien quan ta rien a fair""";'07-JAN-2022';86;11;vrmt bien quan ta rien a fair;07-janv-22
-22;5;"""On faisait mieux en 2001…""";'29-NOV-2019';73;12;On faisait mieux en 2001…;29-nov-19
-23;6;"""C'est un jeu maudit !""";'02-JUL-2015';14;13;C'est un jeu maudit !;02-juil-15
-24;18;"""Juste une dingz""";'10-FEB-2020';88;16;Juste une dingz;10-Feb-2020
-25;19;"""Juste une double dingz""";'09-JAN-2019';65;16;Juste une double dingz;09-janv-19
-26;4;"""Comment on se fait rembourser ?""";'03-MAY-2021';17;17;Comment on se fait rembourser ?;03-May-2021
-27;14;"""Durée de vie : ++ / Gameplay : - / Equilibrage : - / Design : +""";'12-JAN-2019';6;18;Durée de vie : ++ / Gameplay : - / Equilibrage : - / Design : +;12-janv-19
-28;16;"""Durée de vie : + / Gameplay : ++ / Equilibrage : - / Design : +""";'20-JAN-2020';33;18;Durée de vie : + / Gameplay : ++ / Equilibrage : - / Design : +;20-janv-20
-29;8;"""Durée de vie : -- / Gameplay : + / Equilibrage : - / Design : -""";'27-MAY-2018';26;18;Durée de vie : -- / Gameplay : + / Equilibrage : - / Design : -;27-May-2018
-30;17;"""Durée de vie : + / Gameplay : + / Equilibrage : + / Design : ++""";'29-JUN-2017';52;18;Durée de vie : + / Gameplay : + / Equilibrage : + / Design : ++;29-juin-17
-31;18;"""Durée de vie : ++ / Gameplay : ++ / Equilibrage : + / Design : ++""";'06-FEB-2022';1;18;Durée de vie : ++ / Gameplay : ++ / Equilibrage : + / Design : ++;06-Feb-2022
-32;13;"""Durée de vie : - / Gameplay : + / Equilibrage : -- / Design : +""";'02-DEC-2016';65;18;Durée de vie : - / Gameplay : + / Equilibrage : -- / Design : +;02-Dec-2016
-33;11;"""Durée de vie : -- / Gameplay : ++ / Equilibrage : + / Design : -""";'15-APR-2016';50;18;Durée de vie : -- / Gameplay : ++ / Equilibrage : + / Design : -;15-Apr-2016
-34;9;"""Durée de vie : + / Gameplay : -- / Equilibrage : ++ / Design : +""";'17-MAR-2020';14;18;Durée de vie : + / Gameplay : -- / Equilibrage : ++ / Design : +;17-mars-20
-35;15;"""Durée de vie : - / Gameplay : + / Equilibrage : + / Design : +""";'03-OCT-2019';84;18;Durée de vie : - / Gameplay : + / Equilibrage : + / Design : +;03-oct-19
-36;3;"""Durée de vie : -- / Gameplay : -- / Equilibrage : - / Design : --""";'13-MAY-2016';9;18;Durée de vie : -- / Gameplay : -- / Equilibrage : - / Design : --;13-May-2016
-37;17;"""Durée de vie : ++ / Gameplay : ++ / Equilibrage : - / Design : ++""";'12-SEP-2019';53;18;Durée de vie : ++ / Gameplay : ++ / Equilibrage : - / Design : ++;12-sept-19
-38;15;"""Vraiment pas mal ce petit jeu !""";'18-MAY-2015';30;19;Vraiment pas mal ce petit jeu !;18-May-2015
-39;19;"""Un classique !""";'20-AUG-2020';89;19;Un classique !;20-Aug-2020
-40;11;"""Bof""";'16-OCT-2017';21;19;Bof;16-oct-17
-41;18;"""Un très bon jeu ! Si y en a qui cherchent des gens pour jouer, vous pouvez m'ajouter, mon pseudo c'est Whiskey""";'03-MAY-2016';1;21;Un très bon jeu ! Si y en a qui cherchent des gens pour jouer, vous pouvez m'ajouter, mon pseudo c'est Whiskey;03-May-2016
-42;20;"""Il était une école, qui avait tout gagné…""";'24-SEP-2018';21;22;Il était une école, qui avait tout gagné…;24-sept-18
-43;3;"""Catastrophique ! Une honte de vendre un jeu pareil !""";'09-MAR-2016';32;26;Catastrophique ! Une honte de vendre un jeu pareil !;09-mars-16
-44;5;"""Si l'ennui est votre passion, alors n'hésitez pas !""";'04-JUL-2021';27;26;Si l'ennui est votre passion, alors n'hésitez pas !;04-juil-21
-45;2;"""Remplir sa fiche d'impôsition est du fun à l'état pur à côté de ça...""";'19-MAR-2022';100;26;Remplir sa fiche d'impôsition est du fun à l'état pur à côté de ça...;19-mars-22
-46;4;"""Wow ! Ils ont dû redoubler d'effort pour réussir à condenser tout ce qui s'oppose à l'amusement en un seul jeu !""";'27-MAR-2022';101;26;Wow ! Ils ont dû redoubler d'effort pour réussir à condenser tout ce qui s'oppose à l'amusement en un seul jeu !;27-mars-22
-47;6;"""Ce jeu me rappelle mon fils : j'en voulais pas, il m'a coûté plus cher que ce qu'il m'a rapporté et même si j'en attendais rien, j'ai quand même été déçu…""";'31-OCT-2019';53;26;Ce jeu me rappelle mon fils : j'en voulais pas, il m'a coûté plus cher que ce qu'il m'a rapporté et même si j'en attendais rien, j'ai quand même été déçu…;31-oct-19
-48;1;"""Alors là, j'ai plus les mots…""";'20-FEB-2021';31;26;Alors là, j'ai plus les mots…;20-Feb-2021
-49;18;"""Du pain béni !""";'11-JUN-2022';99;27;Du pain béni !;11-juin-22
-50;20;"""MASTERCLASS !! Vous devez y jouer !!""";'01-AUG-2018';13;27;MASTERCLASS !! Vous devez y jouer !!;01-Aug-2018
-51;17;"""Le parfait mélange entre un éclair vanille et une tarte au citron meringuée !""";'01-MAY-2015';10;27;Le parfait mélange entre un éclair vanille et une tarte au citron meringuée !;01-May-2015
-52;20;"""Si les dieux faisaient un enfant, il resemblerait à ça !""";'25-JUL-2015';61;27;Si les dieux faisaient un enfant, il resemblerait à ça !;25-juil-15
-53;16;"""Très fun ! Il vaut le détour !""";'24-APR-2016';3;27;Très fun ! Il vaut le détour !;24-Apr-2016
-54;18;"""MA-SHA-LLAH !""";'13-MAR-2018';23;27;MA-SHA-LLAH !;13-mars-18
-55;7;"""Ne vaut pas son prix !""";'18-JAN-2018';1;30;Ne vaut pas son prix !;18-janv-18
-56;14;"""Le concept est vraiment original ! Dommage que les dessins soient peu travaillés…""";'26-JUL-2016';13;30;Le concept est vraiment original ! Dommage que les dessins soient peu travaillés…;26-juil-16
-57;4;"""Les pièces commencent déjà à s'abîmer gravement alors que j'ai acheté le jeu il y a moins de 2 semaines ! C'est honteux !""";'16-FEB-2021';11;31;Les pièces commencent déjà à s'abîmer gravement alors que j'ai acheté le jeu il y a moins de 2 semaines ! C'est honteux !;16-Feb-2021
-58;17;"""Excellent jeu ! Très convivial !""";'07-MAR-2021';11;32;Excellent jeu ! Très convivial !;07-mars-21
-59;11;"""Les dessins sont beaux mais c'est tout…""";'02-APR-2022';103;32;Les dessins sont beaux mais c'est tout…;02-Apr-2022
-60;14;"""Pas le jeu de l'année mais plutôt cool !""";'09-JUL-2017';34;32;Pas le jeu de l'année mais plutôt cool !;09-juil-17
-61;18;"""Ce jeu est aux jeux de société ce que Père Fouras est à Fort Boyard ! """;'21-MAY-2021';72;33;Ce jeu est aux jeux de société ce que Père Fouras est à Fort Boyard ! ;21-May-2021
-62;20;"""Ce jeu est aux jeux de société ce que la tarte au citron meringuée est aux desserts !""";'12-APR-2018';103;33;Ce jeu est aux jeux de société ce que la tarte au citron meringuée est aux desserts !;12-Apr-2018
-63;5;"""Ce jeu est aux jeux de société ce que le réglisse est aux bonbons !""";'04-OCT-2020';92;33;Ce jeu est aux jeux de société ce que le réglisse est aux bonbons !;04-oct-20
-64;10;"""Ce jeu est aux jeux de société ce que le chou est aux légumes !""";'15-MAR-2021';41;33;Ce jeu est aux jeux de société ce que le chou est aux légumes !;15-mars-21
-65;14;"""pas mal""";'18-MAY-2015';46;41;pas mal;18-May-2015
-66;15;"""vrmt pas mal""";'05-APR-2016';63;41;vrmt pas mal;05-Apr-2016
-67;10;"""pas vrmt pas mal""";'09-OCT-2016';104;41;pas vrmt pas mal;09-oct-16
-68;15;"""Un bon petit jeu""";'22-APR-2019';87;45;Un bon petit jeu;22-Apr-2019
-69;18;"""Un indispensable des soirées entre amis !""";'15-MAY-2018';84;45;Un indispensable des soirées entre amis !;15-May-2018
-70;7;"""Presque autant déçu que Leon""";'18-OCT-2016';68;48;Presque autant déçu que Leon;18-oct-16
-71;10;"""Moyen""";'19-OCT-2019';33;50;Moyen;19-oct-19
-72;10;"""Bof""";'01-JUN-2016';21;50;Bof;01-juin-16
-73;10;"""Dans la moyenne""";'25-OCT-2017';104;50;Dans la moyenne;25-oct-17
-74;10;"""Médiane""";'11-NOV-2022';32;50;Médiane;11-nov-22
-75;10;"""Meh""";'01-OCT-2020';30;50;Meh;01-oct-20
-76;14;"""Ça ne vaut pas un bon vieux Takenoko mais ça fait quand même l'affaire""";'21-JUN-2016';23;51;Ça ne vaut pas un bon vieux Takenoko mais ça fait quand même l'affaire;21-juin-16
-77;10;"""J'ai vu mieux, j'ai vu pire…""";'09-APR-2017';51;53;J'ai vu mieux, j'ai vu pire…;09-Apr-2017
-78;4;"""Nul""";'01-JUN-2018';55;53;Nul;01-juin-18
-79;18;"""Grave bien !""";'28-AUG-2016';80;53;Grave bien !;28-Aug-2016
-80;2;"""Comme une envie de me foutre en l'air…""";'03-MAR-2018';30;53;Comme une envie de me foutre en l'air…;03-mars-18
-81;15;"""Plutôt original, il en vaut le détour !""";'11-OCT-2015';39;53;Plutôt original, il en vaut le détour !;11-oct-15
-82;19;"""Sûrement l'un des meilleurs dans ce domaine""";'26-AUG-2018';28;53;Sûrement l'un des meilleurs dans ce domaine;26-Aug-2018
-83;18;"""Toujours une valeur sure [EDITEUR] !""";'03-JAN-2015';53;53;Toujours une valeur sure [EDITEUR] !;03-janv-15
-84;17;"""Y en a pas bcp des bons jeu de [THEME], mais celui-là en fait partie !""";'31-JAN-2015';76;53;Y en a pas bcp des bons jeu de [THEME], mais celui-là en fait partie !;31-janv-15
-85;7;"""Bcp trop de règles compliquées qui rendent le jeu incompréhensible !""";'18-MAY-2016';88;53;Bcp trop de règles compliquées qui rendent le jeu incompréhensible !;18-May-2016
-86;13;"""Un bon jeu pour changer des grands classiques !""";'16-JUN-2018';50;53;Un bon jeu pour changer des grands classiques !;16-juin-18
-87;11;"""J'aime bien le concept mais à acheter en promo car la durée de vie est limitée""";'05-NOV-2021';45;53;J'aime bien le concept mais à acheter en promo car la durée de vie est limitée;05-nov-21
-88;19;"""Excellent en tout point ! Un must-have !""";'10-MAR-2015';44;53;Excellent en tout point ! Un must-have !;10-mars-15
-89;14;"""Même si le design est un peu élémentaire, il vaut le coup !""";'04-JUL-2020';92;53;Même si le design est un peu élémentaire, il vaut le coup !;04-juil-20
-90;12;"""Le gameplay n'est pas très passionnant… Heureusement que c'est illustré par [ILLUSTRATEUR] !""";'08-MAY-2018';33;53;Le gameplay n'est pas très passionnant… Heureusement que c'est illustré par [ILLUSTRATEUR] !;08-May-2018
-91;16;"""Il sort des sentiers battus et ça marche ! Je valide !""";'18-DEC-2015';12;53;Il sort des sentiers battus et ça marche ! Je valide !;18-Dec-2015
-92;16;"""Une formule classique mais bien exécutée !""";'11-MAY-2020';46;53;Une formule classique mais bien exécutée !;11-May-2020
-93;15;"""On retrouve bien la patte de [CREATEUR], ce qui nous donne un jeu agréable entre amis !""";'05-OCT-2015';72;53;On retrouve bien la patte de [CREATEUR], ce qui nous donne un jeu agréable entre amis !;05-oct-15
-94;14;"""Moelleux""";'11-MAY-2020';69;55;Moelleux;11-May-2020
-95;16;"""Galbé""";'09-MAR-2017';1;55;Galbé;09-mars-17
-96;17;"""Eclairé""";'22-NOV-2016';104;55;Eclairé;22-nov-16
-97;7;"""Obscur""";'15-APR-2015';23;55;Obscur;15-Apr-2015
-98;20;"""Transcendant""";'13-APR-2020';30;55;Transcendant;13-Apr-2020
-99;9;"""Arrogant""";'01-NOV-2018';20;55;Arrogant;01-nov-18
-100;13;"""Curieux""";'22-NOV-2020';17;55;Curieux;22-nov-20
-101;15;"""Mignon""";'27-OCT-2022';40;55;Mignon;27-oct-22
-102;3;"""Froid""";'24-APR-2021';74;55;Froid;24-Apr-2021
-103;5;"""Hypocrite""";'28-JUL-2021';74;55;Hypocrite;28-juil-21
-104;10;"""Egal""";'27-FEB-2016';63;55;Egal;27-Feb-2016
-105;11;"""Patient""";'11-FEB-2017';6;55;Patient;11-Feb-2017
-106;1;"""Pauvre""";'21-JUN-2018';1;55;Pauvre;21-juin-18
-107;17;"""Sincère""";'01-JUL-2016';79;55;Sincère;01-juil-16
-108;12;"""Timide""";'09-AUG-2015';86;55;Timide;09-Aug-2015
-109;18;"""Onctueux""";'12-APR-2019';24;55;Onctueux;12-Apr-2019
-110;7;"""Pas cuit""";'01-NOV-2020';57;55;Pas cuit;01-nov-20
-111;7;"""Trop cuit""";'23-MAY-2018';1;55;Trop cuit;23-May-2018
-112;14;"""Allumé""";'05-JAN-2018';76;55;Allumé;05-janv-18
-113;14;"""Vibrant""";'27-DEC-2020';50;55;Vibrant;27-Dec-2020
-114;16;"""Vivant""";'05-APR-2019';98;55;Vivant;05-Apr-2019
-115;6;"""Sauvage""";'27-NOV-2020';78;55;Sauvage;27-nov-20
-116;13;"""Assaisonné""";'01-APR-2021';15;55;Assaisonné;01-Apr-2021
-117;4;"""Innocent""";'26-DEC-2019';71;56;Innocent;26-Dec-2019
-118;16;"""Super""";'28-JAN-2020';56;56;Super;28-janv-20
-119;2;"""Indiscernable""";'19-NOV-2015';52;56;Indiscernable;19-nov-15
-120;18;"""Invincible""";'07-JUN-2016';8;56;Invincible;07-juin-16
-121;10;"""Artérielle""";'06-FEB-2021';11;56;Artérielle;06-Feb-2021
-122;0;"""Aberrant""";'16-AUG-2018';30;56;Aberrant;16-Aug-2018
-123;1;"""Immédiat""";'28-MAR-2020';50;56;Immédiat;28-mars-20
-124;11;"""Sanguin""";'11-JUL-2016';63;56;Sanguin;11-juil-16
-125;17;"""Oxygéné""";'07-OCT-2022';91;56;Oxygéné;07-oct-22
-126;14;"""Aéré""";'06-FEB-2017';37;56;Aéré;06-Feb-2017
-127;9;"""Plausible""";'20-MAR-2020';25;56;Plausible;20-mars-20
-128;13;"""Occupant""";'09-AUG-2020';1;56;Occupant;09-Aug-2020
-129;16;"""Distrayant""";'10-NOV-2022';2;56;Distrayant;10-nov-22
-130;13;"""Demonstratif""";'17-DEC-2018';2;56;Demonstratif;17-Dec-2018
-131;17;"""Très bien ! """;'17-DEC-2020';70;57;Très bien ! ;17-Dec-2020
-132;4;"""Oubliable""";'22-DEC-2020';79;57;Oubliable;22-Dec-2020
-133;3;"""Nullissime""";'13-APR-2019';91;57;Nullissime;13-Apr-2019
-134;8;"""Génant""";'16-SEP-2016';2;57;Génant;16-sept-16
-135;14;"""Aiguisé""";'07-DEC-2020';8;57;Aiguisé;07-Dec-2020
-136;8;"""Inquiet""";'15-NOV-2018';43;57;Inquiet;15-nov-18
-137;5;"""Grossier""";'22-SEP-2022';11;57;Grossier;22-sept-22
-138;19;"""Monstreux""";'15-JUL-2020';104;57;Monstreux;15-juil-20
-139;12;"""Lucide""";'10-AUG-2021';15;57;Lucide;10-Aug-2021
-140;9;"""Basique""";'14-MAY-2019';60;57;Basique;14-May-2019
-141;11;"""Simple""";'15-SEP-2015';11;57;Simple;15-sept-15
-142;12;"""Académique""";'13-FEB-2017';89;57;Académique;13-Feb-2017
-143;16;"""Ludique""";'03-AUG-2015';67;57;Ludique;03-Aug-2015
-144;16;"""Stylé""";'31-AUG-2015';70;57;Stylé;31-Aug-2015
-145;19;"""Cosmique""";'08-OCT-2020';1;58;Cosmique;08-oct-20
-146;11;"""Rapide""";'14-FEB-2020';27;58;Rapide;14-Feb-2020
-147;11;"""Long""";'01-MAY-2022';28;58;Long;01-May-2022
-148;6;"""Lent""";'01-FEB-2018';19;58;Lent;01-Feb-2018
-149;5;"""Court""";'24-NOV-2021';61;58;Court;24-nov-21
-150;14;"""Minimal""";'03-APR-2020';15;58;Minimal;03-Apr-2020
-151;15;"""Développé""";'07-MAR-2018';21;58;Développé;07-mars-18
-152;15;"""Beau""";'12-APR-2020';102;58;Beau;12-Apr-2020
-153;17;"""Immersif""";'09-SEP-2020';35;58;Immersif;09-sept-20
-154;18;"""Intuitif""";'18-AUG-2021';99;58;Intuitif;18-Aug-2021
-155;12;"""Normal""";'08-APR-2020';66;58;Normal;08-Apr-2020
-156;16;"""Surprenant""";'16-SEP-2021';20;58;Surprenant;16-sept-21
-157;18;"""Génial""";'28-AUG-2019';29;58;Génial;28-Aug-2019
-158;16;"""Imaginatif""";'18-APR-2019';43;58;Imaginatif;18-Apr-2019
-159;17;"""Créatif""";'03-DEC-2021';63;58;Créatif;03-Dec-2021
-160;14;"""Solide""";'09-JUL-2021';50;59;Solide;09-juil-21
-161;11;"""Ponctuel""";'03-AUG-2017';48;59;Ponctuel;03-Aug-2017
-162;15;"""Bienveillant""";'12-AUG-2019';51;59;Bienveillant;12-Aug-2019
-163;3;"""Traumatisant""";'30-MAY-2022';12;59;Traumatisant;30-May-2022
-164;4;"""Horrible""";'16-FEB-2021';78;59;Horrible;16-Feb-2021
-165;5;"""Affreux""";'18-AUG-2018';57;59;Affreux;18-Aug-2018
-166;4;"""Catastrophique""";'13-JAN-2015';16;59;Catastrophique;13-janv-15
-167;3;"""Désastreux""";'27-NOV-2022';7;59;Désastreux;27-nov-22
-168;2;"""Ecoeurant""";'17-MAR-2020';26;59;Ecoeurant;17-mars-20
-169;11;"""Assidu""";'24-AUG-2015';26;59;Assidu;24-Aug-2015
-170;9;"""Pensif""";'28-APR-2015';37;59;Pensif;28-Apr-2015
-171;1;"""Vendu""";'10-OCT-2021';1;59;Vendu;10-oct-21
-172;10;"""Terminé""";'10-AUG-2016';31;59;Terminé;10-Aug-2016
-173;18;"""Héroïque""";'20-MAY-2018';91;59;Héroïque;20-May-2018
-174;8;"""Plat""";'19-FEB-2017';95;59;Plat;19-Feb-2017
-175;7;"""Fade""";'14-NOV-2016';84;59;Fade;14-nov-16
-176;19;"""Gastronomique""";'12-MAR-2015';37;59;Gastronomique;12-mars-15
-177;13;"""Féodal""";'02-JUL-2015';90;59;Féodal;02-juil-15
-178;9;"""Visible""";'14-JUL-2020';104;59;Visible;14-juil-20
-179;13;"""Efficace""";'24-MAY-2017';92;59;Efficace;24-May-2017
-180;8;"""Chargemeeeeeennnnnntt !! Lalalalala ! Chargemeeeeeeeennntt !!""";'24-FEB-2022';1;60;Chargemeeeeeennnnnntt !! Lalalalala ! Chargemeeeeeeeennntt !!;24-Feb-2022
-181;11;"""Ouverture de porte""";'15-DEC-2018';20;60;Ouverture de porte;15-Dec-2018
-182;14;"""Transition""";'22-APR-2016';91;60;Transition;22-Apr-2016
-183;18;"""Un jeu excellent !""";'11-OCT-2020';18;61;Un jeu excellent !;11-oct-20
-184;8;"""Un jeu mauvais !""";'03-AUG-2020';54;61;Un jeu mauvais !;03-Aug-2020
-185;15;"""Un jeu amusant !""";'01-AUG-2015';11;61;Un jeu amusant !;01-Aug-2015
-186;15;"""Rien à dire, il fait le job.""";'03-DEC-2015';40;62;Rien à dire, il fait le job.;03-Dec-2015
-187;12;"""Un peu déçu par la fin, dommage le début était prometteur…""";'06-OCT-2017';25;62;Un peu déçu par la fin, dommage le début était prometteur…;06-oct-17
-188;15;"""Très compliqué au premier abord mais la courbe de progression est très satisfaisante !""";'01-MAY-2018';51;64;Très compliqué au premier abord mais la courbe de progression est très satisfaisante !;01-May-2018
-189;18;"""Alors là je dis oui, oui, oui !""";'08-MAY-2019';89;64;Alors là je dis oui, oui, oui !;08-May-2019
-190;6;"""Mais là je dis non, non, non !""";'25-JUL-2017';41;64;Mais là je dis non, non, non !;25-juil-17
-191;16;"""C'est un jeu de niche, qui plaira aux fans des jeux de [MECANIQUE] !""";'09-OCT-2017';82;64;C'est un jeu de niche, qui plaira aux fans des jeux de [MECANIQUE] !;09-oct-17
-192;19;"""J'ai enfin trouvé le digne successeur de [JEU] !""";'30-JAN-2016';13;65;J'ai enfin trouvé le digne successeur de [JEU] !;30-janv-16
-193;17;"""Il est cool celui-là ! Tu voudras y jouer [PSEUDO] ?""";'02-AUG-2019';59;65;Il est cool celui-là ! Tu voudras y jouer [PSEUDO] ?;02-Aug-2019
-194;20;"""Je vendrai ma mère pour ce jeu !""";'08-APR-2022';38;66;Je vendrai ma mère pour ce jeu !;08-Apr-2022
-195;19;"""Je vendrai mon père pour ce jeu !""";'02-OCT-2016';63;66;Je vendrai mon père pour ce jeu !;02-oct-16
-196;4;"""Je vendrai mon frère pour ce jeu !""";'25-FEB-2020';99;66;Je vendrai mon frère pour ce jeu !;25-Feb-2020
-197;15;"""Je vendrai ma sœur pour ce jeu !""";'27-APR-2016';99;66;Je vendrai ma sœur pour ce jeu !;27-Apr-2016
-198;2;"""Je vendrai mon fils pour ce jeu !""";'18-FEB-2021';24;66;Je vendrai mon fils pour ce jeu !;18-Feb-2021
-199;11;"""Je vendrai ma fille pour ce jeu !""";'28-MAR-2017';31;66;Je vendrai ma fille pour ce jeu !;28-mars-17
-200;6;"""Je vendrai mon oncle pour ce jeu !""";'12-DEC-2018';100;66;Je vendrai mon oncle pour ce jeu !;12-Dec-2018
-201;3;"""Il vaut pas un rond celui-là…""";'01-JUL-2016';61;66;Il vaut pas un rond celui-là…;01-juil-16
-202;14;"""Je vendrai ma tante pour ce jeu !""";'27-FEB-2015';82;66;Je vendrai ma tante pour ce jeu !;27-Feb-2015
-203;17;"""Je vendrai mon grand-père pour ce jeu !""";'04-SEP-2016';15;66;Je vendrai mon grand-père pour ce jeu !;04-sept-16
-204;17;"""Je vendrai ma grand-mère pour ce jeu !""";'15-MAR-2016';7;66;Je vendrai ma grand-mère pour ce jeu !;15-mars-16
-205;10;"""Je vendrai ma femme pour ce jeu !""";'29-SEP-2019';5;66;Je vendrai ma femme pour ce jeu !;29-sept-19
-206;18;"""Je vendrai mon meilleur ami pour ce jeu !""";'06-SEP-2021';52;66;Je vendrai mon meilleur ami pour ce jeu !;06-sept-21
-207;18;"""Je vendrai mon chien pour ce jeu !""";'17-SEP-2018';76;66;Je vendrai mon chien pour ce jeu !;17-sept-18
-208;15;"""J'ai plus grand-chose à vendre, mais il est vraiment bien !""";'15-SEP-2017';84;66;J'ai plus grand-chose à vendre, mais il est vraiment bien !;15-sept-17
-209;0;"""Nul ! Faut être beaucoup pour jouer mais je suis tout seul…""";'27-MAY-2017';50;66;Nul ! Faut être beaucoup pour jouer mais je suis tout seul…;27-May-2017
-210;1;"""Ne l'achetez surtout pas !""";'18-MAR-2022';54;68;Ne l'achetez surtout pas !;18-mars-22
-211;17;"""Vrmt raffraichissant ! Ça devrait être une inspiration pour les prochains jeux !""";'03-MAY-2018';79;69;Vrmt raffraichissant ! Ça devrait être une inspiration pour les prochains jeux !;03-May-2018
-212;18;"""Un classique indémodable""";'23-MAR-2017';80;69;Un classique indémodable;23-mars-17
-213;16;"""*pouce en l'air*""";'04-FEB-2018';55;70;*pouce en l'air*;04-Feb-2018
-214;18;"""*applaudissement*""";'18-SEP-2015';0;70;*applaudissement*;18-sept-15
-215;15;"""*smiley content*""";'20-AUG-2018';38;70;*smiley content*;20-Aug-2018
-216;4;"""*smiley énervé*""";'27-JAN-2019';34;70;*smiley énervé*;27-janv-19
-217;8;"""*smiley déçu*""";'04-MAY-2016';73;70;*smiley déçu*;04-May-2016
-218;2;"""*baleine*""";'24-AUG-2021';90;70;*baleine*;24-Aug-2021
-219;18;"""*hot-dog*""";'29-JUN-2016';96;70;*hot-dog*;29-juin-16
-220;7;"""*pouce vers le bas*""";'28-DEC-2016';100;70;*pouce vers le bas*;28-Dec-2016
-221;14;"""*smiley satisfait mais qui reste un peu sur sa faim quand même car il aurait aimé un peu plus de possibilité de gameplay mais vu que les dessins sont stylés*""";'18-SEP-2019';102;70;*smiley satisfait mais qui reste un peu sur sa faim quand même car il aurait aimé un peu plus de possibilité de gameplay mais vu que les dessins sont stylés*;18-sept-19
-222;17;"""Très convivial, parfait pour les dimanche en famille !""";'17-SEP-2019';72;72;Très convivial, parfait pour les dimanche en famille !;17-sept-19
-223;13;"""Un peu trop compliqué pour les novices du genre.""";'18-SEP-2016';86;72;Un peu trop compliqué pour les novices du genre.;18-sept-16
-224;16;"""A la fois intuitif et complexe, il permet de faire de belles parties entre adeptes !""";'08-OCT-2020';36;72;A la fois intuitif et complexe, il permet de faire de belles parties entre adeptes !;08-oct-20
-225;17;"""Parfait pour initier de nouveaux joueurs aux jeux de [MECANIQUE] !""";'10-MAY-2021';47;73;Parfait pour initier de nouveaux joueurs aux jeux de [MECANIQUE] !;10-May-2021
-226;7;"""3550708""";'07-FEB-2016';78;74;3550708;07-Feb-2016
-227;18;"""5508""";'16-FEB-2017';20;74;5508;16-Feb-2017
-228;11;"""370909""";'15-JAN-2022';99;74;370909;15-janv-22
-229;17;"""Enfin un jeu de [THEME] à la hauteur !""";'15-MAR-2017';103;75;Enfin un jeu de [THEME] à la hauteur !;15-mars-17
-230;20;"""[JEU], c'est la vie !""";'22-JAN-2022';97;76;[JEU], c'est la vie !;22-janv-22
-231;0;"""B***** de m**** ! C'est quoi cette m**** p***** ! Bande d'e****** remboursez moi !""";'04-MAR-2019';48;77;B***** de m**** ! C'est quoi cette m**** p***** ! Bande d'e****** remboursez moi !;04-mars-19
-232;17;"""Toujours un plaisir d'y jouer avec mes amies du club de tricot !""";'16-JUN-2022';71;77;Toujours un plaisir d'y jouer avec mes amies du club de tricot !;16-juin-22
-233;15;"""Jsuis pas sur davoir tout compris mais ca a lair plutot cool""";'23-OCT-2016';12;78;Jsuis pas sur davoir tout compris mais ca a lair plutot cool;23-oct-16
-234;11;"""Un peu déçu venant de [CREATEUR] et [CREATEUR], c'est pas leur meilleur...""";'18-NOV-2016';97;80;Un peu déçu venant de [CREATEUR] et [CREATEUR], c'est pas leur meilleur...;18-nov-16
-235;20;"""Une collaboration entre [CREATEUR] et [ILLUSTRATEUR] ne pouvait donner qu'un chef d'œuvre !""";'26-MAR-2019';68;84;Une collaboration entre [CREATEUR] et [ILLUSTRATEUR] ne pouvait donner qu'un chef d'œuvre !;26-mars-19
-236;10;"""Je ne sais pas pour les autres configurations, mais y jouer à 4 rendait le jeu assez lent…""";'21-DEC-2022';58;84;Je ne sais pas pour les autres configurations, mais y jouer à 4 rendait le jeu assez lent…;21-Dec-2022
-237;18;"""J'adore l'univers ! De plus le gameplay est nerveux et intense ! C'est un grand oui pour moi !""";'16-MAR-2019';14;84;J'adore l'univers ! De plus le gameplay est nerveux et intense ! C'est un grand oui pour moi !;16-mars-19
-238;9;"""C'est tellement dommage ! Le concept de base était grave intéressant, mais on s'y perd trop avec tous les attributs et les objets en plus ! On passe plus de temps à essayer de comprendre ce qu'il se passe qu'à jouer...""";'11-OCT-2017';11;84;C'est tellement dommage ! Le concept de base était grave intéressant, mais on s'y perd trop avec tous les attributs et les objets en plus ! On passe plus de temps à essayer de comprendre ce qu'il se passe qu'à jouer...;11-oct-17
-239;17;"""Et bien ! Je ne suis pas un grand fan des jeux de [MECANIQUE], mais je dois avouer que celui-ci a su me plaire !""";'07-SEP-2022';95;84;Et bien ! Je ne suis pas un grand fan des jeux de [MECANIQUE], mais je dois avouer que celui-ci a su me plaire !;07-sept-22
-240;15;"""Un jeu intuitif, facile à prendre en main et compréhensible""";'20-JAN-2016';69;87;Un jeu intuitif, facile à prendre en main et compréhensible;20-janv-16
-241;15;"""Un jeu rapide, vif et véloce""";'25-SEP-2017';9;87;Un jeu rapide, vif et véloce;25-sept-17
-242;11;"""Un jeu difficile, complexe et compliqué""";'28-SEP-2021';13;87;Un jeu difficile, complexe et compliqué;28-sept-21
-243;12;"""Easy""";'30-JUN-2022';16;88;Easy;30-juin-22
-244;11;"""ez""";'04-JUN-2020';38;88;ez;04-juin-20
-245;10;"""trop facil com jeu""";'12-JUL-2015';49;88;trop facil com jeu;12-juil-15
-246;9;"""vous aver pa plus dificil ?""";'09-JUL-2015';65;88;vous aver pa plus dificil ?;09-juil-15
-247;17;"""Première fois que je teste un jeu de [EDITEUR] : résultat très concluant !""";'12-JUL-2020';37;91;Première fois que je teste un jeu de [EDITEUR] : résultat très concluant !;12-juil-20
-248;7;"""A part si vous n'avez rien d'autre, à éviter""";'22-AUG-2018';21;91;A part si vous n'avez rien d'autre, à éviter;22-Aug-2018
-249;15;"""Bon jeu entre amis, dommage qu'il ne puisse pas y avoir plus de joueurs…""";'18-JAN-2020';17;91;Bon jeu entre amis, dommage qu'il ne puisse pas y avoir plus de joueurs…;18-janv-20
-250;3;"""Si vous tenez à votre santé mental, votre temps et votre argent, n'y jouez pas !""";'03-JUN-2021';77;92;Si vous tenez à votre santé mental, votre temps et votre argent, n'y jouez pas !;03-juin-21
+id_avis;note_avis;commentaire;date;id_jeu;id_config;id_joueur;;;;
+250;3;'"Si vous tenez à votre santé mental, votre temps et votre argent, n''y jouez pas !"';'''03-JUN-2021''';4;77;92;Si vous tenez à votre santé mental; votre temps et votre argent;' n''y jouez pas !';03-juin-21
+249;15;'"Bon jeu entre amis, dommage qu''il ne puisse pas y avoir plus de joueurs…"';'''18-JAN-2020''';29;17;91;Bon jeu entre amis;' dommage qu''il ne puisse pas y avoir plus de joueurs…';18-janv-20;
+248;7;'"A part si vous n''avez rien d''autre, à éviter"';'''22-AUG-2018''';20;21;91;'A part si vous n''avez rien d''autre'; à éviter;22-Aug-2018;
+247;17;"Première fois que je teste un jeu de [EDITEUR] : résultat très concluant !";'''12-JUL-2020''';21;37;91;Première fois que je teste un jeu de [EDITEUR] : résultat très concluant !;12-juil-20;;
+246;9;"vous aver pa plus dificil ?";'''09-JUL-2015''';30;65;88;vous aver pa plus dificil ?;09-juil-15;;
+245;10;"trop facil com jeu";'''12-JUL-2015''';26;49;88;trop facil com jeu;12-juil-15;;
+244;11;"ez";'''04-JUN-2020''';43;38;88;ez;04-juin-20;;
+243;12;"Easy";'''30-JUN-2022''';41;16;88;Easy;30-juin-22;;
+242;11;"Un jeu difficile, complexe et compliqué";'''28-SEP-2021''';28;13;87;Un jeu difficile; complexe et compliqué;28-sept-21;
+241;15;"Un jeu rapide, vif et véloce";'''25-SEP-2017''';22;9;87;Un jeu rapide; vif et véloce;25-sept-17;
+240;15;"Un jeu intuitif, facile à prendre en main et compréhensible";'''20-JAN-2016''';48;69;87;Un jeu intuitif; facile à prendre en main et compréhensible;20-janv-16;
+239;17;"Et bien ! Je ne suis pas un grand fan des jeux de [MECANIQUE], mais je dois avouer que celui-ci a su me plaire !";'''07-SEP-2022''';20;95;84;Et bien ! Je ne suis pas un grand fan des jeux de [MECANIQUE]; mais je dois avouer que celui-ci a su me plaire !;07-sept-22;
+238;9;'"C''est tellement dommage ! Le concept de base était grave intéressant, mais on s''y perd trop avec tous les attributs et les objets en plus ! On passe plus de temps à essayer de comprendre ce qu''il se passe qu''à jouer..."';'''11-OCT-2017''';31;11;84;'C''est tellement dommage ! Le concept de base était grave intéressant';' mais on s''y perd trop avec tous les attributs et les objets en plus ! On passe plus de temps à essayer de comprendre ce qu''il se passe qu''à jouer...';11-oct-17;
+237;18;'"J''adore l''univers ! De plus le gameplay est nerveux et intense ! C''est un grand oui pour moi !"';'''16-MAR-2019''';18;14;84;'J''adore l''univers ! De plus le gameplay est nerveux et intense ! C''est un grand oui pour moi !';16-mars-19;;
+236;10;"Je ne sais pas pour les autres configurations, mais y jouer à 4 rendait le jeu assez lent…";'''21-DEC-2022''';39;58;84;Je ne sais pas pour les autres configurations; mais y jouer à 4 rendait le jeu assez lent…;21-Dec-2022;
+235;20;'"Une collaboration entre [CREATEUR] et [ILLUSTRATEUR] ne pouvait donner qu''un chef d''œuvre !"';'''26-MAR-2019''';8;68;84;'Une collaboration entre [CREATEUR] et [ILLUSTRATEUR] ne pouvait donner qu''un chef d''œuvre !';26-mars-19;;
+234;11;'"Un peu déçu venant de [CREATEUR] et [CREATEUR], c''est pas leur meilleur..."';'''18-NOV-2016''';12;97;80;Un peu déçu venant de [CREATEUR] et [CREATEUR];' c''est pas leur meilleur...';18-nov-16;
+233;15;"Jsuis pas sur davoir tout compris mais ca a lair plutot cool";'''23-OCT-2016''';1;12;78;Jsuis pas sur davoir tout compris mais ca a lair plutot cool;23-oct-16;;
+232;17;'"Toujours un plaisir d''y jouer avec mes amies du club de tricot !"';'''16-JUN-2022''';38;71;77;'Toujours un plaisir d''y jouer avec mes amies du club de tricot !';16-juin-22;;
+231;0;'"B***** de m**** ! C''est quoi cette m**** p***** ! Bande d''e****** remboursez moi !"';'''04-MAR-2019''';32;48;77;'B***** de m**** ! C''est quoi cette m**** p***** ! Bande d''e****** remboursez moi !';04-mars-19;;
+230;20;'"[JEU], c''est la vie !"';'''22-JAN-2022''';16;97;76;[JEU];' c''est la vie !';22-janv-22;
+229;17;"Enfin un jeu de [THEME] à la hauteur !";'''15-MAR-2017''';44;103;75;Enfin un jeu de [THEME] à la hauteur !;15-mars-17;;
+228;11;"370909";'''15-JAN-2022''';49;99;74;370909;15-janv-22;;
+227;18;"5508";'''16-FEB-2017''';37;20;74;5508;16-Feb-2017;;
+226;7;"3550708";'''07-FEB-2016''';40;78;74;3550708;07-Feb-2016;;
+225;17;"Parfait pour initier de nouveaux joueurs aux jeux de [MECANIQUE] !";'''10-MAY-2021''';21;47;73;Parfait pour initier de nouveaux joueurs aux jeux de [MECANIQUE] !;10-May-2021;;
+224;16;"A la fois intuitif et complexe, il permet de faire de belles parties entre adeptes !";'''08-OCT-2020''';40;36;72;A la fois intuitif et complexe; il permet de faire de belles parties entre adeptes !;08-oct-20;
+223;13;"Un peu trop compliqué pour les novices du genre.";'''18-SEP-2016''';35;86;72;Un peu trop compliqué pour les novices du genre.;18-sept-16;;
+222;17;"Très convivial, parfait pour les dimanche en famille !";'''17-SEP-2019''';12;72;72;Très convivial; parfait pour les dimanche en famille !;17-sept-19;
+221;14;"*smiley satisfait mais qui reste un peu sur sa faim quand même car il aurait aimé un peu plus de possibilité de gameplay mais vu que les dessins sont stylés*";'''18-SEP-2019''';19;102;70;*smiley satisfait mais qui reste un peu sur sa faim quand même car il aurait aimé un peu plus de possibilité de gameplay mais vu que les dessins sont stylés*;18-sept-19;;
+220;7;"*pouce vers le bas*";'''28-DEC-2016''';10;100;70;*pouce vers le bas*;28-Dec-2016;;
+219;18;"*hot-dog*";'''29-JUN-2016''';16;96;70;*hot-dog*;29-juin-16;;
+218;2;"*baleine*";'''24-AUG-2021''';39;90;70;*baleine*;24-Aug-2021;;
+217;8;"*smiley déçu*";'''04-MAY-2016''';4;73;70;*smiley déçu*;04-May-2016;;
+216;4;"*smiley énervé*";'''27-JAN-2019''';27;34;70;*smiley énervé*;27-janv-19;;
+215;15;"*smiley content*";'''20-AUG-2018''';3;38;70;*smiley content*;20-Aug-2018;;
+214;18;"*applaudissement*";'''18-SEP-2015''';29;0;70;*applaudissement*;18-sept-15;;
+213;16;'"*pouce en l''air*"';'''04-FEB-2018''';1;55;70;'*pouce en l''air*';04-Feb-2018;;
+212;18;"Un classique indémodable";'''23-MAR-2017''';22;80;69;Un classique indémodable;23-mars-17;;
+211;17;"Vrmt raffraichissant ! Ça devrait être une inspiration pour les prochains jeux !";'''03-MAY-2018''';16;79;69;Vrmt raffraichissant ! Ça devrait être une inspiration pour les prochains jeux !;03-May-2018;;
+210;1;'"Ne l''achetez surtout pas !"';'''18-MAR-2022''';12;54;68;'Ne l''achetez surtout pas !';18-mars-22;;
+209;0;"Nul ! Faut être beaucoup pour jouer mais je suis tout seul…";'''27-MAY-2017''';8;50;66;Nul ! Faut être beaucoup pour jouer mais je suis tout seul…;27-May-2017;;
+208;15;'"J''ai plus grand-chose à vendre, mais il est vraiment bien !"';'''15-SEP-2017''';2;84;66;'J''ai plus grand-chose à vendre'; mais il est vraiment bien !;15-sept-17;
+207;18;"Je vendrai mon chien pour ce jeu !";'''17-SEP-2018''';39;76;66;Je vendrai mon chien pour ce jeu !;17-sept-18;;
+206;18;"Je vendrai mon meilleur ami pour ce jeu !";'''06-SEP-2021''';20;52;66;Je vendrai mon meilleur ami pour ce jeu !;06-sept-21;;
+205;10;"Je vendrai ma femme pour ce jeu !";'''29-SEP-2019''';19;5;66;Je vendrai ma femme pour ce jeu !;29-sept-19;;
+204;17;"Je vendrai ma grand-mère pour ce jeu !";'''15-MAR-2016''';13;7;66;Je vendrai ma grand-mère pour ce jeu !;15-mars-16;;
+203;17;"Je vendrai mon grand-père pour ce jeu !";'''04-SEP-2016''';1;15;66;Je vendrai mon grand-père pour ce jeu !;04-sept-16;;
+202;14;"Je vendrai ma tante pour ce jeu !";'''27-FEB-2015''';30;82;66;Je vendrai ma tante pour ce jeu !;27-Feb-2015;;
+201;3;"Il vaut pas un rond celui-là…";'''01-JUL-2016''';24;61;66;Il vaut pas un rond celui-là…;01-juil-16;;
+200;6;"Je vendrai mon oncle pour ce jeu !";'''12-DEC-2018''';40;100;66;Je vendrai mon oncle pour ce jeu !;12-Dec-2018;;
+199;11;"Je vendrai ma fille pour ce jeu !";'''28-MAR-2017''';4;31;66;Je vendrai ma fille pour ce jeu !;28-mars-17;;
+198;2;"Je vendrai mon fils pour ce jeu !";'''18-FEB-2021''';43;24;66;Je vendrai mon fils pour ce jeu !;18-Feb-2021;;
+197;15;"Je vendrai ma sœur pour ce jeu !";'''27-APR-2016''';33;99;66;Je vendrai ma sœur pour ce jeu !;27-Apr-2016;;
+196;4;"Je vendrai mon frère pour ce jeu !";'''25-FEB-2020''';29;99;66;Je vendrai mon frère pour ce jeu !;25-Feb-2020;;
+195;19;"Je vendrai mon père pour ce jeu !";'''02-OCT-2016''';26;63;66;Je vendrai mon père pour ce jeu !;02-oct-16;;
+194;20;"Je vendrai ma mère pour ce jeu !";'''08-APR-2022''';3;38;66;Je vendrai ma mère pour ce jeu !;08-Apr-2022;;
+193;17;"Il est cool celui-là ! Tu voudras y jouer [PSEUDO] ?";'''02-AUG-2019''';21;59;65;Il est cool celui-là ! Tu voudras y jouer [PSEUDO] ?;02-Aug-2019;;
+192;19;'"J''ai enfin trouvé le digne successeur de [JEU] !"';'''30-JAN-2016''';3;13;65;'J''ai enfin trouvé le digne successeur de [JEU] !';30-janv-16;;
+191;16;'"C''est un jeu de niche, qui plaira aux fans des jeux de [MECANIQUE] !"';'''09-OCT-2017''';16;82;64;'C''est un jeu de niche'; qui plaira aux fans des jeux de [MECANIQUE] !;09-oct-17;
+190;6;"Mais là je dis non, non, non !";'''25-JUL-2017''';41;41;64;Mais là je dis non; non; non !;25-juil-17
+189;18;"Alors là je dis oui, oui, oui !";'''08-MAY-2019''';24;89;64;Alors là je dis oui; oui; oui !;08-May-2019
+188;15;"Très compliqué au premier abord mais la courbe de progression est très satisfaisante !";'''01-MAY-2018''';30;51;64;Très compliqué au premier abord mais la courbe de progression est très satisfaisante !;01-May-2018;;
+187;12;"Un peu déçu par la fin, dommage le début était prometteur…";'''06-OCT-2017''';25;25;62;Un peu déçu par la fin; dommage le début était prometteur…;06-oct-17;
+186;15;"Rien à dire, il fait le job.";'''03-DEC-2015''';40;40;62;Rien à dire; il fait le job.;03-Dec-2015;
+185;15;"Un jeu amusant !";'''01-AUG-2015''';21;11;61;Un jeu amusant !;01-Aug-2015;;
+184;8;"Un jeu mauvais !";'''03-AUG-2020''';8;54;61;Un jeu mauvais !;03-Aug-2020;;
+183;18;"Un jeu excellent !";'''11-OCT-2020''';3;18;61;Un jeu excellent !;11-oct-20;;
+182;14;"Transition";'''22-APR-2016''';9;91;60;Transition;22-Apr-2016;;
+181;11;"Ouverture de porte";'''15-DEC-2018''';31;20;60;Ouverture de porte;15-Dec-2018;;
+180;8;"Chargemeeeeeennnnnntt !! Lalalalala ! Chargemeeeeeeeennntt !!";'''24-FEB-2022''';3;1;60;Chargemeeeeeennnnnntt !! Lalalalala ! Chargemeeeeeeeennntt !!;24-Feb-2022;;
+179;13;"Efficace";'''24-MAY-2017''';50;92;59;Efficace;24-May-2017;;
+178;9;"Visible";'''14-JUL-2020''';7;104;59;Visible;14-juil-20;;
+177;13;"Féodal";'''02-JUL-2015''';3;90;59;Féodal;02-juil-15;;
+176;19;"Gastronomique";'''12-MAR-2015''';14;37;59;Gastronomique;12-mars-15;;
+175;7;"Fade";'''14-NOV-2016''';6;84;59;Fade;14-nov-16;;
+174;8;"Plat";'''19-FEB-2017''';43;95;59;Plat;19-Feb-2017;;
+173;18;"Héroïque";'''20-MAY-2018''';31;91;59;Héroïque;20-May-2018;;
+172;10;"Terminé";'''10-AUG-2016''';48;31;59;Terminé;10-Aug-2016;;
+171;1;"Vendu";'''10-OCT-2021''';1;1;59;Vendu;10-oct-21;;
+170;9;"Pensif";'''28-APR-2015''';33;37;59;Pensif;28-Apr-2015;;
+169;11;"Assidu";'''24-AUG-2015''';45;26;59;Assidu;24-Aug-2015;;
+168;2;"Ecoeurant";'''17-MAR-2020''';46;26;59;Ecoeurant;17-mars-20;;
+167;3;"Désastreux";'''27-NOV-2022''';22;7;59;Désastreux;27-nov-22;;
+166;4;"Catastrophique";'''13-JAN-2015''';35;16;59;Catastrophique;13-janv-15;;
+165;5;"Affreux";'''18-AUG-2018''';26;57;59;Affreux;18-Aug-2018;;
+164;4;"Horrible";'''16-FEB-2021''';29;78;59;Horrible;16-Feb-2021;;
+163;3;"Traumatisant";'''30-MAY-2022''';24;12;59;Traumatisant;30-May-2022;;
+162;15;"Bienveillant";'''12-AUG-2019''';37;51;59;Bienveillant;12-Aug-2019;;
+161;11;"Ponctuel";'''03-AUG-2017''';20;48;59;Ponctuel;03-Aug-2017;;
+160;14;"Solide";'''09-JUL-2021''';2;50;59;Solide;09-juil-21;;
+159;17;"Créatif";'''03-DEC-2021''';37;63;58;Créatif;03-Dec-2021;;
+158;16;"Imaginatif";'''18-APR-2019''';12;43;58;Imaginatif;18-Apr-2019;;
+157;18;"Génial";'''28-AUG-2019''';39;29;58;Génial;28-Aug-2019;;
+156;16;"Surprenant";'''16-SEP-2021''';49;20;58;Surprenant;16-sept-21;;
+155;12;"Normal";'''08-APR-2020''';13;66;58;Normal;08-Apr-2020;;
+154;18;"Intuitif";'''18-AUG-2021''';17;99;58;Intuitif;18-Aug-2021;;
+153;17;"Immersif";'''09-SEP-2020''';35;35;58;Immersif;09-sept-20;;
+152;15;"Beau";'''12-APR-2020''';23;102;58;Beau;12-Apr-2020;;
+151;15;"Développé";'''07-MAR-2018''';4;21;58;Développé;07-mars-18;;
+150;14;"Minimal";'''03-APR-2020''';3;15;58;Minimal;03-Apr-2020;;
+149;5;"Court";'''24-NOV-2021''';50;61;58;Court;24-nov-21;;
+148;6;"Lent";'''01-FEB-2018''';38;19;58;Lent;01-Feb-2018;;
+147;11;"Long";'''01-MAY-2022''';19;28;58;Long;01-May-2022;;
+146;11;"Rapide";'''14-FEB-2020''';3;27;58;Rapide;14-Feb-2020;;
+145;19;"Cosmique";'''08-OCT-2020''';42;1;58;Cosmique;08-oct-20;;
+144;16;"Stylé";'''31-AUG-2015''';1;70;57;Stylé;31-Aug-2015;;
+143;16;"Ludique";'''03-AUG-2015''';40;67;57;Ludique;03-Aug-2015;;
+142;12;"Académique";'''13-FEB-2017''';17;89;57;Académique;13-Feb-2017;;
+141;11;"Simple";'''15-SEP-2015''';50;11;57;Simple;15-sept-15;;
+140;9;"Basique";'''14-MAY-2019''';42;60;57;Basique;14-May-2019;;
+139;12;"Lucide";'''10-AUG-2021''';10;15;57;Lucide;10-Aug-2021;;
+138;19;"Monstreux";'''15-JUL-2020''';49;104;57;Monstreux;15-juil-20;;
+137;5;"Grossier";'''22-SEP-2022''';43;11;57;Grossier;22-sept-22;;
+136;8;"Inquiet";'''15-NOV-2018''';39;43;57;Inquiet;15-nov-18;;
+135;14;"Aiguisé";'''07-DEC-2020''';45;8;57;Aiguisé;07-Dec-2020;;
+134;8;"Génant";'''16-SEP-2016''';3;2;57;Génant;16-sept-16;;
+133;3;"Nullissime";'''13-APR-2019''';22;91;57;Nullissime;13-Apr-2019;;
+132;4;"Oubliable";'''22-DEC-2020''';34;79;57;Oubliable;22-Dec-2020;;
+131;17;"Très bien ! ";'''17-DEC-2020''';16;70;57;Très bien ! ;17-Dec-2020;;
+130;13;"Demonstratif";'''17-DEC-2018''';37;2;56;Demonstratif;17-Dec-2018;;
+129;16;"Distrayant";'''10-NOV-2022''';35;2;56;Distrayant;10-nov-22;;
+128;13;"Occupant";'''09-AUG-2020''';23;1;56;Occupant;09-Aug-2020;;
+127;9;"Plausible";'''20-MAR-2020''';32;25;56;Plausible;20-mars-20;;
+126;14;"Aéré";'''06-FEB-2017''';30;37;56;Aéré;06-Feb-2017;;
+125;17;"Oxygéné";'''07-OCT-2022''';38;91;56;Oxygéné;07-oct-22;;
+124;11;"Sanguin";'''11-JUL-2016''';14;63;56;Sanguin;11-juil-16;;
+123;1;"Immédiat";'''28-MAR-2020''';6;50;56;Immédiat;28-mars-20;;
+122;0;"Aberrant";'''16-AUG-2018''';33;30;56;Aberrant;16-Aug-2018;;
+121;10;"Artérielle";'''06-FEB-2021''';45;11;56;Artérielle;06-Feb-2021;;
+120;18;"Invincible";'''07-JUN-2016''';40;8;56;Invincible;07-juin-16;;
+119;2;"Indiscernable";'''19-NOV-2015''';42;52;56;Indiscernable;19-nov-15;;
+118;16;"Super";'''28-JAN-2020''';26;56;56;Super;28-janv-20;;
+117;4;"Innocent";'''26-DEC-2019''';3;71;56;Innocent;26-Dec-2019;;
+116;13;"Assaisonné";'''01-APR-2021''';38;15;55;Assaisonné;01-Apr-2021;;
+115;6;"Sauvage";'''27-NOV-2020''';46;78;55;Sauvage;27-nov-20;;
+114;16;"Vivant";'''05-APR-2019''';18;98;55;Vivant;05-Apr-2019;;
+113;14;"Vibrant";'''27-DEC-2020''';42;50;55;Vibrant;27-Dec-2020;;
+112;14;"Allumé";'''05-JAN-2018''';41;76;55;Allumé;05-janv-18;;
+111;7;"Trop cuit";'''23-MAY-2018''';45;1;55;Trop cuit;23-May-2018;;
+110;7;"Pas cuit";'''01-NOV-2020''';19;57;55;Pas cuit;01-nov-20;;
+109;18;"Onctueux";'''12-APR-2019''';48;24;55;Onctueux;12-Apr-2019;;
+108;12;"Timide";'''09-AUG-2015''';12;86;55;Timide;09-Aug-2015;;
+107;17;"Sincère";'''01-JUL-2016''';1;79;55;Sincère;01-juil-16;;
+106;1;"Pauvre";'''21-JUN-2018''';27;1;55;Pauvre;21-juin-18;;
+105;11;"Patient";'''11-FEB-2017''';31;6;55;Patient;11-Feb-2017;;
+104;10;"Egal";'''27-FEB-2016''';35;63;55;Egal;27-Feb-2016;;
+103;5;"Hypocrite";'''28-JUL-2021''';7;74;55;Hypocrite;28-juil-21;;
+102;3;"Froid";'''24-APR-2021''';17;74;55;Froid;24-Apr-2021;;
+101;15;"Mignon";'''27-OCT-2022''';10;40;55;Mignon;27-oct-22;;
+100;13;"Curieux";'''22-NOV-2020''';28;17;55;Curieux;22-nov-20;;
+99;9;"Arrogant";'''01-NOV-2018''';39;20;55;Arrogant;01-nov-18;;
+98;20;"Transcendant";'''13-APR-2020''';3;30;55;Transcendant;13-Apr-2020;;
+97;7;"Obscur";'''15-APR-2015''';9;23;55;Obscur;15-Apr-2015;;
+96;17;"Eclairé";'''22-NOV-2016''';8;104;55;Eclairé;22-nov-16;;
+95;16;"Galbé";'''09-MAR-2017''';23;1;55;Galbé;09-mars-17;;
+94;14;"Moelleux";'''11-MAY-2020''';34;69;55;Moelleux;11-May-2020;;
+93;15;"On retrouve bien la patte de [CREATEUR], ce qui nous donne un jeu agréable entre amis !";'''05-OCT-2015''';33;72;53;On retrouve bien la patte de [CREATEUR]; ce qui nous donne un jeu agréable entre amis !;05-oct-15;
+92;16;"Une formule classique mais bien exécutée !";'''11-MAY-2020''';4;46;53;Une formule classique mais bien exécutée !;11-May-2020;;
+91;16;"Il sort des sentiers battus et ça marche ! Je valide !";'''18-DEC-2015''';26;12;53;Il sort des sentiers battus et ça marche ! Je valide !;18-Dec-2015;;
+90;12;'"Le gameplay n''est pas très passionnant… Heureusement que c''est illustré par [ILLUSTRATEUR] !"';'''08-MAY-2018''';2;33;53;'Le gameplay n''est pas très passionnant… Heureusement que c''est illustré par [ILLUSTRATEUR] !';08-May-2018;;
+89;14;"Même si le design est un peu élémentaire, il vaut le coup !";'''04-JUL-2020''';34;92;53;Même si le design est un peu élémentaire; il vaut le coup !;04-juil-20;
+88;19;"Excellent en tout point ! Un must-have !";'''10-MAR-2015''';39;44;53;Excellent en tout point ! Un must-have !;10-mars-15;;
+87;11;'"J''aime bien le concept mais à acheter en promo car la durée de vie est limitée"';'''05-NOV-2021''';20;45;53;'J''aime bien le concept mais à acheter en promo car la durée de vie est limitée';05-nov-21;;
+86;13;"Un bon jeu pour changer des grands classiques !";'''16-JUN-2018''';25;50;53;Un bon jeu pour changer des grands classiques !;16-juin-18;;
+85;7;"Bcp trop de règles compliquées qui rendent le jeu incompréhensible !";'''18-MAY-2016''';3;88;53;Bcp trop de règles compliquées qui rendent le jeu incompréhensible !;18-May-2016;;
+84;17;"Y en a pas bcp des bons jeu de [THEME], mais celui-là en fait partie !";'''31-JAN-2015''';31;76;53;Y en a pas bcp des bons jeu de [THEME]; mais celui-là en fait partie !;31-janv-15;
+83;18;"Toujours une valeur sure [EDITEUR] !";'''03-JAN-2015''';46;53;53;Toujours une valeur sure [EDITEUR] !;03-janv-15;;
+82;19;'"Sûrement l''un des meilleurs dans ce domaine"';'''26-AUG-2018''';10;28;53;'Sûrement l''un des meilleurs dans ce domaine';26-Aug-2018;;
+81;15;"Plutôt original, il en vaut le détour !";'''11-OCT-2015''';43;39;53;Plutôt original; il en vaut le détour !;11-oct-15;
+80;2;'"Comme une envie de me foutre en l''air…"';'''03-MAR-2018''';40;30;53;'Comme une envie de me foutre en l''air…';03-mars-18;;
+79;18;"Grave bien !";'''28-AUG-2016''';21;80;53;Grave bien !;28-Aug-2016;;
+78;4;"Nul";'''01-JUN-2018''';16;55;53;Nul;01-juin-18;;
+77;10;'"J''ai vu mieux, j''ai vu pire…"';'''09-APR-2017''';42;51;53;'J''ai vu mieux';' j''ai vu pire…';09-Apr-2017;
+76;14;'"Ça ne vaut pas un bon vieux Takenoko mais ça fait quand même l''affaire"';'''21-JUN-2016''';43;23;51;'Ça ne vaut pas un bon vieux Takenoko mais ça fait quand même l''affaire';21-juin-16;;
+75;10;"Meh";'''01-OCT-2020''';18;30;50;Meh;01-oct-20;;
+74;10;"Médiane";'''11-NOV-2022''';34;32;50;Médiane;11-nov-22;;
+73;10;"Dans la moyenne";'''25-OCT-2017''';3;104;50;Dans la moyenne;25-oct-17;;
+72;10;"Bof";'''01-JUN-2016''';9;21;50;Bof;01-juin-16;;
+71;10;"Moyen";'''19-OCT-2019''';32;33;50;Moyen;19-oct-19;;
+70;7;"Presque autant déçu que Leon";'''18-OCT-2016''';5;68;48;Presque autant déçu que Leon;18-oct-16;;
+69;18;"Un indispensable des soirées entre amis !";'''15-MAY-2018''';20;84;45;Un indispensable des soirées entre amis !;15-May-2018;;
+68;15;"Un bon petit jeu";'''22-APR-2019''';35;87;45;Un bon petit jeu;22-Apr-2019;;
+67;10;"pas vrmt pas mal";'''09-OCT-2016''';22;104;41;pas vrmt pas mal;09-oct-16;;
+66;15;"vrmt pas mal";'''05-APR-2016''';18;63;41;vrmt pas mal;05-Apr-2016;;
+65;14;"pas mal";'''18-MAY-2015''';21;46;41;pas mal;18-May-2015;;
+64;10;"Ce jeu est aux jeux de société ce que le chou est aux légumes !";'''15-MAR-2021''';40;41;33;Ce jeu est aux jeux de société ce que le chou est aux légumes !;15-mars-21;;
+63;5;"Ce jeu est aux jeux de société ce que le réglisse est aux bonbons !";'''04-OCT-2020''';44;92;33;Ce jeu est aux jeux de société ce que le réglisse est aux bonbons !;04-oct-20;;
+62;20;"Ce jeu est aux jeux de société ce que la tarte au citron meringuée est aux desserts !";'''12-APR-2018''';49;103;33;Ce jeu est aux jeux de société ce que la tarte au citron meringuée est aux desserts !;12-Apr-2018;;
+61;18;"Ce jeu est aux jeux de société ce que Père Fouras est à Fort Boyard ! ";'''21-MAY-2021''';21;72;33;Ce jeu est aux jeux de société ce que Père Fouras est à Fort Boyard ! ;21-May-2021;;
+60;14;'"Pas le jeu de l''année mais plutôt cool !"';'''09-JUL-2017''';7;34;32;'Pas le jeu de l''année mais plutôt cool !';09-juil-17;;
+59;11;'"Les dessins sont beaux mais c''est tout…"';'''02-APR-2022''';28;103;32;'Les dessins sont beaux mais c''est tout…';02-Apr-2022;;
+58;17;"Excellent jeu ! Très convivial !";'''07-MAR-2021''';30;11;32;Excellent jeu ! Très convivial !;07-mars-21;;
+57;4;'"Les pièces commencent déjà à s''abîmer gravement alors que j''ai acheté le jeu il y a moins de 2 semaines ! C''est honteux !"';'''16-FEB-2021''';3;11;31;'Les pièces commencent déjà à s''abîmer gravement alors que j''ai acheté le jeu il y a moins de 2 semaines ! C''est honteux !';16-Feb-2021;;
+56;14;"Le concept est vraiment original ! Dommage que les dessins soient peu travaillés…";'''26-JUL-2016''';31;13;30;Le concept est vraiment original ! Dommage que les dessins soient peu travaillés…;26-juil-16;;
+55;7;"Ne vaut pas son prix !";'''18-JAN-2018''';45;1;30;Ne vaut pas son prix !;18-janv-18;;
+54;18;"MA-SHA-LLAH !";'''13-MAR-2018''';8;23;27;MA-SHA-LLAH !;13-mars-18;;
+53;16;"Très fun ! Il vaut le détour !";'''24-APR-2016''';21;3;27;Très fun ! Il vaut le détour !;24-Apr-2016;;
+52;20;"Si les dieux faisaient un enfant, il resemblerait à ça !";'''25-JUL-2015''';45;61;27;Si les dieux faisaient un enfant; il resemblerait à ça !;25-juil-15;
+51;17;"Le parfait mélange entre un éclair vanille et une tarte au citron meringuée !";'''01-MAY-2015''';5;10;27;Le parfait mélange entre un éclair vanille et une tarte au citron meringuée !;01-May-2015;;
+50;20;"MASTERCLASS !! Vous devez y jouer !!";'''01-AUG-2018''';3;13;27;MASTERCLASS !! Vous devez y jouer !!;01-Aug-2018;;
+49;18;"Du pain béni !";'''11-JUN-2022''';48;99;27;Du pain béni !;11-juin-22;;
+48;1;'"Alors là, j''ai plus les mots…"';'''20-FEB-2021''';34;31;26;Alors là;' j''ai plus les mots…';20-Feb-2021;
+47;6;'"Ce jeu me rappelle mon fils : j''en voulais pas, il m''a coûté plus cher que ce qu''il m''a rapporté et même si j''en attendais rien, j''ai quand même été déçu…"';'''31-OCT-2019''';21;53;26;'Ce jeu me rappelle mon fils : j''en voulais pas';' il m''a coûté plus cher que ce qu''il m''a rapporté et même si j''en attendais rien';' j''ai quand même été déçu…';31-oct-19
+46;4;'"Wow ! Ils ont dû redoubler d''effort pour réussir à condenser tout ce qui s''oppose à l''amusement en un seul jeu !"';'''27-MAR-2022''';24;101;26;'Wow ! Ils ont dû redoubler d''effort pour réussir à condenser tout ce qui s''oppose à l''amusement en un seul jeu !';27-mars-22;;
+45;2;'"Remplir sa fiche d''impôsition est du fun à l''état pur à côté de ça..."';'''19-MAR-2022''';17;100;26;'Remplir sa fiche d''impôsition est du fun à l''état pur à côté de ça...';19-mars-22;;
+44;5;'"Si l''ennui est votre passion, alors n''hésitez pas !"';'''04-JUL-2021''';33;27;26;'Si l''ennui est votre passion';' alors n''hésitez pas !';04-juil-21;
+43;3;"Catastrophique ! Une honte de vendre un jeu pareil !";'''09-MAR-2016''';44;32;26;Catastrophique ! Une honte de vendre un jeu pareil !;09-mars-16;;
+42;20;"Il était une école, qui avait tout gagné…";'''24-SEP-2018''';46;21;22;Il était une école; qui avait tout gagné…;24-sept-18;
+41;18;'"Un très bon jeu ! Si y en a qui cherchent des gens pour jouer, vous pouvez m''ajouter, mon pseudo c''est Whiskey"';'''03-MAY-2016''';10;1;21;Un très bon jeu ! Si y en a qui cherchent des gens pour jouer;' vous pouvez m''ajouter';' mon pseudo c''est Whiskey';03-May-2016
+40;11;"Bof";'''16-OCT-2017''';2;21;19;Bof;16-oct-17;;
+39;19;"Un classique !";'''20-AUG-2020''';48;89;19;Un classique !;20-Aug-2020;;
+38;15;"Vraiment pas mal ce petit jeu !";'''18-MAY-2015''';27;30;19;Vraiment pas mal ce petit jeu !;18-May-2015;;
+37;17;"Durée de vie : ++ / Gameplay : ++ / Equilibrage : - / Design : ++";'''12-SEP-2019''';3;53;18;Durée de vie : ++ / Gameplay : ++ / Equilibrage : - / Design : ++;12-sept-19;;
+36;3;"Durée de vie : -- / Gameplay : -- / Equilibrage : - / Design : --";'''13-MAY-2016''';43;9;18;Durée de vie : -- / Gameplay : -- / Equilibrage : - / Design : --;13-May-2016;;
+35;15;"Durée de vie : - / Gameplay : + / Equilibrage : + / Design : +";'''03-OCT-2019''';36;84;18;Durée de vie : - / Gameplay : + / Equilibrage : + / Design : +;03-oct-19;;
+34;9;"Durée de vie : + / Gameplay : -- / Equilibrage : ++ / Design : +";'''17-MAR-2020''';27;14;18;Durée de vie : + / Gameplay : -- / Equilibrage : ++ / Design : +;17-mars-20;;
+33;11;"Durée de vie : -- / Gameplay : ++ / Equilibrage : + / Design : -";'''15-APR-2016''';41;50;18;Durée de vie : -- / Gameplay : ++ / Equilibrage : + / Design : -;15-Apr-2016;;
+32;13;"Durée de vie : - / Gameplay : + / Equilibrage : -- / Design : +";'''02-DEC-2016''';17;65;18;Durée de vie : - / Gameplay : + / Equilibrage : -- / Design : +;02-Dec-2016;;
+31;18;"Durée de vie : ++ / Gameplay : ++ / Equilibrage : + / Design : ++";'''06-FEB-2022''';19;1;18;Durée de vie : ++ / Gameplay : ++ / Equilibrage : + / Design : ++;06-Feb-2022;;
+30;17;"Durée de vie : + / Gameplay : + / Equilibrage : + / Design : ++";'''29-JUN-2017''';44;52;18;Durée de vie : + / Gameplay : + / Equilibrage : + / Design : ++;29-juin-17;;
+29;8;"Durée de vie : -- / Gameplay : + / Equilibrage : - / Design : -";'''27-MAY-2018''';24;26;18;Durée de vie : -- / Gameplay : + / Equilibrage : - / Design : -;27-May-2018;;
+28;16;"Durée de vie : + / Gameplay : ++ / Equilibrage : - / Design : +";'''20-JAN-2020''';21;33;18;Durée de vie : + / Gameplay : ++ / Equilibrage : - / Design : +;20-janv-20;;
+27;14;"Durée de vie : ++ / Gameplay : - / Equilibrage : - / Design : +";'''12-JAN-2019''';35;6;18;Durée de vie : ++ / Gameplay : - / Equilibrage : - / Design : +;12-janv-19;;
+26;4;"Comment on se fait rembourser ?";'''03-MAY-2021''';1;17;17;Comment on se fait rembourser ?;03-May-2021;;
+25;19;"Juste une double dingz";'''09-JAN-2019''';32;65;16;Juste une double dingz;09-janv-19;;
+24;18;"Juste une dingz";'''10-FEB-2020''';2;88;16;Juste une dingz;10-Feb-2020;;
+23;6;'"C''est un jeu maudit !"';'''02-JUL-2015''';4;14;13;'C''est un jeu maudit !';02-juil-15;;
+22;5;"On faisait mieux en 2001…";'''29-NOV-2019''';35;73;12;On faisait mieux en 2001…;29-nov-19;;
+21;16;"vrmt bien quan ta rien a fair";'''07-JAN-2022''';3;86;11;vrmt bien quan ta rien a fair;07-janv-22;;
+20;17;"enorme c incr com jeu";'''18-FEB-2022''';33;30;11;enorme c incr com jeu;18-Feb-2022;;
+19;20;"Oui";'''05-JUN-2021''';43;68;10;Oui;05-juin-21;;
+18;0;"Non";'''20-SEP-2017''';1;96;10;Non;20-sept-17;;
+17;0;"Non";'''06-OCT-2020''';39;98;10;Non;06-oct-20;;
+16;20;"Oui";'''03-JUL-2022''';3;16;10;Oui;03-juil-22;;
+15;19;"Excellent jeu avec une durée de vie infinie !";'''09-JUL-2016''';10;100;8;Excellent jeu avec une durée de vie infinie !;09-juil-16;;
+14;0;'"Mon dieu ! Mais quelle horreur ! Ce jeu n''a pour seul objectif de rendre vos enfants violents ! Je suis OUTRÉ !"';'''11-JUN-2015''';14;50;7;'Mon dieu ! Mais quelle horreur ! Ce jeu n''a pour seul objectif de rendre vos enfants violents ! Je suis OUTRÉ !';11-juin-15;;
+13;18;"Parfait pour jouer avec ses enfants !";'''28-JAN-2019''';3;98;7;Parfait pour jouer avec ses enfants !;28-janv-19;;
+12;13;"Un peu cher pour sa durée de vie mais néanmoins agréable !";'''12-SEP-2020''';17;1;6;Un peu cher pour sa durée de vie mais néanmoins agréable !;12-sept-20;;
+11;20;"WOOOOOOOOOOOOOOOOOOOOW ! Mon nouveau jeu préféré !";'''27-FEB-2019''';31;83;5;WOOOOOOOOOOOOOOOOOOOOW ! Mon nouveau jeu préféré !;27-Feb-2019;;
+10;20;"Magistral ! Mon nouveau jeu préféré !";'''29-JAN-2020''';46;41;5;Magistral ! Mon nouveau jeu préféré !;29-janv-20;;
+9;20;"Exceptionnel ! Mon nouveau jeu préféré !";'''23-DEC-2022''';22;7;5;Exceptionnel ! Mon nouveau jeu préféré !;23-Dec-2022;;
+8;20;"Incroyable  ! Mon jeu préféré !";'''03-APR-2022''';23;23;5;Incroyable  ! Mon jeu préféré !;03-Apr-2022;;
+7;0;"G pa kompri lé regle";'''21-JUL-2015''';29;65;4;G pa kompri lé regle;21-juil-15;;
+6;6;"Pas bien !";'''21-JAN-2019''';35;42;2;Pas bien !;21-janv-19;;
+5;14;"Pas mal !";'''14-APR-2018''';24;48;2;Pas mal !;14-Apr-2018;;
+4;12;'"C''est pas le jeu de l''année, mais il saura vous occuper pendant une soirée ou deux !"';'''03-MAR-2022''';43;86;1;'C''est pas le jeu de l''année'; mais il saura vous occuper pendant une soirée ou deux !;03-mars-22;
+3;16;"Très sympa à jouer avec des amis !";'''26-AUG-2021''';13;90;1;Très sympa à jouer avec des amis !;26-Aug-2021;;
+2;8;'"Quelle déception ! Je l''attendais tellement mais il manque trop de contenu, en 30min on a vite fait le tour..."';'''14-JAN-2019''';18;84;1;'Quelle déception ! Je l''attendais tellement mais il manque trop de contenu'; en 30min on a vite fait le tour...;14-janv-19;
+1;18;'"Incroyable ce jeu ! Probablement le meilleur de l''année ! Je conseille fortement !"';'''28-MAY-2020''';31;6;1;'Incroyable ce jeu ! Probablement le meilleur de l''année ! Je conseille fortement !';28-May-2020;;
