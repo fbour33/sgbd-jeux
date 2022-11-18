@@ -23,7 +23,7 @@
     
 
 
---Joueurs
+-- JOUEURS
 
 insert into JOUEURS values (1, 'Akinori', 'Martin', 'Axel', 'axel.martin@me.com');
 insert into JOUEURS values (2, 'Thor', 'Bernard', 'Evan', 'evan.bernard@me.com');
@@ -128,7 +128,7 @@ insert into JOUEURS values (100, 'KalbKilla', 'Lecomte', 'Fanny', 'fanny.lecomte
 
 commit;
 
---Jeux
+-- JEUX
 
 insert into JEUX values (1, 'Takenoko', 'Bombyx', 'Points', 45, 2011);
 insert into JEUX values (2, 'Conspiracy', 'Bombyx', 'Points', 30, 2019);
@@ -183,7 +183,7 @@ insert into JEUX values (50, 'Minivilles', 'MGA', 'Course', 30, 2014);
 
 commit;
 
---Createurs
+-- CREATEURS
 
 insert into CREATEURS values (1, 'Bauza', 'Antoine', 1, 0, 1);
 insert into CREATEURS values (2, 'Fructus', 'Nicolas', 0, 1, 1);
@@ -306,7 +306,7 @@ insert into CREATEURS values (118, 'Hotta', 'Noboru', 0, 1, 50);
 
 commit;
 
---Avis
+-- AVIS
 
 insert into AVIS values (1, 18, "Incroyable ce jeu ! Probablement le meilleur de l'année ! Je conseille fortement !", '28-MAY-2020', 31, 6, 1);
 insert into AVIS values (2, 8, "Quelle déception ! Je l'attendais tellement mais il manque trop de contenu, en 30min on a vite fait le tour...", '14-JAN-2019', 18, 84, 1);
@@ -561,7 +561,7 @@ insert into AVIS values (250, 3, "Si vous tenez à votre santé mental, votre te
 
 commit;
 
---Extensions
+-- EXTENSIONS
 
 insert into EXTENSIONS values (1, 'Cities', 16);
 insert into EXTENSIONS values (2, 'Leaders', 16);
@@ -579,7 +579,7 @@ insert into EXTENSIONS values (13, 'Leviathan', 7);
 
 commit;
 
---Jugements
+-- JUGEMENTS
 
 insert into JUGEMENTS values (53, 133, 1, );
 insert into JUGEMENTS values (79, 41, , 1);
@@ -1083,7 +1083,7 @@ insert into JUGEMENTS values (39, 235, 1, );
 
 commit;
 
---Mecaniques
+-- MECANIQUES
 
 insert into MECANIQUES values ('Strategie', 1);
 insert into MECANIQUES values ('Placement', 1);
@@ -1214,7 +1214,7 @@ insert into MECANIQUES values ('Hasard', 50);
 
 commit;
 
---Mecaniques_pref
+-- MECANIQUES_PREF
 
 insert into MECANIQUES_PREF values ('Ressources', 1);
 insert into MECANIQUES_PREF values ('Placement', 1);
@@ -1519,7 +1519,7 @@ insert into MECANIQUES_PREF values ('Cartes', 100);
 
 commit;
 
---Themes
+-- THEMES
 
 insert into THEMES values ('Asie', 1);
 insert into THEMES values ('Animaux', 1);
@@ -1597,7 +1597,7 @@ insert into THEMES values ('Urbain', 50);
 
 commit;
 
---Themes_pref
+-- THEMES_PREF
 
 insert into THEMES_PREF values ('Tropical', 1);
 insert into THEMES_PREF values ('Futuriste', 1);
@@ -1903,7 +1903,7 @@ insert into THEMES_PREF values ('Asie', 100);
 
 commit;
 
---Configurations
+-- CONFIGURATIONS
 
 insert into CONFIGURATIONS values (1, 3);
 insert into CONFIGURATIONS values (2, 4);
@@ -2013,7 +2013,7 @@ insert into CONFIGURATIONS values (105, 4);
 
 commit;
 
---Extensions_utilisees
+-- EXTENSIONS_UTILISEES
 
 insert into EXTENSIONS_UTILISEES values (1, 5);
 insert into EXTENSIONS_UTILISEES values (6, 4);

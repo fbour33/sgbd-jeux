@@ -11,7 +11,7 @@ def fill_table(myfile):
     compteur=1
 
     nom_table = myfile.upper()
-    fichier.write("\n\n--{}\n\n".format(myfile))
+    fichier.write("\n\n-- {}\n\n".format(nom_table))
 
     with open('bdd_csv/{}_new.csv'.format(myfile), 'r') as f:
         joueurs = csv.reader(f)
