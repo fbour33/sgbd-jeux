@@ -5,7 +5,7 @@ Stratégie: Avoir listes des jeux du themes => Verifier qu'ils ont été critiqu
 SELECT DISTINCT J.nom_jeu, M.description_mecanique (à enlever apres test de tri)
 FROM Jeux AS J NATURAL JOIN Themes AS T JOIN Mecaniques AS M
     ON M.id_jeu = id_jeu
-WHERE T.intitule_theme = '?'
+WHERE T.intitule_theme = ?
     AND id_jeu in (
         SELECT DISTINCT id_jeu
         FROM Avis
@@ -17,7 +17,7 @@ catégories préférées.
 
 Stratégie: Avoir mécaniques pref => liste des jeux de ces mécaniques => liste des commentaires de ces jeux
 
-SELECT commentaire_avis
+SELECT note_avis, commentaire_avis
 FROM Avis
 WHERE id_jeu IN (
     SELECT DISTINCT id_jeu 
@@ -25,7 +25,7 @@ WHERE id_jeu IN (
     WHERE description_mecanique IN (
         SELECT description_mecanique
         FROM Mecaniques_pref
-        WHERE id_joueur ='?'
+        WHERE id_joueur =?
     )
 )
 
@@ -40,9 +40,8 @@ WHERE est_positif = 1
 
 4/ Les joueurs, classés selon le nombre de jeux qu’ils ont notés
 
-SELECT pseudo_joueur, id_joueur, COUNT(*) as Avis_donne
-FROM Joueurs AS J LEFT OUTER JOIN Avis AS A
-    ON J.id_joueur = A.id_joueur
+SELECT id_joueur, pseudo_joueur, COUNT(*) as Avis_donne
+FROM Joueurs LEFT OUTER JOIN Avis USING(id_joueur)
 GROUP BY id_joueur, pseudo_joueur
 ORDER BY Avis_donne
 
@@ -50,10 +49,10 @@ ORDER BY Avis_donne
 
 SELECT *
 FROM Avis
-ORDER BY date_avis 
+ORDER BY date_avis DESC
 LIMIT ?  
 
-6/ Le commentaires qui laisse le moins indifférent
+6/ Le commentaire qui laisse le moins indifférent
 
 SELECT id_avis, COUNT(*) as Jugements_obtenus
 FROM Jugements
@@ -63,7 +62,6 @@ HAVING COUNT(*) = (
     FROM Jugements
     GROUP BY id_avis
 )
-ORDER BY Jugements_obtenus DESC
 
 7/ On procédera au classement des jeux selon une moyenne dans laquelle chaque note est pondérée 
 par l’indice de confiance du commentaire correspondant.
@@ -94,7 +92,8 @@ BEGIN
     SET indice_confiance = (
         SELECT (1+COUNT(estPositif))/(1+COUNT(estNegatif))
         FROM Jugements
-        WHERE id = ?
+        WHERE id_avis = ?
+        GROUP BY id_avis
     )
     WHERE A.id_avis = new.id_avis
 END;
