@@ -43,10 +43,26 @@ separation()
     echo $fichier
 }
 
-creation_fichier 
+separation2()
+{
+    fichier=$(echo bdd_csv/$1 | sed "s/\.csv/_new.csv/g")
+    len=$(head -n1 bdd_csv/$1 | grep -o \; | wc -l)
+    len=$((len+1))
+    cat bdd_csv/$1 | cut -d\; -f1-$len | sed 's/\;/\,/g' > $fichier
+    echo $fichier
+}
 
-for i in $(ls bdd_csv)
-do 
-    separation $(echo $i)
-done
+#creation_fichier 
+#
+#for i in $(ls bdd_csv)
+#do 
+#    separation $(echo $i)
+#done
+
+separation2 Jeux2.csv
+
+#fichier='Jeux2.csv'
+#len=$((head -n1 bdd_csv/$1 | grep -o \; | wc -l + 1))
+#len=$((len + 1))
+#echo $len
 
