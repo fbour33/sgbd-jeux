@@ -1,14 +1,14 @@
-﻿id_extension;nom_extension;id_jeu;
-1;'Cities';16;Cities
-2;'Leaders';16;Leaders
-3;'Pantheon';46;Pantheon
-4;'The crew';3;The crew
-5;'Chibis';1;Chibis
-6;'Memories';34;Memories
-7;'Universe';34;Universe
-8;'Mirrors';34;Mirrors
-9;'Harmonies';34;Harmonies
-10;'Quest';34;Quest
-11;'Corruption et Ascension';20;Corruption et Ascension
-12;'Corneille Rouge';24;Corneille Rouge
-13;'Leviathan';7;Leviathan
+﻿nom_extension;id_jeu
+'Cities';16
+'Leaders';16
+'Pantheon';46
+'The crew';3
+'Chibis';1
+'Memories';34
+'Universe';34
+'Mirrors';34
+'Harmonies';34
+'Quest';34
+'Corruption et Ascension';20
+'Corneille Rouge';24
+'Leviathan';7

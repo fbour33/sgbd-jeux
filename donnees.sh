@@ -52,14 +52,13 @@ separation2()
     echo $fichier
 }
 
-#creation_fichier 
-#
-#for i in $(ls bdd_csv)
-#do 
-#    separation $(echo $i)
-#done
+creation_fichier 
 
-separation2 Jeux2.csv
+for i in $(ls bdd_csv)
+do 
+    separation2 $(echo $i)
+done
+
 
 #fichier='Jeux2.csv'
 #len=$((head -n1 bdd_csv/$1 | grep -o \; | wc -l + 1))

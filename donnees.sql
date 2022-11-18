@@ -563,19 +563,19 @@ commit;
 
 -- EXTENSIONS
 
-insert into EXTENSIONS values (1, 'Cities', 16);
-insert into EXTENSIONS values (2, 'Leaders', 16);
-insert into EXTENSIONS values (3, 'Pantheon', 46);
-insert into EXTENSIONS values (4, 'The crew', 3);
-insert into EXTENSIONS values (5, 'Chibis', 1);
-insert into EXTENSIONS values (6, 'Memories', 34);
-insert into EXTENSIONS values (7, 'Universe', 34);
-insert into EXTENSIONS values (8, 'Mirrors', 34);
-insert into EXTENSIONS values (9, 'Harmonies', 34);
-insert into EXTENSIONS values (10, 'Quest', 34);
-insert into EXTENSIONS values (11, 'Corruption et Ascension', 20);
-insert into EXTENSIONS values (12, 'Corneille Rouge', 24);
-insert into EXTENSIONS values (13, 'Leviathan', 7);
+insert into EXTENSIONS values ('Cities', 16);
+insert into EXTENSIONS values ('Leaders', 16);
+insert into EXTENSIONS values ('Pantheon', 46);
+insert into EXTENSIONS values ('The crew', 3);
+insert into EXTENSIONS values ('Chibis', 1);
+insert into EXTENSIONS values ('Memories', 34);
+insert into EXTENSIONS values ('Universe', 34);
+insert into EXTENSIONS values ('Mirrors', 34);
+insert into EXTENSIONS values ('Harmonies', 34);
+insert into EXTENSIONS values ('Quest', 34);
+insert into EXTENSIONS values ('Corruption et Ascension', 20);
+insert into EXTENSIONS values ('Corneille Rouge', 24);
+insert into EXTENSIONS values ('Leviathan', 7);
 
 commit;
 
