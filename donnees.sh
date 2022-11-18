@@ -33,6 +33,9 @@ separation()
     if [ $1 == "Jugements.csv" ]
     then 
         cat bdd_csv/$1 | cut -d\; -f1-4 | sed 's/\;/\,/g' > $fichier
+    elif [ $1 == "Configurations.csv" ] || [ $1 == "Extensions_utilisees.csv" ]
+    then
+        cat bdd_csv/$1 | cut -d\; -f1-2 | sed 's/\;/\,/g' > $fichier
     else
         len=$(head -n1 bdd_csv/$1 | sed 's/\;\;*/\;/g' | grep -o \; | wc -l |sed 's/\ *//g')
         cat bdd_csv/$1 | cut -d\; -f1-$len | sed 's/\;/\,/g' > $fichier

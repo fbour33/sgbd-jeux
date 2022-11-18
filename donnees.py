@@ -40,8 +40,8 @@ def fill_table(myfile):
 #### Ecriture dans le dossier donnees.sql à partir de tous nos fichiers .csv
 
 def create_table():
-    myfiles = [ 'Joueurs', 'Jeux', 'Createurs', 'Avis', 'Extensions', 'Jugements', \
-                'Mecaniques', 'Mecaniques_pref', 'Themes', 'Themes_pref', 'Configurations' ]
+    myfiles = [ 'Joueurs', 'Jeux', 'Createurs', 'Avis', 'Extensions', 'Jugements', 'Mecaniques', \
+                'Mecaniques_pref', 'Themes', 'Themes_pref', 'Configurations', 'Extensions_utilisees' ]
     for i in range(len(myfiles)):
         fill_table(myfiles[i])
 

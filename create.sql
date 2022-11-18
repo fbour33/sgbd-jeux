@@ -81,8 +81,8 @@ create table AVIS
     COMMENTAIRE_AVIS                CHAR(1000)                     ,
     DATE_AVIS                       DATE                           ,
     ID_JEU                          NUMBER(3)              not null,
-    ID_JOUEUR                       NUMBER(3)              not null,
     ID_CONFIG                       NUMBER(3)              not null,
+    ID_JOUEUR                       NUMBER(3)              not null,
     constraint pk_avis primary key (ID_AVIS)
     constraint uc_avis UNIQUE (ID_JEU, ID_JOUEUR)
 );
