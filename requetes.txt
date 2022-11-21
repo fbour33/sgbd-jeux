@@ -2,32 +2,32 @@
 
 Stratégie: Avoir listes des jeux du themes => Verifier qu'ils ont été critiqués => les trier par mécaniques
 
-SELECT DISTINCT J.nom_jeu, M.description_mecanique (à enlever apres test de tri)
-FROM Jeux AS J NATURAL JOIN Themes AS T JOIN Mecaniques AS M
-    ON M.id_jeu = id_jeu
-WHERE T.intitule_theme = ?
+SELECT DISTINCT id_jeu, M.description_mecanique (à enlever apres test de tri)
+FROM Themes_utilise NATURAL JOIN Mecaniques_utilisee
+WHERE intitule_theme = ?
     AND id_jeu in (
         SELECT DISTINCT id_jeu
         FROM Avis
     )
-ORDER BY M.description ASC
+ORDER BY description_mecanique ASC
 
 2/  Pour un joueur donné, la liste des commentaires se référant à un jeu dans une de ses
 catégories préférées.
 
 Stratégie: Avoir mécaniques pref => liste des jeux de ces mécaniques => liste des commentaires de ces jeux
 
-SELECT note_avis, commentaire_avis
+SELECT *
 FROM Avis
 WHERE id_jeu IN (
     SELECT DISTINCT id_jeu 
-    FROM Jeux NATURAL JOIN Mecaniques
+    FROM Mecaniques_utilisee
     WHERE description_mecanique IN (
-        SELECT description_mecanique
+        SELECT DISTINCT description_mecanique
         FROM Mecaniques_pref
-        WHERE id_joueur =?
+        WHERE id_joueur = ?
     )
 )
+ORDER BY id_jeu // Pour grouper tous les avis d'un meme jeu 
 
 3/ Pour un commentaire la liste des joueurs qui l'ont apprecie
 
@@ -43,7 +43,7 @@ WHERE est_positif = 1
 SELECT id_joueur, pseudo_joueur, COUNT(*) as Avis_donne
 FROM Joueurs LEFT OUTER JOIN Avis USING(id_joueur)
 GROUP BY id_joueur, pseudo_joueur
-ORDER BY Avis_donne
+ORDER BY Avis_donne DESC
 
 5/ La liste des n commentaires les plus récents
 
