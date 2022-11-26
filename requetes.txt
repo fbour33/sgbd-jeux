@@ -2,14 +2,18 @@
 
 Stratégie: Avoir listes des jeux du themes => Verifier qu'ils ont été critiqués => les trier par mécaniques
 
-SELECT DISTINCT id_jeu, M.description_mecanique (à enlever apres test de tri)
-FROM Themes_utilise NATURAL JOIN Mecaniques_utilisee
-WHERE intitule_theme = ?
-    AND id_jeu in (
+SELECT DISTINCT J.nom_jeu, M.description_mecanique //(à enlever apres test de tri)
+FROM Themes_utilises NATURAL JOIN Mecaniques_utilisees NATURAL JOIN Mecaniques as M NATURAL JOIN Jeux as J
+WHERE id_theme = (                  // Relier l'intitulé a l'id
+        SELECT id_theme
+        FROM Themes
+        WHERE intitule_theme = ? 
+    )
+    AND id_jeu in (                 // Verifier que le jeu est critiqué
         SELECT DISTINCT id_jeu
         FROM Avis
     )
-ORDER BY description_mecanique ASC
+ORDER BY id_mecanique ASC // Trier par mecanique
 
 2/  Pour un joueur donné, la liste des commentaires se référant à un jeu dans une de ses
 catégories préférées.
@@ -18,11 +22,11 @@ Stratégie: Avoir mécaniques pref => liste des jeux de ces mécaniques => liste
 
 SELECT *
 FROM Avis
-WHERE id_jeu IN (
+WHERE id_jeu IN (                       // Recuperer jeux des mecaniques pref
     SELECT DISTINCT id_jeu 
     FROM Mecaniques_utilisee
-    WHERE description_mecanique IN (
-        SELECT DISTINCT description_mecanique
+    WHERE id_mecanique IN (            // Avoir meca_pref du joueur
+        SELECT DISTINCT id_mecanique
         FROM Mecaniques_pref
         WHERE id_joueur = ?
     )
