@@ -41,7 +41,8 @@ def fill_table(myfile):
 
 def create_table():
     myfiles = [ 'Joueurs', 'Jeux', 'Createurs', 'Avis', 'Extensions', 'Jugements', 'Mecaniques', \
-                'Mecaniques_pref', 'Themes', 'Themes_pref', 'Configurations', 'Extensions_utilisees' ]
+                'Mecaniques_pref', 'Mecaniques_util', 'Themes', 'Themes_pref', 'Themes_util', \
+                'Configurations', 'Extensions_utilisee', 'Creations' ]
     for i in range(len(myfiles)):
         fill_table(myfiles[i])
 
