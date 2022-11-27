@@ -58,9 +58,9 @@ create table JEUX
 create table JOUEURS
 (
     ID_JOUEUR                       INT(3)                  not null,
-    PSEUDO_JOUEUR                   CHAR(20)                not null,
+    PSEUDO_JOUEUR                   CHAR(20)                unique not null,
     NOM_JOUEUR                      CHAR(20)                not null,
-    PRENOM_JOUEUR                   CHAR(20)                        ,
+    PRENOM_JOUEUR                   CHAR(20)                not null,
     MAIL_JOUEUR                     CHAR(100)                       ,
     constraint pk_joueurs primary key (ID_JOUEUR)
 );
@@ -147,7 +147,7 @@ create table THEMES_PREF
 --   Table : THEMES_UTILISES                                       
 -- ============================================================
 
-create table THEMES_UTILISES
+create table THEMES_UTIL
 (
     ID_THEME                          INT(3)             not null,   
     ID_JEU                            INT(3)             not null,
@@ -181,11 +181,11 @@ create table MECANIQUES_PREF
 --   Table : MECANIQUES UTILISEES                                          
 -- ============================================================
 
-create table MECANIQUES_UTILISEES
+create table MECANIQUES_UTIL
 (
     ID_MECANIQUE                          INT(3)             not null,   
     ID_JEU                                INT(3)             not null,
-    constraint pk_mecaniques primary key (ID_MECANIQUE)
+    constraint pk_mecaniques primary key (ID_MECANIQUE, ID_JEU)
 );
 
 
@@ -205,7 +205,7 @@ create table EXTENSIONS
 -- ============================================================
 --   Table : EXTENSIONS_UTILISEE                                        
 -- ============================================================
-create table EXTENSIONS_UTILISEE 
+create table EXTENSIONS_UTIL
 (
     ID_EXTENSION                INT(3)              not null, 
     ID_CONFIG                   INT(3)              not null, 
