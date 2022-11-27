@@ -9,6 +9,7 @@ creation_fichier()
 
     delete from JEUX ;
     delete from JOUEURS ;
+    delete from CONFIGURATIONS ;
     delete from CREATEURS ; 
     delete from CREATIONS ; 
     delete from AVIS ; 
@@ -20,8 +21,7 @@ creation_fichier()
     delete from MECANIQUES_PREF ; 
     delete from THEMES ; 
     delete from THEMES_UTIL ; 
-    delete from THEMES_PREF ; 
-    delete from CONFIGURATIONS ; 
+    delete from THEMES_PREF ;  
 
     commit ;
 
