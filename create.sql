@@ -4,33 +4,33 @@
 --   Date de creation :  11/11/2022                      
 -- ============================================================
 
+-- drop table CREATIONS;
+
+-- drop table JUGEMENTS;
+
+-- drop table EXTENSIONS_UTIL;
+
+-- drop table MECANIQUES_PREF;
+
+-- drop table MECANIQUES_UTIL;
+
+-- drop table THEMES_PREF;
+
+-- drop table THEMES_UTIL;
+
+-- drop table AVIS;
+
+-- drop table EXTENSIONS;
+
 -- drop table JEUX;
 
 -- drop table JOUEURS;
 
 -- drop table CREATEURS;
 
--- drop table CREATIONS;
-
--- drop table AVIS;
-
--- drop table JUGEMENTS;
-
--- drop table EXTENSIONS;
-
--- drop table EXTENSIONS_UTILISEE
-
 -- drop table MECANIQUES;
 
--- drop table MECANIQUES_PREF;
-
--- drop table MECANIQUE_UTILISEES;
-
 -- drop table THEMES;
-
--- drop table THEMES_PREF;
-
--- drop table THEMES_UTILISES
 
 -- drop table CONFIGURATIONS;
 
@@ -72,8 +72,8 @@ create table JOUEURS
 create table CREATEURS
 (
     ID_CREATEUR                     INT(3)                  not null,
-    PRENOM_CREATEUR                 CHAR(20)                        ,
-    NOM_CREATEUR                    CHAR(20)                not null,
+    PRENOM_CREATEUR                 CHAR(20)                not null,
+    NOM_CREATEUR                    CHAR(20)                        ,
     constraint pk_createurs primary key (ID_CREATEUR)
 );
 
@@ -84,8 +84,8 @@ create table CREATEURS
 create table CREATIONS
 (
     ID_CREATEUR                     INT(3)              not null,
-    EST_AUTEUR                      INT(3)              not null,
-    EST_ILLUSTRATEUR                INT(3)              not null,
+    EST_AUTEUR                      INT(3)                      ,
+    EST_ILLUSTRATEUR                INT(3)                      ,
     ID_JEU                          INT(3)              not null,
     constraint pk_createurs primary key (ID_CREATEUR, ID_JEU)
 );
@@ -227,72 +227,108 @@ create table CONFIGURATIONS
 
 alter table CREATIONS
     add constraint fk2_creations foreign key (ID_CREATEUR)
-        references CREATEURS (ID_CREATEUR);
+        references CREATEURS (ID_CREATEUR)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE;
     
 alter table CREATIONS
     add constraint fk1_creations foreign key (ID_JEU)
-        references JEUX (ID_JEU);
+        references JEUX (ID_JEU)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE;
 
 alter table AVIS
     add constraint fk1_avis foreign key (ID_JEU)
-        references JEUX (ID_JEU);
+        references JEUX (ID_JEU)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE;
 
 alter table AVIS
     add constraint fk2_avis foreign key (ID_CONFIG)
-        references CONFIGURATIONS (ID_CONFIG);
+        references CONFIGURATIONS (ID_CONFIG)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE;
 
 alter table AVIS
     add constraint fk3_avis foreign key (ID_JOUEUR)
-        references JOUEURS (ID_JOUEUR);
+        references JOUEURS (ID_JOUEUR)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE;
 
 alter table JUGEMENTS
     add constraint fk1_jugements foreign key (ID_JOUEUR)
-        references JOUEURS (ID_JOUEUR);
+        references JOUEURS (ID_JOUEUR)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE;
 
 alter table JUGEMENTS
     add constraint fk2_jugements foreign key (ID_AVIS)
-        references AVIS (ID_AVIS);
+        references AVIS (ID_AVIS)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE;
 
 alter table THEMES_PREF
     add constraint fk1_themes_pref foreign key (ID_THEME)
-        references THEMES (ID_THEME); 
+        references THEMES (ID_THEME)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE; 
 
 alter table THEMES_PREF
     add constraint fk2_themes_pref foreign key (ID_JOUEUR)
-       references JOUEURS (ID_JOUEUR);
+        references JOUEURS (ID_JOUEUR)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE;
 
-alter table THEMES_UTILISES
+alter table THEMES_UTIL
     add constraint fk1_themes_util foreign key (ID_THEME)
-        references THEMES (ID_THEME);
+        references THEMES (ID_THEME)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE;
 
-alter table THEMES_UTILISES
+alter table THEMES_UTIL
     add constraint fk2_themes_util foreign key (ID_JEU)
-        references JEUX (ID_JEU);
+        references JEUX (ID_JEU)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE;
 
 alter table MECANIQUES_PREF
     add constraint fk1_mecaniques_pref foreign key (ID_MECANIQUE)
-       references MECANIQUES (ID_MECANIQUE);
+        references MECANIQUES (ID_MECANIQUE)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE;
 
 alter table MECANIQUES_PREF
     add constraint fk2_mecaniques_pref foreign key (ID_JOUEUR)
-       references JOUEURS (ID_JOUEUR);
+        references JOUEURS (ID_JOUEUR)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE;
 
-alter table MECANIQUES_UTILISEES
+alter table MECANIQUES_UTIL
     add constraint fk1_mecaniques_util foreign key (ID_MECANIQUE)
-        references MECANIQUES (ID_MECANIQUE);
+        references MECANIQUES (ID_MECANIQUE)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE;
 
-alter table MECANIQUES_UTILISEES
+alter table MECANIQUES_UTIL
     add constraint fk2_mecaniques_util foreign key (ID_JEU)
-        references JEUX (ID_JEU);
+        references JEUX (ID_JEU)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE;
 
 alter table EXTENSIONS
     add constraint fk1_extensions foreign key (ID_JEU)
-       references JEUX (ID_JEU);
+        references JEUX (ID_JEU)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE;
 
-alter table EXTENSIONS_UTILISEE
+alter table EXTENSIONS_UTIL
     add constraint fk1_extensions_util foreign key (ID_EXTENSION)
-        references EXTENSIONS (ID_EXTENSION);
+        references EXTENSIONS (ID_EXTENSION)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE;
 
-alter table EXTENSIONS_UTILISEE
+alter table EXTENSIONS_UTIL
     add constraint fk2_extensions_util foreign key (ID_CONFIG)
-        references CONFIGURATIONS (ID_CONFIG);
+        references CONFIGURATIONS (ID_CONFIG)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE;
