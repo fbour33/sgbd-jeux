@@ -10,12 +10,16 @@ creation_fichier()
     delete from JEUX ;
     delete from JOUEURS ;
     delete from CREATEURS ; 
+    delete from CREATIONS ; 
     delete from AVIS ; 
     delete from JUGEMENTS ; 
     delete from EXTENSIONS ; 
+    delete from EXTENSIONS_UTIL ; 
     delete from MECANIQUES ;
+    delete from MECANIQUES_UTIL ;
     delete from MECANIQUES_PREF ; 
     delete from THEMES ; 
+    delete from THEMES_UTIL ; 
     delete from THEMES_PREF ; 
     delete from CONFIGURATIONS ; 
 
