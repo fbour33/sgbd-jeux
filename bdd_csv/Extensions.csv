@@ -1,14 +1,14 @@
-﻿nom_extension;id_jeu
-'Cities';16
-'Leaders';16
-'Pantheon';46
-'The crew';3
-'Chibis';1
-'Memories';34
-'Universe';34
-'Mirrors';34
-'Harmonies';34
-'Quest';34
-'Corruption et Ascension';20
-'Corneille Rouge';24
-'Leviathan';7
+﻿id_extension;nom_extension;id_jeu
+1;'Cities';16
+2;'Leaders';16
+3;'Pantheon';46
+4;'The crew';3
+5;'Chibis';1
+6;'Memories';34
+7;'Universe';34
+8;'Mirrors';34
+9;'Harmonies';34
+10;'Quest';34
+11;'Corruption et Ascension';20
+12;'Corneille Rouge';24
+13;'Leviathan';7

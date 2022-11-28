@@ -18,7 +18,7 @@ def fill_table(myfile):
 
         for line in joueurs:
             nb_column = len(line) 
-            if compteur == 1: #Sert à enlever le caractère spécial illisible par Bash
+            if compteur == 1: #Sert à enlever le caractère spécial illisible par Bash contenu ligne 1
                 compteur+= 1
             else: 
                 if nb_column == 2:
@@ -33,6 +33,8 @@ def fill_table(myfile):
                     fichier.write("insert into {} values ({}, {}, {}, {}, {}, {});\n".format(nom_table, line[0], line[1], line[2], line[3], line[4], line[5]))
                 elif nb_column == 7:
                     fichier.write("insert into {} values ({}, {}, {}, {}, {}, {}, {});\n".format(nom_table, line[0], line[1], line[2], line[3], line[4], line[5], line[6]))
+                elif nb_column == 8:
+                    fichier.write("insert into {} values ({}, {}, {}, {}, {}, {}, {}, {});\n".format(nom_table, line[0], line[1], line[2], line[3], line[4], line[5], line[6], line[7]))
 
     fichier.write("\ncommit;")
     fichier.close()
@@ -40,8 +42,9 @@ def fill_table(myfile):
 #### Ecriture dans le dossier donnees.sql à partir de tous nos fichiers .csv
 
 def create_table():
-    myfiles = [ 'Joueurs', 'Jeux', 'Createurs', 'Avis', 'Extensions', 'Jugements', 'Mecaniques', \
-                'Mecaniques_pref', 'Themes', 'Themes_pref', 'Configurations', 'Extensions_utilisees' ]
+    myfiles = [ 'Joueurs', 'Jeux', 'Createurs', 'Configurations', 'Avis', 'Extensions', 'Jugements', 'Mecaniques', \
+                'Mecaniques_pref', 'Mecaniques_util', 'Themes', 'Themes_pref', 'Themes_util', \
+                'Creations', 'Extensions_util' ]
     for i in range(len(myfiles)):
         fill_table(myfiles[i])
 
