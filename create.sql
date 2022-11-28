@@ -100,7 +100,6 @@ create table AVIS
     NOTE_AVIS                       INT(3)                  not null,
     COMMENTAIRE_AVIS                BLOB(1000)                      ,
     DATE_AVIS                       DATE                            ,
-    ID_JEU                          INT(3)                  not null,
     ID_CONFIG                       INT(3)                  not null,
     ID_JOUEUR                       INT(3)                  not null,
     constraint pk_avis primary key (ID_AVIS),
@@ -113,7 +112,7 @@ create table AVIS
 
 create table JUGEMENTS
 (
-    ID_JOUEUR                      INT(3)              not null,
+    ID_JOUEUR                       INT(3)              not null,
     ID_AVIS                         INT(3)              not null,
     EST_POSITIF                     INT(3)                      ,
     EST_NEGATIF                     INT(3)                      ,
@@ -207,8 +206,8 @@ create table EXTENSIONS
 -- ============================================================
 create table EXTENSIONS_UTIL
 (
-    ID_EXTENSION                INT(3)              not null, 
     ID_CONFIG                   INT(3)              not null, 
+    ID_EXTENSION                INT(3)              not null, 
     constraint pk_extensions_utilisee primary key (ID_EXTENSION, ID_CONFIG)
 );
 
@@ -221,6 +220,7 @@ create table CONFIGURATIONS
 (   
     ID_CONFIG                   INT(3)             not null, 
     NB_JOUEUR                   INT(3)             not null,
+    ID_JEU                      INT(3)             not null,
     constraint pk_config primary key (ID_CONFIG)
 );
 
@@ -330,5 +330,11 @@ alter table EXTENSIONS_UTIL
 alter table EXTENSIONS_UTIL
     add constraint fk2_extensions_util foreign key (ID_CONFIG)
         references CONFIGURATIONS (ID_CONFIG)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE;
+
+alter table CONFIGURATIONS
+    add constraint fk1_configurations foreign key (ID_JEU)
+        references JEUX (ID_JEU)
         ON DELETE CASCADE
         ON UPDATE CASCADE;
