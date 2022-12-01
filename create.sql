@@ -102,8 +102,7 @@ create table AVIS
     DATE_AVIS                       DATE                            ,
     ID_CONFIG                       INT(3)                  not null,
     ID_JOUEUR                       INT(3)                  not null,
-    constraint pk_avis primary key (ID_AVIS),
-    constraint uc_avis UNIQUE key (ID_JEU, ID_JOUEUR)
+    constraint pk_avis primary key (ID_AVIS)
 );
 
 -- ============================================================
@@ -238,19 +237,13 @@ alter table CREATIONS
         ON UPDATE CASCADE;
 
 alter table AVIS
-    add constraint fk1_avis foreign key (ID_JEU)
-        references JEUX (ID_JEU)
-        ON DELETE CASCADE
-        ON UPDATE CASCADE;
-
-alter table AVIS
-    add constraint fk2_avis foreign key (ID_CONFIG)
+    add constraint fk1_avis foreign key (ID_CONFIG)
         references CONFIGURATIONS (ID_CONFIG)
         ON DELETE CASCADE
         ON UPDATE CASCADE;
 
 alter table AVIS
-    add constraint fk3_avis foreign key (ID_JOUEUR)
+    add constraint fk2_avis foreign key (ID_JOUEUR)
         references JOUEURS (ID_JOUEUR)
         ON DELETE CASCADE
         ON UPDATE CASCADE;
