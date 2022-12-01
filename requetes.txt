@@ -3,49 +3,49 @@
 Stratégie: Avoir listes des jeux du themes => Verifier qu'ils ont été critiqués => les trier par mécaniques
 
 SELECT DISTINCT J.nom_jeu, M.description_mecanique //(à enlever apres test de tri)
-FROM Themes_utilises NATURAL JOIN Mecaniques_utilisees NATURAL JOIN Mecaniques as M NATURAL JOIN Jeux as J
+FROM JEUX as J NATURAL JOIN MECANIQUES_UTIL NATURAL JOIN MECANIQUES as M NATURAL JOIN THEMES_UTIL
 WHERE id_theme = (                  // Relier l'intitulé a l'id
         SELECT id_theme
-        FROM Themes
+        FROM THEMES
         WHERE intitule_theme = ? 
     )
     AND id_jeu in (                 // Verifier que le jeu est critiqué
         SELECT DISTINCT id_jeu
-        FROM Avis
+        FROM CONFIGURATIONS
     )
-ORDER BY id_mecanique ASC // Trier par mecanique
+ORDER BY description_mecanique ASC // Trier par mecanique
 
 2/  Pour un joueur donné, la liste des commentaires se référant à un jeu dans une de ses
 catégories préférées.
 
 Stratégie: Avoir mécaniques pref => liste des jeux de ces mécaniques => liste des commentaires de ces jeux
 
-SELECT *
-FROM Avis
-WHERE id_jeu IN (                       // Recuperer jeux des mecaniques pref
+SELECT note_avis, commentaire_avis, date_avis, nom_jeu
+FROM AVIS NATURAL JOIN CONFIGURATIONS NATURAL JOIN JEUX
+WHERE id_jeu IN (                       
     SELECT DISTINCT id_jeu 
-    FROM Mecaniques_utilisee
-    WHERE id_mecanique IN (            // Avoir meca_pref du joueur
-        SELECT DISTINCT id_mecanique
-        FROM Mecaniques_pref
-        WHERE id_joueur = ?
+    FROM MECANIQUES_UTIL NATURAL JOIN MECANIQUES_PREF
+    WHERE id_joueur = (
+        SELECT id_joueur
+        FROM JOUEURS
+        WHERE pseudo_joueur = ?
     )
 )
-ORDER BY id_jeu // Pour grouper tous les avis d'un meme jeu 
+ORDER BY id_jeu; // Pour grouper tous les avis d'un meme jeu 
 
 3/ Pour un commentaire la liste des joueurs qui l'ont apprecie
 
 Stratégie: Avoir la liste des jugements positifs d'un avis => remonter aux joueurs qui ont fait ces jugements
 
-SELECT id_joueur
-FROM Jugements
+SELECT pseudo_joueur
+FROM JUGEMENTS NATURAL JOIN JOUEURS 
 WHERE est_positif = 1
     AND id_avis = ?
 
 4/ Les joueurs, classés selon le nombre de jeux qu’ils ont notés
 
-SELECT id_joueur, pseudo_joueur, COUNT(*) as Avis_donne
-FROM Joueurs LEFT OUTER JOIN Avis USING(id_joueur)
+SELECT id_joueur, pseudo_joueur, COUNT(id_avis) as Avis_donne
+FROM JOUEURS LEFT OUTER JOIN AVIS USING(id_joueur)
 GROUP BY id_joueur, pseudo_joueur
 ORDER BY Avis_donne DESC
 
@@ -62,9 +62,11 @@ SELECT id_avis, COUNT(*) as Jugements_obtenus
 FROM Jugements
 GROUP BY id_avis
 HAVING COUNT(*) = (
-    SELECT MAX(COUNT(*))
+    SELECT COUNT(*)
     FROM Jugements
     GROUP BY id_avis
+    ORDER BY COUNT(*) DESC 
+    LIMIT 1
 )
 
 7/ On procédera au classement des jeux selon une moyenne dans laquelle chaque note est pondérée 
