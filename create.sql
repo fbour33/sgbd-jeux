@@ -41,7 +41,7 @@
 create table JEUX
 (
     ID_JEU                          INT(3)                  not null,
-    NOM_JEU                         CHAR(20)                not null,
+    NOM_JEU                         CHAR(100)               not null,
     EDITEUR_JEU                     CHAR(20)                        ,
     TYPE_JEU                        CHAR(20)                        ,
     DUREE_JEU                       INT(3)                          ,
@@ -57,7 +57,7 @@ create table JEUX
 
 create table JOUEURS
 (
-    ID_JOUEUR                       INT(3)                  not null,
+    ID_JOUEUR                       INT(3)                  not null AUTO_INCREMENT,
     PSEUDO_JOUEUR                   CHAR(20)                unique not null,
     NOM_JOUEUR                      CHAR(20)                not null,
     PRENOM_JOUEUR                   CHAR(20)                not null,
