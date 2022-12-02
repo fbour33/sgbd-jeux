@@ -34,8 +34,8 @@
                         <h1 class="h3">Nombre d'auteur : </h1>
                     </div>
                     <div class="col">
-                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                            <option selected name="auteur">Nombre</option>
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="Auteur">
+                            <option selected >Nombre</option>
                                     <option value="1">1</option>
                                     <option value="1">2</option>
                                     <option value="1">3</option>
