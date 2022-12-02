@@ -12,7 +12,7 @@ creation_fichier()
     delete from CONFIGURATIONS ;
     delete from CREATEURS ; 
     delete from CREATIONS ; 
-    delete from AVIS ; 
+    delete from AVIS ;
     delete from JUGEMENTS ; 
     delete from EXTENSIONS ; 
     delete from EXTENSIONS_UTIL ; 

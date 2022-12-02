@@ -40,7 +40,7 @@
 
 create table JEUX
 (
-    ID_JEU                          INT(3)                  not null,
+    ID_JEU                          INT(3)                  not null AUTO_INCREMENT,
     NOM_JEU                         CHAR(100)               not null,
     EDITEUR_JEU                     CHAR(20)                        ,
     TYPE_JEU                        CHAR(20)                        ,
@@ -71,7 +71,7 @@ create table JOUEURS
 
 create table CREATEURS
 (
-    ID_CREATEUR                     INT(3)                  not null,
+    ID_CREATEUR                     INT(3)                  not null AUTO_INCREMENT,
     PRENOM_CREATEUR                 CHAR(20)                not null,
     NOM_CREATEUR                    CHAR(20)                        ,
     constraint pk_createurs primary key (ID_CREATEUR)

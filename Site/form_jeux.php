@@ -39,6 +39,33 @@
                 </div>
             </div>
             <div class="container mt-2">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="h3">Nombre d'auteur : </h1>
+                    </div>
+                    <div class="col">
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                            <option selected name="auteur">Nombre</option>
+                                    <option value="1">1</option>
+                                    <option value="1">2</option>
+                                    <option value="1">3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-2">
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Auteur</label>
+                </div>
+            </div>
+            <div class="container mt-2">
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Illustrateur</label>
+                </div>
+            </div>
+            <div class="container mt-2">
                 <div class="form-floating">
                     <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
                     <label for="floatingTextarea">Date de création</label>
