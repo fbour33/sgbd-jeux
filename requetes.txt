@@ -60,14 +60,12 @@ LIMIT ?
 
 SELECT id_avis, COUNT(*) as Jugements_obtenus
 FROM Jugements
-GROUP BY id_avis
 HAVING COUNT(*) = (
-    SELECT COUNT(*)
+    SELECT MAX(COUNT(*))
     FROM Jugements
     GROUP BY id_avis
-    ORDER BY COUNT(*) DESC 
-    LIMIT 1
 )
+GROUP BY id_avis
 
 7/ On procédera au classement des jeux selon une moyenne dans laquelle chaque note est pondérée 
 par l’indice de confiance du commentaire correspondant.
