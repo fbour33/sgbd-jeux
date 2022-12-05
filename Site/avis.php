@@ -31,7 +31,7 @@
 
         <?php include('connect.php'); 
     $jeu = $_GET['Jeu'];
-    $sqlQuery = 'SELECT  A.* FROM AVIS as A natural join CONFIGURATIONS natural join JEUX where NOM_JEU ="' . $jeu . '"';
+    $sqlQuery = 'SELECT NOTE_AVIS, NB_JOUEUR, NOM_JOUEUR, COMMENTAIRE_AVIS, DATE_AVIS FROM JOUEURS as J natural join AVIS as A natural join CONFIGURATIONS as C natural join JEUX where NOM_JEU ="' . $jeu . '"';
 
     $avisStatement = $db->prepare($sqlQuery);  
     $avisStatmentQuery = $db->query($sqlQuery);
@@ -41,21 +41,19 @@
         <div class="container text-center ">
             <div class="row justify-content-md-center border mt-2 bg-dark text-white"><?php echo $jeu?></div>
             <div class="row justify-content-md-center border mt-2 bg-dark text-white">
-                <div class="col">ID</div>
+                <div class="col">PSEUDO JOUEUR</div>
                 <div class="col">NOTE</div>
                 <div class="col">COMMENTAIRE</div>
+                <div class="col">NB JOUEUR</div>
                 <div class="col">DATE</div>
-                <div class="col">ID CONFIG</div>
-                <div class="col">ID JOUEUR</div>
         </div>
             <?php foreach($avis as $avis) {?>
                 <div class="row bg-light border mt-2">
-                    <div class="col"><?php echo $avis['ID_AVIS']?></div>
-                    <div class="col"><?php echo $avis['NOTE_AVIS']?></div>
+                    <div class="col"><?php echo $avis['NOM_JOUEUR']?></div>
+                    <div class="col"><?php echo $avis['NOTE_AVIS'] . '/20'?></div>
                     <div class="col"><?php echo $avis['COMMENTAIRE_AVIS']?></div>
+                    <div class="col"><?php echo $avis['NB_JOUEUR']?></div>
                     <div class="col"><?php echo $avis['DATE_AVIS']?></div>
-                    <div class="col"><?php echo $avis['ID_CONFIG']?></div>
-                    <div class="col"><?php echo $avis['ID_JOUEUR']?></div>
             </div>
             <?php } ?>
     </div>
