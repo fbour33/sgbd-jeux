@@ -1,51 +1,51 @@
-﻿id_jeu;nom_jeu;editeur;type;duree;date_parution;nb_joueurs_min;nb_joueurs_max
-1;'Takenoko';'Bombyx';'Points';45;2011;2;4
-2;'Conspiracy';'Bombyx';'Points';30;2019;2;4
-3;'Jamaica';'Game Works';'Course';45;2008;2;6
-4;'Karuba';'Haba';'Course';40;2015;2;4
-5;'Santorini';'Roxley';'Course';20;2018;2;4
-6;'Down Force';'Iello';'Course';30;2018;2;6
-7;'Abyss';'Bombyx';'Points';45;2014;2;4
-8;'Imaginarium';'Bombyx';'Points';90;2017;2;5
-9;'Yamatai';'Days of wonder';'Points';80;2017;2;4
-10;'Quadropolis';'Days of wonder';'Points';60;2016;2;4
-11;'Five Tribes';'Days of wonder';'Points';60;2014;2;4
-12;'El Dorado';'Ravensburger';'Course';60;2017;2;4
-13;'Iquazu';'Haba';'Points';50;2017;2;4
-14;'L’ile au tresor';'Matagot';'Course';45;2018;2;5
-15;'Descendance';'Gigamic';'Points';90;2012;2;4
-16;'7 Wonders';'Repos Production';'Points';30;2010;2;7
-17;'Otys';'Libellud';'Points';60;2017;2;4
-18;'Dice Forge';'Libellud';'Points';45;2017;2;4
-19;'Solenia';'Pearl Games';'Points';45;2018;1;4
-20;'It’s a wonderful world';'Ori Games';'Points';45;2020;1;5
-21;'7 Wonders Architects';'Repos Production';'Course';25;2021;2;7
-22;'Bunny Kingdom';'Iello';'Points';45;2017;2;4
-23;'Pharaon';'Catch up Games';'Points';60;2019;1;5
-24;'Dreamscape';'Sylex';'Points';90;2018;1;4
-25;'Maka Bana';'Sweet Games';'Points';45;2009;3;6
-26;'Ishtar';'Iello';'Points';45;2019;2;4
-27;'Catan';'Filosofia';'Points';75;2007;3;4
-28;'Mr.Jack';'Hurrican';'Course';30;2006;2;2
-29;'Century';'Plan B Games';'Points';45;2017;2;5
-30;'Splendor';'Space Cowboys';'Course';30;2016;2;4
-31;'Le tour du monde en 80 jours';'Purple Brain Classics';'Course';45;2016;2;6
-32;'Les ruines perdues de Narak';'Iello';'Points';100;2021;1;4
-33;'Concept';'Repos Production';'Points';40;2014;4;12
-34;'Dixit';'Libellud';'Course';30;2014;3;12
-35;'Azul';'Next Move';'Points';30;2018;2;4
-36;'Les aventuriers du rail';'Days of wonder';'Points';100;2016;2;5
-37;'Medina';'Gigamic';'Points';60;2014;2;4
-38;'Sagrada';'Matagot';'Points';40;2019;1;4
-39;'Majesty';'Hans im gluck';'Points';30;2017;2;4
-40;'Citadelles';'Edge';'Points';45;2014;2;8
-41;'Code Names';'Iello';'Course';15;2016;2;8
-42;'Kingdomino';'Blue Orange';'Points';15;2016;2;4
-43;'Welcome';'Blue Cocker';'Points';25;2017;1;100
-44;'Corinth';'Days of wonder';'Points';25;2019;2;4
-45;'Celestia';'Blam';'Points';30;2015;2;6
-46;'7 Wonders Duel';'Repos Production';'Points';30;2020;2;2
-47;'Chakra';'Blam';'Course';30;2019;2;4
-48;'Sea of clouds';'Iello';'Points';40;2015;2;4
-49;'Les batisseurs';'Bombyx';'Points';30;2017;2;4
-50;'Minivilles';'MGA';'Course';30;2014;2;4
+id_jeu;nom_jeu;editeur;type;duree;date_parution;nb_joueurs_min;nb_joueurs_max
+1;'''Takenoko''';'''Bombyx''';'''Points''';45;2011;2;4
+2;'''Conspiracy''';'''Bombyx''';'''Points''';30;2019;2;4
+3;'''Jamaica''';'''Game Works''';'''Course''';45;2008;2;6
+4;'''Karuba''';'''Haba''';'''Course''';40;2015;2;4
+5;'''Santorini''';'''Roxley''';'''Course''';20;2018;2;4
+6;'''Down Force''';'''Iello''';'''Course''';30;2018;2;6
+7;'''Abyss''';'''Bombyx''';'''Points''';45;2014;2;4
+8;'''Imaginarium''';'''Bombyx''';'''Points''';90;2017;2;5
+9;'''Yamatai''';'''Days of wonder''';'''Points''';80;2017;2;4
+10;'''Quadropolis''';'''Days of wonder''';'''Points''';60;2016;2;4
+11;'''Five Tribes''';'''Days of wonder''';'''Points''';60;2014;2;4
+12;'''El Dorado''';'''Ravensburger''';'''Course''';60;2017;2;4
+13;'''Iquazu''';'''Haba''';'''Points''';50;2017;2;4
+14;'''L’ile au tresor''';'''Matagot''';'''Course''';45;2018;2;5
+15;'''Descendance''';'''Gigamic''';'''Points''';90;2012;2;4
+16;'''7 Wonders''';'''Repos Production''';'''Points''';30;2010;2;7
+17;'''Otys''';'''Libellud''';'''Points''';60;2017;2;4
+18;'''Dice Forge''';'''Libellud''';'''Points''';45;2017;2;4
+19;'''Solenia''';'''Pearl Games''';'''Points''';45;2018;1;4
+20;'''It’s a wonderful world''';'''Ori Games''';'''Points''';45;2020;1;5
+21;'''7 Wonders Architects''';'''Repos Production''';'''Course''';25;2021;2;7
+22;'''Bunny Kingdom''';'''Iello''';'''Points''';45;2017;2;4
+23;'''Pharaon''';'''Catch up Games''';'''Points''';60;2019;1;5
+24;'''Dreamscape''';'''Sylex''';'''Points''';90;2018;1;4
+25;'''Maka Bana''';'''Sweet Games''';'''Points''';45;2009;3;6
+26;'''Ishtar''';'''Iello''';'''Points''';45;2019;2;4
+27;'''Catan''';'''Filosofia''';'''Points''';75;2007;3;4
+28;'''Mr.Jack''';'''Hurrican''';'''Course''';30;2006;2;2
+29;'''Century''';'''Plan B Games''';'''Points''';45;2017;2;5
+30;'''Splendor''';'''Space Cowboys''';'''Course''';30;2016;2;4
+31;'''Le tour du monde en 80 jours''';'''Purple Brain Classics''';'''Course''';45;2016;2;6
+32;'''Les ruines perdues de Narak''';'''Iello''';'''Points''';100;2021;1;4
+33;'''Concept''';'''Repos Production''';'''Points''';40;2014;4;12
+34;'''Dixit''';'''Libellud''';'''Course''';30;2014;3;12
+35;'''Azul''';'''Next Move''';'''Points''';30;2018;2;4
+36;'''Les aventuriers du rail''';'''Days of wonder''';'''Points''';100;2016;2;5
+37;'''Medina''';'''Gigamic''';'''Points''';60;2014;2;4
+38;'''Sagrada''';'''Matagot''';'''Points''';40;2019;1;4
+39;'''Majesty''';'''Hans im gluck''';'''Points''';30;2017;2;4
+40;'''Citadelles''';'''Edge''';'''Points''';45;2014;2;8
+41;'''Code Names''';'''Iello''';'''Course''';15;2016;2;8
+42;'''Kingdomino''';'''Blue Orange''';'''Points''';15;2016;2;4
+43;'''Welcome''';'''Blue Cocker''';'''Points''';25;2017;1;100
+44;'''Corinth''';'''Days of wonder''';'''Points''';25;2019;2;4
+45;'''Celestia''';'''Blam''';'''Points''';30;2015;2;6
+46;'''7 Wonders Duel''';'''Repos Production''';'''Points''';30;2020;2;2
+47;'''Chakra''';'''Blam''';'''Course''';30;2019;2;4
+48;'''Sea of clouds''';'''Iello''';'''Points''';40;2015;2;4
+49;'''Les batisseurs''';'''Bombyx''';'''Points''';30;2017;2;4
+50;'''Minivilles''';'''MGA''';'''Course''';30;2014;2;4
