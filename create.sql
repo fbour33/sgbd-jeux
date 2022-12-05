@@ -331,3 +331,56 @@ alter table CONFIGURATIONS
         references JEUX (ID_JEU)
         ON DELETE CASCADE
         ON UPDATE CASCADE;
+
+DELIMITER //
+CREATE TRIGGER uniq_jeu_avis
+BEFORE INSERT ON AVIS
+FOR EACH ROW
+BEGIN
+    DECLARE cpt int;
+    SELECT COUNT(*)
+    INTO cpt
+    FROM ( /* Selectionne tous les avis du jeu associé à une config particulière*/
+        SELECT * 
+        FROM AVIS NATURAL JOIN CONFIGURATIONS
+        WHERE id_jeu = (
+            SELECT id_jeu
+            FROM CONFIGURATIONS
+            WHERE id_config = NEW.id_config
+        )
+    ) T
+    WHERE id_joueur = NEW.id_joueur;
+    
+    if 0 < cpt
+    then 
+        SIGNAL SQLSTATE '50001'
+        SET MESSAGE_TEXT = 'Ce joueur à déjà donné son avis sur ce jeu';
+    end if; 
+
+END //
+DELIMITER ;
+
+
+-- DELIMITER //
+-- CREATE TRIGGER date_parution_avis
+-- BEFORE INSERT ON AVIS
+-- FOR EACH ROW 
+-- BEGIN   
+
+--     DECLARE date_parution date;
+--     SELECT date_jeu
+--     INTO date_parution
+--     FROM JEUX 
+--     WHERE id_jeu = (
+--         SELECT id_jeu
+--         FROM CONFIGURATIONS
+--         WHERE id_config = NEW.id_config
+--     )
+
+--     if NEW.date_avis < date_parution
+--     then 
+--         SIGNAL SQLSTATE '50001'
+--         SET MESSAGE_TEXT = "L'avis est donné avant la sortie du jeu";
+--     end if; 
+-- END //
+-- DELIMITER ;

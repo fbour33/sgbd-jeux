@@ -47,7 +47,7 @@
 46;4;"""Wow ! Ils ont dû redoubler d'effort pour réussir à condenser tout ce qui s'oppose à l'amusement en un seul jeu !""";'2021-07-07';60;26
 47;6;"""Ce jeu me rappelle mon fils : j'en voulais pas, il m'a coûté plus cher que ce qu'il m'a rapporté et même si j'en attendais rien, j'ai quand même été déçu…""";'2021-10-19';39;26
 48;1;"""Alors là, j'ai plus les mots…""";'2016-07-19';53;26
-49;18;"""Du pain béni !""";'2021-03-11';13;27
+49;18;"""Du pain béni !""";'2021-03-11';12;27
 50;20;"""MASTERCLASS !! Vous devez y jouer !!""";'2016-03-05';13;27
 51;17;"""Le parfait mélange entre un éclair vanille et une tarte au citron meringuée !""";'2020-08-04';8;27
 52;20;"""Si les dieux faisaient un enfant, il resemblerait à ça !""";'2015-01-28';64;27
@@ -83,15 +83,15 @@
 82;19;"""Sûrement l'un des meilleurs dans ce domaine""";'2017-06-28';27;53
 83;18;"""Toujours une valeur sure Libellud !""";'2018-02-25';23;53
 84;17;"""Y en a pas bcp des bons jeux policier, mais celui-là en fait partie !""";'2015-11-29';34;53
-85;7;"""Bcp trop de règles compliquées qui rendent le jeu incompréhensible !""";'2022-11-25';53;53
+85;7;"""Bcp trop de règles compliquées qui rendent le jeu incompréhensible !""";'2022-11-25';3;53
 86;13;"""Un bon jeu pour changer des grands classiques !""";'2022-02-14';53;53
 87;11;"""J'aime bien le concept mais à acheter en promo car la durée de vie est limitée""";'2022-08-12';63;53
 88;19;"""Excellent en tout point ! Un must-have !""";'2020-06-14';11;53
 89;14;"""Même si le design est un peu élémentaire, il vaut le coup !""";'2016-09-14';37;53
 90;12;"""Le gameplay n'est pas très passionnant… Heureusement que c'est illustré par Vincent Dutrait !""";'2022-06-20';17;53
 91;16;"""Il sort des sentiers battus et ça marche ! Je valide !""";'2022-10-27';30;53
-92;16;"""Une formule classique mais bien exécutée !""";'2015-05-05';37;53
-93;15;"""On retrouve bien la patte de Bauza, ce qui nous donne un jeu agréable entre amis !""";'2019-05-14';28;53
+92;16;"""Une formule classique mais bien exécutée !""";'2015-05-05';7;53
+93;15;"""On retrouve bien la patte de Bauza, ce qui nous donne un jeu agréable entre amis !""";'2019-05-14';64;53
 94;14;"""Moelleux""";'2022-12-10';5;55
 95;16;"""Galbé""";'2018-08-31';33;55
 96;17;"""Eclairé""";'2019-02-08';63;55
@@ -99,27 +99,27 @@
 98;20;"""Transcendant""";'2019-08-12';20;55
 99;9;"""Arrogant""";'2016-03-07';58;55
 100;13;"""Curieux""";'2017-09-28';40;55
-101;15;"""Mignon""";'2018-11-05';42;55
+101;15;"""Mignon""";'2018-11-05';1;55
 102;3;"""Froid""";'2022-12-30';6;55
 103;5;"""Hypocrite""";'2016-09-16';17;55
 104;10;"""Egal""";'2017-06-12';36;55
 105;11;"""Patient""";'2020-07-30';3;55
 106;1;"""Pauvre""";'2018-02-24';32;55
-107;17;"""Sincère""";'2020-12-23';55;55
-108;12;"""Timide""";'2021-02-07';42;55
-109;18;"""Onctueux""";'2021-01-16';6;55
+107;17;"""Sincère""";'2020-12-23';61;55
+108;12;"""Timide""";'2021-02-07';9;55
+109;18;"""Onctueux""";'2021-01-16';11;55
 110;7;"""Pas cuit""";'2017-02-18';51;55
 111;7;"""Trop cuit""";'2016-10-09';46;55
-112;14;"""Allumé""";'2016-03-14';5;55
-113;14;"""Vibrant""";'2016-05-20';35;55
-114;16;"""Vivant""";'2020-10-18';4;55
-115;6;"""Sauvage""";'2019-07-16';37;55
-116;13;"""Assaisonné""";'2015-02-14';41;55
+112;14;"""Allumé""";'2016-03-14';23;55
+113;14;"""Vibrant""";'2016-05-20';64;55
+114;16;"""Vivant""";'2020-10-18';18;55
+115;6;"""Sauvage""";'2019-07-16';24;55
+116;13;"""Assaisonné""";'2015-02-14';34;55
 117;4;"""Innocent""";'2018-11-13';43;56
 118;16;"""Super""";'2019-09-23';2;56
 119;2;"""Indiscernable""";'2016-03-05';28;56
 120;18;"""Invincible""";'2022-09-28';24;56
-121;10;"""Artérielle""";'2020-08-05';40;56
+121;10;"""Artérielle""";'2020-08-05';1;56
 122;0;"""Aberrant""";'2020-03-19';30;56
 123;1;"""Immédiat""";'2016-10-26';3;56
 124;11;"""Sanguin""";'2020-06-17';9;56
@@ -127,22 +127,22 @@
 126;14;"""Aéré""";'2016-01-24';20;56
 127;9;"""Plausible""";'2017-07-31';36;56
 128;13;"""Occupant""";'2020-02-08';52;56
-129;16;"""Distrayant""";'2017-08-28';42;56
-130;13;"""Demonstratif""";'2018-11-06';27;56
+129;16;"""Distrayant""";'2017-08-28';25;56
+130;13;"""Demonstratif""";'2018-11-06';23;56
 131;17;"""Très bien ! """;'2020-06-08';1;57
 132;4;"""Oubliable""";'2022-09-09';3;57
 133;3;"""Nullissime""";'2022-04-23';53;57
 134;8;"""Génant""";'2019-07-14';29;57
-135;14;"""Aiguisé""";'2018-10-07';1;57
+135;14;"""Aiguisé""";'2018-10-07';22;57
 136;8;"""Inquiet""";'2015-11-12';63;57
 137;5;"""Grossier""";'2018-04-04';51;57
 138;19;"""Monstreux""";'2022-03-25';35;57
-139;12;"""Lucide""";'2015-11-18';52;57
+139;12;"""Lucide""";'2015-11-18';64;57
 140;9;"""Basique""";'2020-03-29';18;57
-141;11;"""Simple""";'2016-12-03';7;57
+141;11;"""Simple""";'2016-12-03';16;57
 142;12;"""Académique""";'2016-10-18';39;57
 143;16;"""Ludique""";'2022-02-20';34;57
-144;16;"""Stylé""";'2019-09-21';54;57
+144;16;"""Stylé""";'2019-09-21';55;57
 145;19;"""Cosmique""";'2017-07-29';34;58
 146;11;"""Rapide""";'2016-04-30';59;58
 147;11;"""Long""";'2017-11-06';57;58
@@ -153,10 +153,10 @@
 152;15;"""Beau""";'2017-12-04';25;58
 153;17;"""Immersif""";'2021-03-21';46;58
 154;18;"""Intuitif""";'2019-10-09';38;58
-155;12;"""Normal""";'2016-12-03';12;58
-156;16;"""Surprenant""";'2022-12-26';45;58
-157;18;"""Génial""";'2022-03-15';17;58
-158;16;"""Imaginatif""";'2022-08-04';45;58
+155;12;"""Normal""";'2016-12-03';9;58
+156;16;"""Surprenant""";'2022-12-26';3;58
+157;18;"""Génial""";'2022-03-15';18;58
+158;16;"""Imaginatif""";'2022-08-04';7;58
 159;17;"""Créatif""";'2020-09-11';29;58
 160;14;"""Solide""";'2021-08-20';33;59
 161;11;"""Ponctuel""";'2021-02-18';59;59
@@ -169,12 +169,12 @@
 168;2;"""Ecoeurant""";'2018-05-30';52;59
 169;11;"""Assidu""";'2018-11-21';20;59
 170;9;"""Pensif""";'2022-04-28';25;59
-171;1;"""Vendu""";'2018-10-07';41;59
+171;1;"""Vendu""";'2018-10-07';63;59
 172;10;"""Terminé""";'2015-09-28';2;59
 173;18;"""Héroïque""";'2021-12-23';46;59
-174;8;"""Plat""";'2019-07-26';43;59
-175;7;"""Fade""";'2016-09-09';33;59
-176;19;"""Gastronomique""";'2020-05-25';11;59
+174;8;"""Plat""";'2019-07-26';64;59
+175;7;"""Fade""";'2016-09-09';34;59
+176;19;"""Gastronomique""";'2020-05-25';10;59
 177;13;"""Féodal""";'2017-09-27';7;59
 178;9;"""Visible""";'2019-07-31';37;59
 179;13;"""Efficace""";'2016-06-29';58;59
@@ -203,11 +203,11 @@
 202;14;"""Je vendrai ma tante pour ce jeu !""";'2015-12-23';37;66
 203;17;"""Je vendrai mon grand-père pour ce jeu !""";'2021-06-24';32;66
 204;17;"""Je vendrai ma grand-mère pour ce jeu !""";'2016-11-19';10;66
-205;10;"""Je vendrai ma femme pour ce jeu !""";'2015-07-14';37;66
+205;10;"""Je vendrai ma femme pour ce jeu !""";'2015-07-14';18;66
 206;18;"""Je vendrai mon meilleur ami pour ce jeu !""";'2019-10-19';21;66
 207;18;"""Je vendrai mon chien pour ce jeu !""";'2017-02-22';25;66
-208;15;"""J'ai plus grand-chose à vendre, mais il est vraiment bien !""";'2017-04-01';21;66
-209;0;"""Nul ! Faut être beaucoup pour jouer mais je suis tout seul…""";'2020-04-05';56;66
+208;15;"""J'ai plus grand-chose à vendre, mais il est vraiment bien !""";'2017-04-01';45;66
+209;0;"""Nul ! Faut être beaucoup pour jouer mais je suis tout seul…""";'2020-04-05';63;66
 210;1;"""Ne l'achetez surtout pas !""";'2017-09-23';30;68
 211;17;"""Vrmt raffraichissant ! Ça devrait être une inspiration pour les prochains jeux !""";'2022-12-10';13;69
 212;18;"""Un classique indémodable""";'2017-04-24';25;69
@@ -218,11 +218,11 @@
 217;8;"""*smiley déçu*""";'2018-03-06';30;70
 218;2;"""*baleine*""";'2021-04-14';1;70
 219;18;"""*hot-dog*""";'2021-12-30';54;70
-220;7;"""*pouce vers le bas*""";'2022-04-17';31;70
+220;7;"""*pouce vers le bas*""";'2022-04-17';32;70
 221;14;"""*smiley satisfait mais qui reste un peu sur sa faim quand même car il aurait aimé un peu plus de possibilité de gameplay mais vu que les dessins sont stylés*""";'2021-11-11';27;70
 222;17;"""Très convivial, parfait pour les dimanche en famille !""";'2016-08-10';55;72
 223;13;"""Un peu trop compliqué pour les novices du genre.""";'2021-08-14';42;72
-224;16;"""A la fois intuitif et complexe, il permet de faire de belles parties entre adeptes !""";'2017-10-08';43;72
+224;16;"""A la fois intuitif et complexe, il permet de faire de belles parties entre adeptes !""";'2017-10-08';8;72
 225;17;"""Parfait pour initier de nouveaux joueurs aux jeux de construction et de stratégie !""";'2017-07-25';60;73
 226;7;"""3550708""";'2021-04-30';53;74
 227;18;"""5508""";'2020-02-16';23;74
