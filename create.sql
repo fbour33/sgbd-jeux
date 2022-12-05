@@ -361,26 +361,73 @@ END //
 DELIMITER ;
 
 
--- DELIMITER //
--- CREATE TRIGGER date_parution_avis
--- BEFORE INSERT ON AVIS
--- FOR EACH ROW 
--- BEGIN   
+DELIMITER //
+CREATE TRIGGER date_parution_avis
+BEFORE INSERT ON AVIS
+FOR EACH ROW 
+BEGIN   
 
---     DECLARE date_parution date;
---     SELECT date_jeu
---     INTO date_parution
---     FROM JEUX 
---     WHERE id_jeu = (
---         SELECT id_jeu
---         FROM CONFIGURATIONS
---         WHERE id_config = NEW.id_config
---     )
+    DECLARE date_parution date;
+    SELECT date_jeu
+    INTO date_parution
+    FROM JEUX 
+    WHERE id_jeu = (
+        SELECT id_jeu
+        FROM CONFIGURATIONS
+        WHERE id_config = NEW.id_config
+    );
 
---     if NEW.date_avis < date_parution
---     then 
---         SIGNAL SQLSTATE '50001'
---         SET MESSAGE_TEXT = "L'avis est donné avant la sortie du jeu";
---     end if; 
--- END //
--- DELIMITER ;
+    if NEW.date_avis < date_parution
+    then 
+        SIGNAL SQLSTATE '50001'
+        SET MESSAGE_TEXT = "L'avis est donné avant la sortie du jeu";
+    end if; 
+END //
+DELIMITER ;
+
+DELIMITER //
+CREATE TRIGGER accord_jeu_confi_extension
+BEFORE INSERT ON EXTENSIONS_UTIL
+FOR EACH ROW 
+BEGIN   
+
+    DECLARE id_jeu_config int;
+    DECLARE id_jeu_ext int;
+
+    SELECT id_jeu
+    INTO id_jeu_config
+    FROM CONFIGURATIONS
+    WHERE id_config = NEW.id_config;
+
+    SELECT id_jeu 
+    INTO id_jeu_ext
+    FROM EXTENSIONS
+    WHERE id_extension = NEW.id_extension;
+
+    if id_jeu_config <> id_jeu_ext
+    then 
+        SIGNAL SQLSTATE '50001'
+        SET MESSAGE_TEXT = "L'extension n'est pas utilisée avec le bon jeu";
+    end if; 
+END //
+DELIMITER ;
+
+DELIMITER //
+CREATE TRIGGER joueur_diff_jugements_avis
+BEFORE INSERT ON JUGEMENTS
+FOR EACH ROW 
+BEGIN   
+    DECLARE id_joueur_avis int;
+
+    SELECT id_joueur
+    INTO id_joueur_avis
+    FROM AVIS
+    WHERE id_avis= NEW.id_avis;
+
+    if New.id_joueur = id_joueur_avis
+    then 
+        SIGNAL SQLSTATE '50001'
+        SET MESSAGE_TEXT = "Il est impossible de noter son propre avis !";
+    end if; 
+END //
+DELIMITER ;
