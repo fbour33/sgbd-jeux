@@ -11,7 +11,7 @@
             <div class="container mt-2">
             <div class="form-floating ">
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="pseudo" method="post" action="submit_form_joueurs.php"></textarea>
-                <label for="floatingTextarea" >Pseudo</label>
+                <label for="floatingTextarea">Pseudo</label>
             </div>
         </div>
         <div class="container mt-2">

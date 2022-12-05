@@ -40,6 +40,16 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Requêtes
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="jeux_critiques.php">Jeux critiqués pour un thème</a></li>
+              <li><a class="dropdown-item" href="form_jeux.php">Jeux</a></li>
+              <li><a class="dropdown-item" href="#">Avis</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Ajouter
             </a>
             <ul class="dropdown-menu">
