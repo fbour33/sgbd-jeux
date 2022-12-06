@@ -44,8 +44,8 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="jeux_critiques.php">Jeux critiqués pour un thème</a></li>
-              <li><a class="dropdown-item" href="form_jeux.php">Jeux</a></li>
-              <li><a class="dropdown-item" href="#">Avis</a></li>
+              <li><a class="dropdown-item" href="commentaire_categorie.php">Commentaires d'un joueur pour sa catégorie préférée</a></li>
+              <li><a class="dropdown-item" href="appreciated_comment.php">Joueurs appreciant un avis</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
