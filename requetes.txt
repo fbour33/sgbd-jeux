@@ -2,18 +2,18 @@
 
 Stratégie: Avoir listes des jeux du themes => Verifier qu'ils ont été critiqués => les trier par mécaniques
 
-SELECT DISTINCT J.nom_jeu, M.description_mecanique //(à enlever apres test de tri)
+SELECT DISTINCT J.nom_jeu, M.description_mecanique /*(à enlever apres test de tri)*/
 FROM JEUX as J NATURAL JOIN MECANIQUES_UTIL NATURAL JOIN MECANIQUES as M NATURAL JOIN THEMES_UTIL
-WHERE id_theme = (                  // Relier l'intitulé a l'id
+WHERE id_theme = (                  /* Relier l'intitulé a l'id*/
         SELECT id_theme
         FROM THEMES
         WHERE intitule_theme = ? 
     )
-    AND id_jeu in (                 // Verifier que le jeu est critiqué
+    AND id_jeu in (                 /* Verifier que le jeu est critiqué*/
         SELECT DISTINCT id_jeu
         FROM CONFIGURATIONS
     )
-ORDER BY description_mecanique ASC // Trier par mecanique
+ORDER BY description_mecanique ASC /* Trier par mecanique */
 
 2/  Pour un joueur donné, la liste des commentaires se référant à un jeu dans une de ses
 catégories préférées.
@@ -31,7 +31,7 @@ WHERE id_jeu IN (
         WHERE pseudo_joueur = ?
     )
 )
-ORDER BY id_jeu; // Pour grouper tous les avis d'un meme jeu 
+ORDER BY id_jeu; /*Pour grouper tous les avis d'un meme jeu*/ 
 
 3/ Pour un commentaire la liste des joueurs qui l'ont apprecie
 
