@@ -3,5 +3,5 @@
 
     <header>
         <?php include('header.php'); ?>
-    </header> 
+    </header>
 </html>

@@ -2,6 +2,7 @@
     <head>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         
 		<title>Saxo Gang Bande Dessinée</title>
@@ -46,6 +47,8 @@
               <li><a class="dropdown-item" href="jeux_critiques.php">Jeux critiqués pour un thème</a></li>
               <li><a class="dropdown-item" href="commentaire_categorie.php">Commentaires d'un joueur pour sa catégorie préférée</a></li>
               <li><a class="dropdown-item" href="appreciated_comment.php">Joueurs appreciant un avis</a></li>
+              <li><a class="dropdown-item" href="ranking_players.php">Classement des joueurs selon le nombre d'avis déposés</a></li>
+              <li><a class="dropdown-item" href="best_comment.php">Commentaire le mieux noté</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">

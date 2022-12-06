@@ -34,29 +34,63 @@
                         <h1 class="h3 text-white mt-2">Nombre d'auteur : </h1>
                     </div>
                     <div class="col">
-                        <input type="select">
-                        <name>Test</name>
-                                <label>Choisir un nombre d'auteur</label>
-                                        <option value="1" name="nb_auteur">1</option>
-                                        <option value="1">2</option>
-                                        <option value="1">3</option>
-                        </input>
+                    <form name="form" >
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="auteur" onChange="location = this.options[this.selectedIndex].value;">
+                             <option disabled selected>Choisir le nombre d'auteur</option>
+                             <option value="form_jeux.php?auteur=1">1</option>
+                             <option value="form_jeux.php?auteur=2">2</option>
+                        </select>
+                    </form>                
                     </div>
                 </div>
             </div>
             <div class="container mt-2">
-                <?php for($i = 1; $i < $_POST['nb_auteur']; ++$i){ ?>
-                <div class="row">
+                <?php for($i = 1; $i <= $_GET['auteur']; ++$i){ ?>
+                <div class="row mt-2">
                     <div class="col">
                         <div class="form-floating">
                             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="nom" method="post" action="submit_form_joueurs.php"></textarea>
-                            <label for="floatingTextarea">Nom</label>
+                            <label for="floatingTextarea">Nom auteur </label>
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-floating">
                             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="prenom" method="post" action="submit_form_joueurs.php"></textarea>
-                            <label for="floatingTextarea">Prenom</label>
+                            <label for="floatingTextarea">Prenom auteur </label>
+                        </div>
+                    </div>
+                </div>
+                <?php } ?>
+            </div>
+            <div class="container mt-2">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="h3 text-white mt-2">Nombre d'illustrateur : </h1>
+                    </div>
+                    <div class="col">
+                    <form name="form" >
+                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="illustrateur" onChange="location = this.options[this.selectedIndex].value;">
+                             <option disabled selected>Choisir le nombre d''illustrateur</option>
+                             <option value="form_jeux.php?illustrateur=1">1</option>
+                             <option value="form_jeux.php?illustrateur=2">2</option>
+                        </select>
+                    </form>                
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-2">
+                <?php for($i = 1; $i <= $_GET['illustrateur']; ++$i){ ?>
+                <div class="row mt-2">
+                    <div class="col">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="nom" method="post" action="submit_form_joueurs.php"></textarea>
+                            <label for="floatingTextarea">Nom auteur </label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="prenom" method="post" action="submit_form_joueurs.php"></textarea>
+                            <label for="floatingTextarea">Prenom auteur </label>
                         </div>
                     </div>
                 </div>
