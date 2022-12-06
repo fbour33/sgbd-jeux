@@ -332,8 +332,13 @@ alter table CONFIGURATIONS
         ON DELETE CASCADE
         ON UPDATE CASCADE;
 
+
+-- ============================================================
+--   Trigger : uniq_jeu_avis                                        
+-- ============================================================
+
 DELIMITER //
-CREATE PROCEDURE uniq_jeu_avis (config, joueur)
+CREATE PROCEDURE uniq_jeu_avis (IN config INT , IN joueur INT)
 BEGIN
     DECLARE cpt int;
     SELECT COUNT(*)
@@ -376,8 +381,12 @@ BEGIN
 END //
 DELIMITER ;
 
+-- ============================================================
+--   Trigger : date_parution_avis                                        
+-- ============================================================
+
 DELIMITER //
-CREATE PROCEDURE date_parution_avis (config, date_avis)
+CREATE PROCEDURE date_parution_avis (IN config INT , IN date_avis DATE)
 BEGIN   
     DECLARE date_parution date;
     SELECT date_jeu
@@ -415,8 +424,12 @@ BEGIN
 END //
 DELIMITER ;
 
+-- ============================================================
+--   Trigger : accord_jeu_config_extension                                        
+-- ============================================================
+
 DELIMITER //
-CREATE PROCEDURE accord_jeu_config_extension (config, extension)
+CREATE PROCEDURE accord_jeu_config_extension (IN config INT , IN extension INT)
 BEGIN
     DECLARE id_jeu_config int;
     DECLARE id_jeu_ext int;
@@ -458,8 +471,12 @@ BEGIN
 END //
 DELIMITER ;
 
+-- ============================================================
+--   Trigger : joueur_diff_jugements_avis                                        
+-- ============================================================
+
 DELIMITER //
-CREATE PROCEDURE joueur_diff_jugements_avis(avis, joueur)
+CREATE PROCEDURE joueur_diff_jugements_avis(IN avis INT, IN joueur INT)
 BEGIN
     DECLARE id_joueur_avis int;
 
@@ -494,8 +511,12 @@ BEGIN
 END //
 DELIMITER ;
 
+-- ============================================================
+--   Trigger : nb_joueurs_config                                        
+-- ============================================================
+
 DELIMITER //
-CREATE PROCEDURE nb_joueurs_config(jeu, nb_joueur)
+CREATE PROCEDURE nb_joueurs_config(IN jeu INT, IN nb_joueur INT )
 BEGIN
     DECLARE nb_min int;
     DECLARE nb_max int;
