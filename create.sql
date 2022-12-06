@@ -333,7 +333,7 @@ alter table CONFIGURATIONS
         ON UPDATE CASCADE;
 
 DELIMITER //
-CREATE PROCEDURE uniq_jeu_avis
+CREATE PROCEDURE uniq_jeu_avis (config, joueur)
 BEGIN
     DECLARE cpt int;
     SELECT COUNT(*)
@@ -344,10 +344,10 @@ BEGIN
         WHERE id_jeu = (
             SELECT id_jeu
             FROM CONFIGURATIONS
-            WHERE id_config = NEW.id_config
+            WHERE id_config = config
         )
-    ) T
-    WHERE id_joueur = NEW.id_joueur;
+    )
+    WHERE id_joueur = joueur;
     
     if 0 < cpt
     then 
@@ -362,105 +362,171 @@ DELIMITER //
 CREATE TRIGGER uniq_jeu_avis_insert
 BEFORE INSERT ON AVIS
 FOR EACH ROW
-CALL uniq_jeu_avis()
+BEGIN
+    CALL uniq_jeu_avis(NEW.id_config, NEW.id_joueur);
+END //
 DELIMITER ;
 
 DELIMITER //
 CREATE TRIGGER uniq_jeu_avis_update
 BEFORE UPDATE ON AVIS
 FOR EACH ROW
-CALL uniq_jeu_avis()
+BEGIN
+    CALL uniq_jeu_avis(NEW.id_config, NEW.id_joueur);
+END //
+DELIMITER ;
+
+DELIMITER //
+CREATE PROCEDURE date_parution_avis (config, date_avis)
+BEGIN   
+    DECLARE date_parution date;
+    SELECT date_jeu
+    INTO date_parution
+    FROM JEUX 
+    WHERE id_jeu = (
+        SELECT id_jeu
+        FROM CONFIGURATIONS
+        WHERE id_config = config
+    );
+
+    if date_avis < date_parution
+    then 
+        SIGNAL SQLSTATE '50001'
+        SET MESSAGE_TEXT = "L'avis est donné avant la sortie du jeu";
+    end if; 
+END //
+DELIMITER ; 
+
+DELIMITER //
+CREATE TRIGGER date_parution_avis_insert
+BEFORE INSERT ON AVIS
+FOR EACH ROW 
+BEGIN   
+    CALL date_parution_avis(NEW.id_config, NEW.date_avis);
+END //
+DELIMITER ;
+
+DELIMITER //
+CREATE TRIGGER date_parution_avis_update
+BEFORE UPDATE ON AVIS
+FOR EACH ROW 
+BEGIN   
+    CALL date_parution_avis(NEW.id_config, NEW.date_avis);
+END //
+DELIMITER ;
+
+DELIMITER //
+CREATE PROCEDURE accord_jeu_config_extension (config, extension)
+BEGIN
+    DECLARE id_jeu_config int;
+    DECLARE id_jeu_ext int;
+
+    SELECT id_jeu
+    INTO id_jeu_config
+    FROM CONFIGURATIONS
+    WHERE id_config = config;
+
+    SELECT id_jeu 
+    INTO id_jeu_ext
+    FROM EXTENSIONS
+    WHERE id_extension = extension;
+
+    if id_jeu_config <> id_jeu_ext
+    then 
+        SIGNAL SQLSTATE '50001'
+        SET MESSAGE_TEXT = "L'extension n'est pas utilisée avec le bon jeu";
+    end if; 
+END //
 DELIMITER ;
 
 
--- DELIMITER //
--- CREATE TRIGGER date_parution_avis
--- BEFORE INSERT OR UPDATE ON AVIS
--- FOR EACH ROW 
--- BEGIN   
+DELIMITER //
+CREATE TRIGGER accord_jeu_config_extension_insert
+BEFORE INSERT ON EXTENSIONS_UTIL
+FOR EACH ROW 
+BEGIN   
+    CALL accord_jeu_config_extension(NEW.id_config, NEW.id_extension);
+END //
+DELIMITER ;
 
---     DECLARE date_parution date;
---     SELECT date_jeu
---     INTO date_parution
---     FROM JEUX 
---     WHERE id_jeu = (
---         SELECT id_jeu
---         FROM CONFIGURATIONS
---         WHERE id_config = NEW.id_config
---     );
+DELIMITER //
+CREATE TRIGGER accord_jeu_config_extension_update
+BEFORE UPDATE ON EXTENSIONS_UTIL
+FOR EACH ROW 
+BEGIN   
+    CALL accord_jeu_config_extension(NEW.id_config, NEW.id_extension);
+END //
+DELIMITER ;
 
---     if NEW.date_avis < date_parution
---     then 
---         SIGNAL SQLSTATE '50001'
---         SET MESSAGE_TEXT = "L'avis est donné avant la sortie du jeu";
---     end if; 
--- END //
--- DELIMITER ;
+DELIMITER //
+CREATE PROCEDURE joueur_diff_jugements_avis(avis, joueur)
+BEGIN
+    DECLARE id_joueur_avis int;
 
--- DELIMITER //
--- CREATE TRIGGER accord_jeu_confi_extension
--- BEFORE INSERT OR UPDATE ON EXTENSIONS_UTIL
--- FOR EACH ROW 
--- BEGIN   
+    SELECT id_joueur
+    INTO id_joueur_avis
+    FROM AVIS
+    WHERE id_avis= id_avis;
 
---     DECLARE id_jeu_config int;
---     DECLARE id_jeu_ext int;
+    if id_joueur = id_joueur_avis
+    then 
+        SIGNAL SQLSTATE '50001'
+        SET MESSAGE_TEXT = "Il est impossible de noter son propre avis !";
+    end if; 
+END //
+DELIMITER ;
 
---     SELECT id_jeu
---     INTO id_jeu_config
---     FROM CONFIGURATIONS
---     WHERE id_config = NEW.id_config;
+DELIMITER //
+CREATE TRIGGER joueur_diff_jugements_avis_insert
+BEFORE INSERT ON JUGEMENTS
+FOR EACH ROW 
+BEGIN   
+    CALL joueur_diff_jugements_avis(NEW.id_avis, NEW.id_joueur);
+END //
+DELIMITER ;
 
---     SELECT id_jeu 
---     INTO id_jeu_ext
---     FROM EXTENSIONS
---     WHERE id_extension = NEW.id_extension;
+DELIMITER //
+CREATE TRIGGER joueur_diff_jugements_avis_update
+BEFORE UPDATE ON JUGEMENTS
+FOR EACH ROW 
+BEGIN   
+    CALL joueur_diff_jugements_avis(NEW.id_avis, NEW.id_joueur);
+END //
+DELIMITER ;
 
---     if id_jeu_config <> id_jeu_ext
---     then 
---         SIGNAL SQLSTATE '50001'
---         SET MESSAGE_TEXT = "L'extension n'est pas utilisée avec le bon jeu";
---     end if; 
--- END //
--- DELIMITER ;
+DELIMITER //
+CREATE PROCEDURE nb_joueurs_config(jeu, nb_joueur)
+BEGIN
+    DECLARE nb_min int;
+    DECLARE nb_max int;
 
--- DELIMITER //
--- CREATE TRIGGER joueur_diff_jugements_avis
--- BEFORE INSERT OR UPDATE ON JUGEMENTS
--- FOR EACH ROW 
--- BEGIN   
---     DECLARE id_joueur_avis int;
+    SELECT nb_joueurs_min, nb_joueurs_max
+    INTO nb_min, nb_max
+    FROM JEUX
+    WHERE id_jeu = id_jeu;
 
---     SELECT id_joueur
---     INTO id_joueur_avis
---     FROM AVIS
---     WHERE id_avis= NEW.id_avis;
+    if (nb_joueur < nb_min) || (nb_joueur > nb_max)
+    then 
+        SIGNAL SQLSTATE '50001'
+        SET MESSAGE_TEXT = "Le nombre de joueurs de la partie n'est pas cohérent avec le jeu";
+    end if; 
+END //
+DELIMITER ;
 
---     if New.id_joueur = id_joueur_avis
---     then 
---         SIGNAL SQLSTATE '50001'
---         SET MESSAGE_TEXT = "Il est impossible de noter son propre avis !";
---     end if; 
--- END //
--- DELIMITER ;
+DELIMITER //
+CREATE TRIGGER nb_joueurs_config_insert
+BEFORE INSERT ON CONFIGURATIONS
+FOR EACH ROW 
+BEGIN   
+    CALL nb_joueurs_config(NEW.id_jeu, NEW.nb_joueur);
+END //
+DELIMITER ;
 
--- DELIMITER //
--- CREATE TRIGGER nb_joueurs_config
--- BEFORE INSERT OR UPDATE ON CONFIGURATIONS
--- FOR EACH ROW 
--- BEGIN   
---     DECLARE nb_min int;
---     DECLARE nb_max int;
-
---     SELECT nb_joueurs_min, nb_joueurs_max
---     INTO nb_min, nb_max
---     FROM JEUX
---     WHERE id_jeu = NEW.id_jeu;
-
---     if (NEW.nb_joueur < nb_min) || (NEW.nb_joueur > nb_max)
---     then 
---         SIGNAL SQLSTATE '50001'
---         SET MESSAGE_TEXT = "Le nombre de joueurs de la partie n'est pas cohérent avec le jeu";
---     end if; 
--- END //
--- DELIMITER ;
+DELIMITER //
+CREATE TRIGGER nb_joueurs_config_update
+BEFORE UPDATE ON CONFIGURATIONS
+FOR EACH ROW 
+BEGIN   
+    CALL nb_joueurs_config(NEW.id_jeu, NEW.nb_joueur);
+END //
+DELIMITER ;
