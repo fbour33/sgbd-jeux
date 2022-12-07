@@ -7,15 +7,18 @@
 --------------------------------------- JOUEURS -------------------------------------
 
 INSERT INTO JOUEURS(PSEUDO_JOUEUR, NOM_JOUEUR, PRENOM_JOUEUR, MAIL_JOUEUR) 
-VALUES (:pseudo, :nom, :prenom, :mail);
-
+    VALUES (:pseudo, :nom, :prenom, :mail);
 
 ----------------------------------------- JEUX --------------------------------------
 
+INSERT INTO JOUEURS(PSEUDO_JOUEUR, NOM_JOUEUR, PRENOM_JOUEUR, MAIL_JOUEUR) 
+    VALUES (:pseudo, :nom, :prenom, :mail);
 
 ----------------------------------------- AVIS --------------------------------------
 
-
+INSERT INTO AVIS(NOTE_AVIS, COMMENTAIRE_AVIS,DATE_AVIS, ID_CONFIG, ID_JOUEUR) 
+    VALUES (:note, :commentaire, :date_avis, :id_config, :id_joueur);
+    
 -------------------------------------------------------------------------------------
 ---------------------------- Suprression dans les tables ----------------------------
 -------------------------------------------------------------------------------------
