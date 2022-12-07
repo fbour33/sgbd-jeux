@@ -39,3 +39,24 @@ DELETE FROM AVIS WHERE ID_AVIS = ?;
 -------------------------------------------------------------------------------------
 ---------------------------- Modification dans les tables ---------------------------
 -------------------------------------------------------------------------------------
+
+-- Ces requêtes permettent de mettre à jour l'entièreté des bases d'un coup
+-- Pour modifier seulement certaines colonnes, il suffit de laisser seulement les noms 
+-- des colonnes désirées dans l'instruction SET
+
+
+--------------------------------------- JOUEURS -------------------------------------
+
+UPDATE JOUEURS SET PSEUDO_JOUEUR = ?, NOM_JOUEUR = ?, PRENOM_JOUEUR = ?, MAIL_JOUEUR = ?
+    WHERE id_joueur = ?;
+
+----------------------------------------- JEUX --------------------------------------
+
+UPDATE JEUX SET NOM_JEU = ?, EDITEUR_JEU = ?, TYPE_JEU = ? ,DUREE_JEU = ?,
+    DATE_JEU = ?, NB_JOUEURS_MIN = ?, NB_JOUEURS_MAX = ?   
+    WHERE id_jeu = ?;
+
+----------------------------------------- AVIS --------------------------------------
+
+UPDATE AVIS SET NOTE_AVIS = ?, COMMENTAIRE_AVIS = ?, DATE_AVIS = ?, ID_CONFIG = ?, ID_JOUEUR = ?
+    WHERE id_avis = ?;
