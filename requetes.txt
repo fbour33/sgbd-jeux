@@ -88,19 +88,47 @@ Mettre en place un trigger insert sur la table Jugement qui modifie l'attribut I
 De cette facon, il est beaucoup plus facile d'avoir acces a l'indice de confiance et donc la ponderation puis moyenne est triviale. 
 
 Le trigger en question:
-CREATE OR REPLACE TRIGGER Ind_conf
-AFTER INSERT OR UPDATE OR DELETE ON Jugements
-FOR EACH ROW
+
+DELIMITER //
+CREATE PROCEDURE ind_conf (IN avis INT)
 BEGIN
     UPDATE Avis as A
-    SET indice_confiance = (
-        SELECT (1+COUNT(estPositif))/(1+COUNT(estNegatif))
-        FROM Jugements
-        WHERE id_avis = ?
-        GROUP BY id_avis
-    )
-    WHERE A.id_avis = new.id_avis
+        SET indice_confiance = (
+            SELECT (1+COUNT(estPositif))/(1+COUNT(estNegatif))
+            FROM Jugements
+            WHERE id_avis = avis
+            GROUP BY id_avis
+        )
+        WHERE A.id_avis = avis;
+END //
+DELIMITER ;
+
+DELIMITER //
+CREATE TRIGGER Ind_conf_insert
+AFTER INSERT ON Jugements
+FOR EACH ROW
+BEGIN
+    CALL ind_conf(NEW.id_avis);
+END //
+DELIMITER ;
+
+DELIMITER //
+CREATE TRIGGER Ind_conf_update
+AFTER UPDATE ON Jugements
+FOR EACH ROW
+BEGIN
+    CALL ind_conf(NEW.id_avis);
 END;
+DELIMITER ;
+
+DELIMITER //
+CREATE TRIGGER Ind_conf_delete
+AFTER DELETE ON Jugements
+FOR EACH ROW
+BEGIN
+    CALL ind_conf(NEW.id_avis);
+END;
+DELIMITER ;
 
 Requete Finale (??):
 SELECT id_jeu, AVG(A.note * A.indice_confiance) as Note
