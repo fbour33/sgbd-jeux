@@ -18,14 +18,14 @@ INSERT INTO JOUEURS(PSEUDO_JOUEUR, NOM_JOUEUR, PRENOM_JOUEUR, MAIL_JOUEUR)
 
 INSERT INTO AVIS(NOTE_AVIS, COMMENTAIRE_AVIS,DATE_AVIS, ID_CONFIG, ID_JOUEUR) 
     VALUES (:note, :commentaire, :date_avis, :id_config, :id_joueur);
-    
+
 -------------------------------------------------------------------------------------
 ---------------------------- Suprression dans les tables ----------------------------
 -------------------------------------------------------------------------------------
 
 -- Dans nos tables, nous avons configurés les clés secondaires en faisant en sorte que tous 
 -- les éléments associés à la table soit supprimé aussi grâce aux mots clefs 
--- DELETE ON CASCADE. De ce fait on a besoin de Trigger, ce qui facilite la suppression
+-- DELETE ON CASCADE. De ce fait, il n'y a pas besoin de Trigger, ce qui facilite la suppression
 
 --------------------------------------- JOUEURS -------------------------------------
 
