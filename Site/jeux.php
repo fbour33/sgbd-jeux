@@ -24,7 +24,7 @@
                 <div class="col">TYPE DE JEU</div>
                 <div class="col">DATE</div>
                 <div class="col">DUREE</div>
-                <div class="col-4">NOMBRE DE JOUEURS MIN-MAX</div>
+                <div class="col-2">JOUEURS MIN-MAX</div>
         </div>
             <?php foreach($jeux as $jeux) {?>
                 <div class="row bg-light border mt-2">
@@ -33,7 +33,7 @@
                     <div class="col"><?php echo $jeux['TYPE_JEU']?></div>
                     <div class="col"><?php echo $jeux['DATE_JEU']?></div>
                     <div class="col"><?php echo "" . $jeux['DUREE_JEU'] . "min" ?></div>
-                    <div class="col-4"><?php echo $jeux['NB_JOUEURS_MIN'] . ' - ' .$jeux['NB_JOUEURS_MAX']?></div>
+                    <div class="col-2"><?php echo $jeux['NB_JOUEURS_MIN'] . ' - ' .$jeux['NB_JOUEURS_MAX']?></div>
             </div>
             <?php } ?>
     </div>

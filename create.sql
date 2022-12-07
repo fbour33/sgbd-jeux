@@ -4,36 +4,6 @@
 --   Date de creation :  11/11/2022                      
 -- ============================================================
 
--- drop table CREATIONS;
-
--- drop table JUGEMENTS;
-
--- drop table EXTENSIONS_UTIL;
-
--- drop table MECANIQUES_PREF;
-
--- drop table MECANIQUES_UTIL;
-
--- drop table THEMES_PREF;
-
--- drop table THEMES_UTIL;
-
--- drop table AVIS;
-
--- drop table EXTENSIONS;
-
--- drop table JEUX;
-
--- drop table JOUEURS;
-
--- drop table CREATEURS;
-
--- drop table MECANIQUES;
-
--- drop table THEMES;
-
--- drop table CONFIGURATIONS;
-
 -- ============================================================
 --   Table : JEUX                                          
 -- ============================================================
@@ -83,7 +53,7 @@ create table CREATEURS
 
 create table CREATIONS
 (
-    ID_CREATEUR                     INT(3)              not null AUTO_INCREMENT,
+    ID_CREATEUR                     INT(3)              not null,
     EST_AUTEUR                      INT(3)                      ,
     EST_ILLUSTRATEUR                INT(3)                      ,
     ID_JEU                          INT(3)              not null,
@@ -350,8 +320,8 @@ BEGIN
             SELECT id_jeu
             FROM CONFIGURATIONS
             WHERE id_config = config
-        )
-    )
+        ) 
+    ) -- azerty
     WHERE id_joueur = joueur;
     
     if 0 < cpt
