@@ -24,7 +24,7 @@ INSERT INTO AVIS(NOTE_AVIS, COMMENTAIRE_AVIS,DATE_AVIS, ID_CONFIG, ID_JOUEUR)
 -------------------------------------------------------------------------------------
 
 -- Dans nos tables, nous avons configurés les clés secondaires en faisant en sorte que tous 
--- les éléments associés à la table soit supprimé aussi grâce aux mots clefs 
+-- les éléments associés à la table soient supprimés aussi grâce aux mots clefs 
 -- DELETE ON CASCADE. De ce fait, il n'y a pas besoin de Trigger, ce qui facilite la suppression
 
 --------------------------------------- JOUEURS -------------------------------------
