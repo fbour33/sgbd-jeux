@@ -12,13 +12,9 @@ drop table THEMES_PREF;
 
 drop table THEMES_UTIL;
 
-drop table AVIS;
+drop table CONFIGURATIONS;
 
 drop table EXTENSIONS;
-
-drop table JEUX;
-
-drop table JOUEURS;
 
 drop table CREATEURS;
 
@@ -26,4 +22,18 @@ drop table MECANIQUES;
 
 drop table THEMES;
 
-drop table CONFIGURATIONS;
+drop table AVIS;
+
+drop table JOUEURS;
+
+drop table JEUX;
+
+drop TRIGGER uniq_jeu_avis; 
+
+drop TRIGGER date_parution_avis; 
+
+drop TRIGGER accord_jeu_config_extension; 
+
+drop TRIGGER joueur_diff_jugements_avis;
+
+drop TRIGGER nb_joueurs_config; 

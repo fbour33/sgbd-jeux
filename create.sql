@@ -321,8 +321,9 @@ BEGIN
             FROM CONFIGURATIONS
             WHERE id_config = config
         ) 
-    ) -- azerty
-    WHERE id_joueur = joueur;
+    ) a
+    WHERE id_joueur = joueur 
+    LIMIT 1;
     
     if 0 < cpt
     then 
@@ -332,6 +333,7 @@ BEGIN
 
 END //
 DELIMITER ;
+
 
 DELIMITER //
 CREATE TRIGGER uniq_jeu_avis_insert

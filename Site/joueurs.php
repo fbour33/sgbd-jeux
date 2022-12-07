@@ -10,7 +10,6 @@
     <?php include('connect.php'); 
 
     $sqlQuery = 'SELECT * FROM JOUEURS ORDER BY PSEUDO_JOUEUR ASC;';
-    $db->setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, true);
     $joueursStatement = $db->prepare($sqlQuery);
     $joueursStatement->execute();
     $joueurs = $joueursStatement->fetchAll(); 
@@ -29,6 +28,10 @@
             <?php 
             
             $compt = 0; 
+
+            $sqlQueryDelete = "DELETE FROM JOUEURS WHERE PSEUDO_JOUEUR = :id_joueur;";
+            $DeleteStatement = $db->prepare($sqlQueryDelete);
+
             foreach($joueurs as $joueurs) {
                 
                 $ref = '#Delete' . $compt;
@@ -43,33 +46,29 @@
                     <div class="col"><?php echo $joueurs['MAIL_JOUEUR']?></div>
                     <div class="col mt-2">
                         <p>
-                        <a class="btn btn-sm btn-outline-danger" data-bs-toggle="collapse" data-bs-target="<?php echo $ref; ?>" href="test.php" role="button" aria-expanded="false" aria-controls="<?php echo $id; ?>">
+                        <a class="btn btn-sm btn-outline-danger" data-bs-toggle="collapse" data-bs-target="<?php echo $ref; ?>" href="<?php echo $ref; ?>" role="button" aria-expanded="false" aria-controls="<?php echo $id; ?>">
                             Supprimer
                         </a>
                         <p>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <div class="collapse" id="<?php echo $id; ?>">
-                                <div class="card card-body">
-                                    <?php
-                                    print_r($joueurs['ID_JOUEUR']);
-                                    print_r($id);
-                                        //$id_joueur = $joueurs['ID_JOUEUR'];
-                                        //$sqlQueryDelete = "DELETE FROM JOUEURS WHERE ID_JOUEUR = :id_joueur;";
-//
-                                        //$DeleteStatement = $db->prepare($sqlQueryDelete);
-                                        //$DeleteStatement->bindParam(':id_joueur', $id_joueur, PDO::PARAM_INT); 
-                                        //$DeleteStatement->execute(); 
-                    
-                                    ?>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
             </div>
             <?php $compt++ ?>
             <?php } ?>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="collapse" id="<?php echo $id; ?>">
+                <div class="card card-body">
+                    <?php
+                        $id_joueur = 1;
+                        //echo $id_joueur; 
+                        $DeleteStatement->bindParam(':id_joueur', $id_joueur, PDO::PARAM_STR_CHAR);
+                        echo strval($compt); 
+                        $DeleteStatement->execute(); 
+                    ?>
+                </div>
+            </div>
+        </div>
     </div>
     
     </body>
