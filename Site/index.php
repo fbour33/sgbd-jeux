@@ -22,13 +22,13 @@
 
     <div class="container text-center ">
         <div class="row justify-content-md-center border border-white mt-2 bg-dark text-white">
-            <h1 class="h4"> 
+            <h1 class="h4 "> 
                 Vous ne savez pas à quoi jouer ce soir ? Vous ne savez plus comment occuper vos 
-                nuits d'insomnie ? Regardez la sélection de nos meilleurs jeux, notés par nos 
-                plus fidèles joueurs !
+                nuits d'insomnie ? </br> Regardez la sélection de nos meilleurs jeux, notés par nos 
+                plus fidèles joueurs ! </br> Ça ne vous plaît pas ? Allez faire un tour dans les autres sections !
             </h1>
+        </div>
             <div class="row justify-content-md-center border border-white mt-2 bg-dark text-white">
-            </div>
                 <div class="col">CLASSEMENT</div>
                 <div class="col">JEU</div>
                 <div class="col">NOTE</div>
@@ -38,7 +38,7 @@
                 <div class="row bg-light border mt-2">
                     <div class="col"><?php echo $compt ?></div>
                     <div class="col"><?php echo $jeux['nom_jeu']?></div>
-                    <div class="col"><?php echo $jeux['Notes']?></div>
+                    <div class="col"><?php echo $jeux['Notes'] . '/20' ?></div>
             </div>
             <?php $compt++ ?>
             <?php } ?>

@@ -20,7 +20,7 @@
     ?>
     <div class="container bg-dark mt-2 pb-3 rounded-lg">
         <h1 class="text-white h3">Ajouter un jeu</h1>
-        <form method="post" action="submit_form_joueurs.php">
+        <form method="post" action="submit_form_jeux.php">
             <div class="container mt-2">
                 <div class="form-floating ">
                     <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="nom"></textarea>

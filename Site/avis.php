@@ -44,6 +44,7 @@
                 <div class="col">NB JOUEUR</div>
                 <div class="col">COMMENTAIRE</div>
                 <div class="col">APPRECIATION</div>
+                <div class="col">
             </div>
         <?php }?>
         </div>

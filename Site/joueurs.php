@@ -23,7 +23,7 @@
                 <div class="col">PRENOM</div>
                 <div class="col">MAIL</div>
                 <div class="col">SUPPRIMER</div>
-        </div>
+            </div>
 
             <?php 
             
@@ -51,25 +51,18 @@
                         </a>
                         <p>
                     </div>
-            </div>
-            <?php $compt++ ?>
-            <?php } ?>
-    </div>
-    <div class="row">
-        <div class="col">
-            <div class="collapse" id="<?php echo $id; ?>">
-                <div class="card card-body">
-                    <?php
-                        $id_joueur = 1;
-                        //echo $id_joueur; 
-                        $DeleteStatement->bindParam(':id_joueur', $id_joueur, PDO::PARAM_STR_CHAR);
-                        echo strval($compt); 
-                        $DeleteStatement->execute(); 
-                    ?>
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse" id="<?php echo $id; ?>">
+                                <div class="card card-body">
+                                    <p>Work in progress ...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            <?php $compt++; ?>
+            <?php } ?>
     
     </body>
 </html>

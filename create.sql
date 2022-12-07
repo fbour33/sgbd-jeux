@@ -187,7 +187,7 @@ create table EXTENSIONS_UTIL
 
 create table CONFIGURATIONS 
 (   
-    ID_CONFIG                   INT(3)             not null, 
+    ID_CONFIG                   INT(3)             not null AUTO_INCREMENT, 
     NB_JOUEUR                   INT(3)             not null,
     ID_JEU                      INT(3)             not null,
     constraint pk_config primary key (ID_CONFIG)

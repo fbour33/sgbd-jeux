@@ -50,7 +50,7 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="form_joueurs.php">Joueurs</a></li>
               <li><a class="dropdown-item" href="form_jeux.php">Jeux</a></li>
-              <li><a class="dropdown-item" href="#">Avis</a></li>
+              <li><a class="dropdown-item" href="form_avis.php">Avis</a></li>
             </ul>
           </li>
         </ul>
