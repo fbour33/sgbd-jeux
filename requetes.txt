@@ -135,3 +135,17 @@ SELECT id_jeu, AVG(A.note * A.indice_confiance) as Note
 FROM Avis AS A
 GROUP BY id_avis
 ORDER BY Note
+
+
+date note commentaire nb_joueur  joueur id_jeu
+
+
+if exist( ($nb_joueur,$id_jeu) dans config){
+    $config = (SELECT id_config FROM CONFIGURATIONS WHERE nb_joueur = $nb_joueur LIMIT 1);
+}
+else{
+    INSERT INTO CONFIGURATIONS(nb_joueur, id_jeu) values ($nb_joueur, $id_jeu);
+    $config = (SELECT id_config FROM CONFIGURATIONS ORDER BY id_avis DESC LIMIT 1);
+}
+
+INSERT INTO AVIS(NOTE_AVIS, COMMENTAIRE_AVIS,DATE_AVIS, ID_CONFIG, ID_JOUEUR) values ($note, $commentaire, $date, $config, $joueur)

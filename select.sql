@@ -1,5 +1,5 @@
 -----------------------------------------------------------------------------------------------------
----------------------------- L’ensemble des jeux critiqués disponibles ------------------------------
+----------------------------- L’ensemble des jeux critiqués disponibles -----------------------------
 ---------------------------- dans un thème donné, classés par mécaniques.----------------------------
 -----------------------------------------------------------------------------------------------------
 
@@ -18,7 +18,7 @@ ORDER BY description_mecanique ASC;
 
 ----------------------------------------------------------------------------------------------------------------- 
 ---------------------------- Pour un joueur donné, la liste des commentaires se  --------------------------------
----------------------------- référant à un jeu dans une de ses catégories préférées. ----------------------------
+-------------------------- référant à un jeu dans une de ses catégories préférées. ------------------------------
 ----------------------------------------------------------------------------------------------------------------- 
 
 SELECT note_avis, commentaire_avis, date_avis, nom_jeu
@@ -35,7 +35,7 @@ WHERE id_jeu IN (
 ORDER BY id_jeu;
 
 ----------------------------------------------------------------------------------------------------------------------
----------------------------- Pour un commentaire la liste des joueurs qui l'ont apprecie ----------------------------
+---------------------------- Pour un commentaire, la liste des joueurs qui l'ont apprecie ----------------------------
 ----------------------------------------------------------------------------------------------------------------------
 
 SELECT pseudo_joueur
@@ -70,10 +70,12 @@ HAVING COUNT(*) = (
 GROUP BY id_avis; 
 
 --------------------------------------------------------------------------------------------------------
----------------------------- On procédera au classement des jeux selon une -----------------------------
----------------------------- moyenne dans laquelle chaque note est pondérée ----------------------------
----------------------------- par l’indice de confiance du commentaire correspondant. -------------------
+------------------------------ Classement des jeux selon une moyenne dans ------------------------------
+---------------------------- laquelle chaque note est pondérée par l'indice-----------------------------
+------------------------------ de confiance du commentaire correspondant. ------------------------------
 --------------------------------------------------------------------------------------------------------
+
+/* Cette requête ne peut s'exécuter que si un attribut indice_confiance à été défini dans la table AVIS */
 
 DELIMITER //
 CREATE PROCEDURE ind_conf (IN avis INT)
