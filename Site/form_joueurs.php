@@ -10,7 +10,7 @@
         <form method="post" action="submit_form_joueurs.php">
             <div class="container mt-2">
             <div class="form-floating ">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="pseudo" method="post" action="submit_form_joueurs.php"></textarea>
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="pseudo"></textarea>
                 <label for="floatingTextarea">Pseudo</label>
             </div>
         </div>
@@ -18,13 +18,13 @@
             <div class="row">
                 <div class="col">
                     <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="nom" method="post" action="submit_form_joueurs.php"></textarea>
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="nom"></textarea>
                         <label for="floatingTextarea">Nom</label>
                     </div>
                 </div>
                 <div class="col">
                     <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="prenom" method="post" action="submit_form_joueurs.php"></textarea>
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="prenom"></textarea>
                         <label for="floatingTextarea">Prenom</label>
                     </div>
                 </div>
@@ -32,7 +32,7 @@
         </div>
         <div class="container mt-2">
             <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="mail" method="post" action="submit_form_joueurs.php"></textarea>
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" name="mail"></textarea>
                 <label for="floatingTextarea">Mail</label>
             </div>
         </div>

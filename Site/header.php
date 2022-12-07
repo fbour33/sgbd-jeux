@@ -49,6 +49,7 @@
               <li><a class="dropdown-item" href="appreciated_comment.php">Joueurs appreciant un avis</a></li>
               <li><a class="dropdown-item" href="ranking_players.php">Classement des joueurs selon le nombre d'avis déposés</a></li>
               <li><a class="dropdown-item" href="best_comment.php">Commentaire le mieux noté</a></li>
+              <li><a class="dropdown-item" href="comment_list.php">Les n commentaires les plus récents</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">

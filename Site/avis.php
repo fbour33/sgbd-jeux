@@ -15,8 +15,6 @@
     $jeux = $jeuxStatmentQuery->fetchAll(); 
     ?>
 
-
-
     <body class="bg-light">
         <div class="col bg-dark pt-4 pb-4">
         <form name="form" >

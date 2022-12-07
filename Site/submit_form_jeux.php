@@ -1,6 +1,6 @@
 <?php
 
-    if(isset($_POST['nom']) && !isset($_POST['editeur'] )&& !isset($_POST['']) && !isset($_POST[('nom')])){
+    if(isset($_POST['nom']) && !isset($_POST['prenom'] )&& !isset($_POST['pseudo']) && !isset($_POST[('mail')])){
         echo "Il faut renseigner tous les champs pour pouvoir ajouter un joueur";
     }
     $pseudo = $_POST['pseudo'];

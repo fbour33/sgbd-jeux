@@ -6,7 +6,7 @@ import os
 
 def fill_table(myfile): 
 
-    fichier = open("donnees.sql", "a")
+    fichier = open("insert.sql", "a")
 
     compteur=1
 

@@ -83,7 +83,7 @@ create table CREATEURS
 
 create table CREATIONS
 (
-    ID_CREATEUR                     INT(3)              not null,
+    ID_CREATEUR                     INT(3)              not null AUTO_INCREMENT,
     EST_AUTEUR                      INT(3)                      ,
     EST_ILLUSTRATEUR                INT(3)                      ,
     ID_JEU                          INT(3)              not null,
@@ -96,7 +96,7 @@ create table CREATIONS
 
 create table AVIS
 (
-    ID_AVIS                         INT(3)                  not null,
+    ID_AVIS                         INT(3)                  not null AUTO_INCREMENT,
     NOTE_AVIS                       INT(3)                  not null,
     COMMENTAIRE_AVIS                BLOB(1000)                      ,
     DATE_AVIS                       DATE                            ,
@@ -125,7 +125,7 @@ create table JUGEMENTS
 
 create table THEMES 
 (
-    ID_THEME                          INT(3)                not null,
+    ID_THEME                          INT(3)                not null AUTO_INCREMENT,
     INTITULE_THEME                    CHAR(20)              not null,
     constraint pk_themes primary key (ID_THEME)   
 );
