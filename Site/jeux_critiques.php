@@ -37,8 +37,7 @@
     $sqlQueryJeux = 'SELECT DISTINCT J.nom_jeu, M.description_mecanique
                     FROM JEUX as J NATURAL JOIN MECANIQUES_UTIL NATURAL JOIN MECANIQUES as M NATURAL JOIN THEMES_UTIL
                     WHERE id_theme = ( SELECT id_theme FROM THEMES WHERE intitule_theme = :nom )
-                    AND id_jeu in ( SELECT DISTINCT id_jeu FROM CONFIGURATIONS)
-                    ORDER BY description_mecanique ASC'; 
+                    AND id_jeu in ( SELECT DISTINCT id_jeu FROM CONFIGURATIONS)'; 
 
     $StatmentJeux = $db->prepare($sqlQueryJeux);
     $StatmentJeux->bindParam(':nom', $nomTheme, PDO::PARAM_STR_CHAR);

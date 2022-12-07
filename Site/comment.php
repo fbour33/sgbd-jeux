@@ -1,5 +1,10 @@
 <div class="container text-center ">
-            <?php foreach($avis as $avis) {?>
+            <?php foreach($avis as $avis) {
+
+                $ref = '#Delete' . $compt;
+                $id = 'Delete' . $compt; 
+
+                ?>
                 <div class="row bg-black border border-dark mt-2"><?php echo 'Le ' . $avis['DATE_AVIS'] . ', ' . $avis['PSEUDO_JOUEUR'] . ' a posté :'; ?></div>
                 <div class="row bg-light border border-dark">
                     <div class="col"><?php echo $avis['NOTE_AVIS'] . '/20 ';?></div>
@@ -61,6 +66,23 @@
                         </div>
                     </div>
                 </div>
+                <div class="col mt-2">
+                        <p>
+                        <a class="btn btn-sm btn-outline-danger" data-bs-toggle="collapse" data-bs-target="<?php echo $ref; ?>" href="<?php echo $ref; ?>" role="button" aria-expanded="false" aria-controls="<?php echo $id; ?>">
+                            Supprimer
+                        </a>
+                        <p>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse" id="<?php echo $id; ?>">
+                                <div class="card card-body">
+                                    <p>Work in progress ...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <?php $compt++ ?>
             <?php } ?>
     </div>
