@@ -27,7 +27,7 @@
                                 $sqlQueryAgree = "SELECT PSEUDO_JOUEUR
                                                         FROM JUGEMENTS NATURAL JOIN JOUEURS 
                                                         WHERE est_positif = 1
-                                                        AND id_avis = $id_avis";
+                                                        AND id_avis = $id_avis;";
                                 
                                 $agreeStatement = $db->prepare($sqlQueryAgree);  
                                 $agreeStatmentQuery = $db->query($sqlQueryAgree);
@@ -48,7 +48,7 @@
                                 $sqlQueryAgree = "SELECT PSEUDO_JOUEUR
                                                         FROM JUGEMENTS NATURAL JOIN JOUEURS 
                                                         WHERE est_negatif = 1
-                                                        AND id_avis = $id_avis";
+                                                        AND id_avis = $id_avis;";
                                 
                                 $agreeStatement = $db->prepare($sqlQueryAgree);  
                                 $agreeStatmentQuery = $db->query($sqlQueryAgree);
